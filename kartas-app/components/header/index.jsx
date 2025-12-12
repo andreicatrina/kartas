@@ -2,6 +2,7 @@ import React from "react";
 
 import {
   AboutHeader,
+  ActivitiesHeader,
   ContactHeader,
   HeaderContainer,
   HomeHeader,
@@ -19,12 +20,13 @@ export default function Header() {
         <LogoContainer>Logo</LogoContainer>
         <Menu>
           <HomeHeader>Home</HomeHeader>
-          <AboutHeader>Services</AboutHeader>
           <ServicesHeader>About Us</ServicesHeader>
+          <ActivitiesHeader>Activities</ActivitiesHeader>
+          <AboutHeader>Services</AboutHeader>
           <ContactHeader>Contact</ContactHeader>
         </Menu>
         <WhatsappMenuContainer>
-          <a>Whatsapp</a>
+          <a>WHATSAPP</a>
         </WhatsappMenuContainer>
       </MenuContainer>
     </HeaderContainer>

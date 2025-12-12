@@ -67,6 +67,17 @@ export const AboutHeader = styled.span`
     text-underline-offset: 8px;
   }
 `;
+export const ActivitiesHeader = styled.span`
+  color: #dfad6a;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Cormorant SC", serif;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+`;
 
 export const ServicesHeader = styled.span`
   color: #dfad6a;

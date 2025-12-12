@@ -1,6 +1,15 @@
 import Image from "next/image";
 
-import { HomeContainer, HomeSection } from "./components.jsx";
+import {
+  HomeContainer,
+  HomeSection,
+  LandingContainer,
+  LandingParentContainer,
+  LandingSpan,
+  LandingSpanContainer,
+  LandingTitle,
+  LandingTitleContainer,
+} from "./components.jsx";
 
 import Header from "../components/header";
 
@@ -9,8 +18,17 @@ export default function Home() {
     <HomeSection>
       <HomeContainer>
         <Header />
-        <div></div>
       </HomeContainer>
+      <LandingParentContainer>
+        <LandingContainer>
+          <LandingTitleContainer>
+            <LandingTitle>Kartas Bucharest Events</LandingTitle>
+          </LandingTitleContainer>
+          <LandingSpanContainer>
+            <LandingSpan>TEXT SPAN</LandingSpan>
+          </LandingSpanContainer>
+        </LandingContainer>
+      </LandingParentContainer>
     </HomeSection>
   );
 }
