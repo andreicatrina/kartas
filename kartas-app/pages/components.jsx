@@ -43,6 +43,18 @@ export const LandingTitle = styled.h1`
   text-align: center;
 `;
 
-export const LandingSpanContainer = styled.div``;
+export const LandingSpanContainer = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+`;
 
-export const LandingSpan = styled.span``;
+export const LandingSpan = styled.span`
+  color: #fff;
+  margin: 40px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+`;
