@@ -1,3 +1,5 @@
+import { ServicesSection } from "./components";
+
 export default function ServicesPage() {
-  return <div>AA</div>;
+  return <ServicesSection>AA</ServicesSection>;
 }
