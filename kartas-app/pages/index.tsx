@@ -4,6 +4,7 @@ import { ContactParentContainer, HomeContainer, HomeSection } from "../component
 
 import Header from "../components/header";
 import Contact from "../components/contact/contact.jsx";
+import About from "../components/about/about.jsx";
 
 import {
   LandingContainer,
@@ -37,6 +38,7 @@ export default function Home() {
           </LandingSpanContainer>
         </LandingContainer>
       </LandingParentContainer>
+      <About />
       <ContactParentContainer>
         <Contact />
       </ContactParentContainer>

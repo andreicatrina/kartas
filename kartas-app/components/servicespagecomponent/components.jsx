@@ -17,6 +17,14 @@ export const ServicesHeaderContainer = styled.div`
   border-bottom: 1px solid #dfad6a;
 `;
 
-// export const Test = styled.div.attrs({})`
-//   color: red;
-// `;
+export const ContactParentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px;
+  background-color: #0a0a0a;
+  border-top: 1px solid #dfad6a;
+`;

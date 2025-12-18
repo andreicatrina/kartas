@@ -8,11 +8,8 @@ export const HomeSection = styled.section`
 
 export const HomeContainer = styled.div`
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 16px 24px;
-  background-color: #0a0a0a;
+  padding: 30px 0;
+  border-top: 1px solid #dfad6a;
   border-bottom: 1px solid #dfad6a;
 `;
 
@@ -35,7 +32,7 @@ export const LandingTitleContainer = styled.div`
 `;
 
 export const LandingTitle = styled.h1`
-  font-family: "Neonderthaw", cursive;
+  font-family: "Neonderthaw";
   font-size: 64px;
   font-weight: 400;
   line-height: 80px;
