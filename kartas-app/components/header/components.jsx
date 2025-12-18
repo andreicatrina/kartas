@@ -44,11 +44,12 @@ export const WhatsappMenuContainer = styled.div`
   }
 `;
 
-export const HomeHeader = styled.span`
+export const HomeHeader = styled.a`
   color: #dfad6a;
   font-size: 18px;
   cursor: pointer;
   font-family: "Cormorant SC", serif;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;
@@ -56,11 +57,12 @@ export const HomeHeader = styled.span`
   }
 `;
 
-export const AboutHeader = styled.span`
+export const AboutHeader = styled.a`
   color: #dfad6a;
   font-size: 18px;
   cursor: pointer;
   font-family: "Cormorant SC", serif;
+  text-decoration: none;
 
   &:hover {
     text-decoration: underline;

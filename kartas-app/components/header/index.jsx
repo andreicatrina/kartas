@@ -19,10 +19,10 @@ export default function Header() {
       <MenuContainer>
         <LogoContainer>Logo</LogoContainer>
         <Menu>
-          <HomeHeader>Home</HomeHeader>
+          <HomeHeader href="/">Home</HomeHeader>
           <ServicesHeader>About Us</ServicesHeader>
           <ActivitiesHeader>Activities</ActivitiesHeader>
-          <AboutHeader>Services</AboutHeader>
+          <AboutHeader href="/services">Services</AboutHeader>
           <ContactHeader>Contact</ContactHeader>
         </Menu>
         <WhatsappMenuContainer>

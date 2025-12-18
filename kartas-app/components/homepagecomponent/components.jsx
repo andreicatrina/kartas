@@ -53,8 +53,21 @@ export const LandingSpanContainer = styled.div`
 export const LandingSpan = styled.span`
   color: #fff;
   margin: 40px 0;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: center;
+  font-family: "Roboto";
+`;
+
+export const ContactParentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px;
+  background-color: #0a0a0a;
+  border-top: 1px solid #dfad6a;
 `;

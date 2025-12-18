@@ -1,8 +1,9 @@
 import Image from "next/image";
 
-import { HomeContainer, HomeSection } from "../components/homepagecomponent/components.jsx";
+import { ContactParentContainer, HomeContainer, HomeSection } from "../components/homepagecomponent/components.jsx";
 
 import Header from "../components/header";
+import Contact from "../components/contact/contact.jsx";
 
 import {
   LandingContainer,
@@ -36,6 +37,9 @@ export default function Home() {
           </LandingSpanContainer>
         </LandingContainer>
       </LandingParentContainer>
+      <ContactParentContainer>
+        <Contact />
+      </ContactParentContainer>
     </HomeSection>
   );
 }
