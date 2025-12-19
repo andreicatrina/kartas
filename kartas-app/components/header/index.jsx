@@ -21,7 +21,7 @@ export default function Header() {
         <Menu>
           <HomeHeader href="/">Home</HomeHeader>
           <ServicesHeader>About Us</ServicesHeader>
-          <ActivitiesHeader>Activities</ActivitiesHeader>
+          <ActivitiesHeader href="/activities">Activities</ActivitiesHeader>
           <AboutHeader href="/services">Services</AboutHeader>
           <ContactHeader>Contact</ContactHeader>
         </Menu>
