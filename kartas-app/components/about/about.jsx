@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AboutCard1,
   AboutCard2,
@@ -14,6 +13,14 @@ import {
 import Image from "next/image";
 
 import carexample1 from "../../public/bmw.jpg";
+import kartas13 from "../../public/kartas13.jpeg";
+import kartas15 from "../../public/kartas15.jpeg";
+import kartas17 from "../../public/kartas17.jpeg";
+import kartas12 from "../../public/kartas12.jpeg";
+import kartas11 from "../../public/kartas11.jpeg";
+import kartas9 from "../../public/kartas9.jpeg";
+import kartas8 from "../../public/kartas8.jpeg";
+import kartas6 from "../../public/kartas6.jpeg";
 
 export default function About() {
   return (
@@ -30,13 +37,37 @@ export default function About() {
         </AboutSubTitleContainer>
         <AboutCardsContainer>
           <AboutCard1>
-            <Image src={carexample1} alt="car rent" />
-            <span>VIP Cars & Driver</span>
+            <Image src={kartas13} alt="car rent" />
+            {/* <span>VIP Cars & Driver</span> */}
           </AboutCard1>
-          <AboutCard2>
-            <img src="" alt="" />
-            <span>VIP Escorts</span>
-          </AboutCard2>
+          <AboutCard1>
+            <Image src={kartas15} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
+          <AboutCard1>
+            <Image src={kartas17} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
+          <AboutCard1>
+            <Image src={kartas12} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
+          <AboutCard1>
+            <Image src={kartas11} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
+          <AboutCard1>
+            <Image src={kartas9} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
+          <AboutCard1>
+            <Image src={kartas6} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
+          <AboutCard1>
+            <Image src={kartas8} alt="bucharest car rent" />
+            {/* <span>VIP Escorts</span> */}
+          </AboutCard1>
         </AboutCardsContainer>
       </AboutContainer>
     </AboutParentContainer>

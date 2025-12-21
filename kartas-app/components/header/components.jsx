@@ -14,7 +14,16 @@ export const MenuContainer = styled.div`
 `;
 
 export const LogoContainer = styled.div`
+  width: 100%;
+  max-width: 160px;
+  height: 60px;
   color: #fff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export const Menu = styled.div`

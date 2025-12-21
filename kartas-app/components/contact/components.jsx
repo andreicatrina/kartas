@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
 
-export const ContactParentContainer = styled.div`
+export const ContactParentContainer = styled.footer`
   width: 100%;
 `;
 
 export const ContactContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -77,4 +77,16 @@ export const Column3Title = styled.p`
   font-weight: 400;
   line-height: 24px;
   color: #dfad6a;
+`;
+
+export const ContactFooterLogo = styled.div`
+  width: 100%;
+  max-width: 160px;
+  height: 60px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;

@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   gap: 40px;
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1600px; */
   margin: 0 auto;
   padding: 0px 24px 80px;
 `;
@@ -43,8 +43,11 @@ export const AboutTitle = styled.h2`
 `;
 
 export const AboutCardsContainer = styled.div`
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 12px;
+  justify-items: center;
 `;
 
 export const AboutCard1 = styled.div`
@@ -53,7 +56,34 @@ export const AboutCard1 = styled.div`
   padding: 8px;
   gap: 16px;
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
+  height: 220px;
+  border: 1px solid #c7b198;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    cursor: pointer;
+  }
+
+  span {
+    color: #fff;
+  }
+`;
+
+export const AboutCard2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 16px;
+  width: 100%;
+  height: 220px;
+  max-width: 360px;
   border: 1px solid #c7b198;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -65,11 +95,6 @@ export const AboutCard1 = styled.div`
     object-fit: cover;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-  }
-
-  span {
-    color: #fff;
+    cursor: pointer;
   }
 `;
-
-export const AboutCard2 = styled.div``;

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image.js";
 
 import {
   AboutHeader,
@@ -13,11 +14,15 @@ import {
   WhatsappMenuContainer,
 } from "./components.jsx";
 
+import kartaslogo4 from "../../public/kartaslogo4.png";
+
 export default function Header() {
   return (
     <HeaderContainer>
       <MenuContainer>
-        <LogoContainer>Logo</LogoContainer>
+        <LogoContainer>
+          <Image src={kartaslogo4} alt="logo" />
+        </LogoContainer>
         <Menu>
           <HomeHeader href="/">Home</HomeHeader>
           <ServicesHeader>About Us</ServicesHeader>
