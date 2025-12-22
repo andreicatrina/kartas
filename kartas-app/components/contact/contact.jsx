@@ -15,7 +15,14 @@ import {
   ContactHeadingContainer,
   ContactHeadingPhoneLink,
   ContactParentContainer,
+  FacebookFooterLink,
+  InstagramFooterLink,
+  YoutubeFooterLink,
 } from "./components";
+
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 import kartaslogo4 from "../../public/kartaslogo4.png";
 
@@ -45,9 +52,15 @@ export default function Contact() {
         </ContactColumn2>
         <ContactColumn3>
           <Column3Title>Socials</Column3Title>
-          <span>A</span>
-          <span>B</span>
-          <span>C</span>
+          <InstagramFooterLink>
+            <FaInstagram />
+          </InstagramFooterLink>
+          <FacebookFooterLink>
+            <FaFacebookSquare />
+          </FacebookFooterLink>
+          <YoutubeFooterLink>
+            <FaYoutube />
+          </YoutubeFooterLink>
         </ContactColumn3>
       </ContactContainer>
     </ContactParentContainer>

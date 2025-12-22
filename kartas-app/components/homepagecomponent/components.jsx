@@ -33,6 +33,7 @@ export const LandingTitleContainer = styled.div`
 
 export const LandingTitle = styled.h1`
   font-family: "Neonderthaw";
+  /* font-family: "Righteous", sans-serif; */
   font-size: 64px;
   font-weight: 400;
   line-height: 80px;
