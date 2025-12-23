@@ -47,6 +47,7 @@ export default function Contact() {
         <ContactColumn2>
           <Column2Title>Links</Column2Title>
           <span>Home</span>
+          <span>About Us</span>
           <span>Services</span>
           <span>Activities</span>
         </ContactColumn2>

@@ -23,7 +23,12 @@ import {
   ServicesText,
   ServicesTextContainer,
   ServicesTitle,
+  VIPPackContainer,
+  VIPSpan,
+  VIPTitle,
 } from "../../components/servicespagecomponent/components";
+
+import { RiVipCrown2Fill } from "react-icons/ri";
 
 import Header from "../../components/header/";
 import Contact from "../../components/contact/contact";
@@ -106,7 +111,12 @@ export default function ServicesPage() {
             <SecurityTitle>Security Guard</SecurityTitle>
             <SecuritySpan>For your protection</SecuritySpan>
           </ServicesSecurityContainer>
-          <div></div>
+          <VIPPackContainer>
+            <VIPTitle>
+              VIP Combo <RiVipCrown2Fill />
+            </VIPTitle>
+            <VIPSpan>Get the best of everything</VIPSpan>
+          </VIPPackContainer>
         </ServicesOffersContainer>
       </ServicesParentContainer>
       <ContactParentContainer>

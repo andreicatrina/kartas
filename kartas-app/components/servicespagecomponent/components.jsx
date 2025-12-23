@@ -60,6 +60,7 @@ export const ATClassicTitle = styled.h3`
   font-size: 28px;
   color: #dfad6a;
   margin-bottom: 20px;
+  font-family: "Roboto";
 `;
 
 export const ATClassicSpan = styled.span`
@@ -90,6 +91,12 @@ export const ATImageContainer1 = styled.div`
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+  }
 `;
 
 export const ATImageContainer2 = styled.div`
@@ -106,6 +113,12 @@ export const ATImageContainer2 = styled.div`
     object-fit: cover;
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
+  }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
   }
 `;
 
@@ -124,7 +137,14 @@ export const ATImageContainer3 = styled.div`
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+  }
 `;
+
 export const ATImageContainer4 = styled.div`
   display: flex;
   flex-direction: column;
@@ -139,6 +159,12 @@ export const ATImageContainer4 = styled.div`
     object-fit: contain;
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
+  }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
   }
 `;
 
@@ -157,7 +183,14 @@ export const ATImageContainer5 = styled.div`
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+  }
 `;
+
 export const ATImageContainer6 = styled.div`
   display: flex;
   flex-direction: column;
@@ -173,6 +206,12 @@ export const ATImageContainer6 = styled.div`
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+  }
 `;
 
 export const ATLimoContainer = styled.div``;
@@ -181,26 +220,52 @@ export const ATLimoTitle = styled.h3`
   font-size: 28px;
   color: #dfad6a;
   margin-bottom: 20px;
+  font-family: "Roboto";
 `;
 
 export const ATLimoSpan = styled.span`
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+  font-family: "Roboto";
 `;
 
-export const ServicesSecurityContainer = styled.div``;
+export const ServicesSecurityContainer = styled.div`
+  padding: 24px 0;
+`;
 
 export const SecurityTitle = styled.h3`
   font-size: 28px;
   color: #dfad6a;
   margin-bottom: 20px;
+  font-family: "Roboto";
 `;
 
 export const SecuritySpan = styled.span`
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+`;
+
+export const VIPPackContainer = styled.div`
+  padding: 24px 0;
+`;
+
+export const VIPTitle = styled.h3`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+  color: #dfad6a;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+`;
+
+export const VIPSpan = styled.span`
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto";
 `;
 
 export const ContactParentContainer = styled.div`
