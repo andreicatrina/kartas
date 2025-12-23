@@ -67,6 +67,7 @@ export const ATClassicSpan = styled.span`
   font-size: 20px;
   font-weight: 400;
   color: #fff;
+  font-family: "Roboto";
 `;
 
 export const ATImagesContainer = styled.div`
