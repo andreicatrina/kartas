@@ -6,6 +6,7 @@ import {
   ActivitiesSection,
   ActivitiesTitle,
   ActivitiesTitleContainer,
+  ClubPartiesTextContainer,
   LocationCardContainer,
   LocationContainer,
   LocationDescriptionContainer,
@@ -13,14 +14,26 @@ import {
   LocationImageContainer,
   LocationTitle,
   LocationsToursContainer,
+  OtherActivitiesChildContainer1,
+  OtherActivitiesChildContainer2,
   OtherActivitiesContainer,
+  OtherActivitiesImageContainer,
+  OtherActivitiesParentContainer,
+  OtherActivitiesParentContainer2,
+  OtherActivitiesParentContainer3,
   OtherActivitiesSubtitle,
   OtherActivitiesTitleContainer,
-  OtherActivityCardContainer,
-  OtherActivityImageContainer,
+  PoolPartiesTextContainer,
+  PoolPartyImageContainer,
+  PoolPartyImagesContainer,
+  PoolPartyTitleContainer,
   ToursContainer,
   ToursText,
   ToursTitle,
+  VilaPartyImageContainer,
+  VilaPartyImagesContainer,
+  VilaPartyTextContainer,
+  VilaPartyTitleContainer,
 } from "../../components/activitiespagecomponents/component";
 
 import Header from "../../components/header/index";
@@ -28,9 +41,13 @@ import Contact from "../../components/contact/contact";
 
 import Image from "next/image";
 import kartasbran from "../../public/kartas-bran.jpg";
+import kartaspartytest from "../../public/kartaspartytest.jpg";
+import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
+import kartaspartytest3 from "../../public/kartaspartytest3.jpg";
 
 import { CiLocationOn } from "react-icons/ci";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
+import { BiParty } from "react-icons/bi";
 
 export default function index() {
   return (
@@ -273,14 +290,87 @@ export default function index() {
         <OtherActivitiesContainer>
           <OtherActivitiesTitleContainer>
             <h3>Other Activities</h3>
+            <OtherActivitiesSubtitle>Bucharest Club Parties</OtherActivitiesSubtitle>
           </OtherActivitiesTitleContainer>
-          <OtherActivitiesSubtitle>Private Events & Celebrations</OtherActivitiesSubtitle>
-          <OtherActivityCardContainer>
-            <h3>Club Party - Bucharest</h3>
-            <OtherActivityImageContainer>
-              <Image src={kartasbran} />
-            </OtherActivityImageContainer>
-          </OtherActivityCardContainer>
+          <OtherActivitiesParentContainer>
+            <OtherActivitiesChildContainer1>
+              <OtherActivitiesImageContainer>
+                <Image src={kartaspartytest2} alt="romanian clubs" />
+              </OtherActivitiesImageContainer>
+              <OtherActivitiesImageContainer>
+                <Image src={kartaspartytest2} alt="romania parties" />
+              </OtherActivitiesImageContainer>
+              <OtherActivitiesImageContainer>
+                <Image src={kartaspartytest2} alt="bucharest parties" />
+              </OtherActivitiesImageContainer>
+              <OtherActivitiesImageContainer>
+                <Image src={kartaspartytest2} alt="bucharest clubs" />
+              </OtherActivitiesImageContainer>
+            </OtherActivitiesChildContainer1>
+            <ClubPartiesTextContainer>
+              <span>
+                Bucharest’s club parties are known for their high energy, late-night intensity, and eclectic mix of
+                styles, making the city one of Eastern Europe’s most exciting nightlife hubs. From sleek, upscale clubs
+                in the city center to underground venues tucked into old industrial spaces, the scene caters to
+                everything from mainstream hits to techno, house, and experimental electronic music.
+              </span>
+            </ClubPartiesTextContainer>
+          </OtherActivitiesParentContainer>
+          <OtherActivitiesParentContainer2>
+            <PoolPartyTitleContainer>
+              <h3>Bucharest Pool Parties</h3>
+            </PoolPartyTitleContainer>
+            <PoolPartyImagesContainer>
+              <PoolPartyImageContainer>
+                <Image src={kartaspartytest3} alt="pool party Romania" />
+              </PoolPartyImageContainer>
+              <PoolPartyImageContainer>
+                <Image src={kartaspartytest3} alt="bucharest pool party" />
+              </PoolPartyImageContainer>
+              <PoolPartyImageContainer>
+                <Image src={kartaspartytest3} alt="bucharest party" />
+              </PoolPartyImageContainer>
+              <PoolPartyImageContainer>
+                <Image src={kartaspartytest3} alt="vip parties" />
+              </PoolPartyImageContainer>
+            </PoolPartyImagesContainer>
+            <PoolPartiesTextContainer>
+              <span>
+                Bucharest pool parties bring a vibrant, sun-soaked twist to the city’s nightlife, especially during the
+                summer months when rooftops, hotels, and private venues transform into lively daytime-to-night events.
+                Known for stylish crowds, upbeat DJ sets, and a relaxed yet glamorous atmosphere
+              </span>
+            </PoolPartiesTextContainer>
+          </OtherActivitiesParentContainer2>
+          <OtherActivitiesParentContainer3>
+            <VilaPartyTitleContainer>
+              <BiParty />
+              <h3>Villa/Penthouse Private Party</h3>
+              <BiParty />
+            </VilaPartyTitleContainer>
+            <VilaPartyImagesContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+            </VilaPartyImagesContainer>
+            <VilaPartyTextContainer>
+              <span>
+                Private villa parties in Romania are known for their exclusivity, freedom, and high-energy atmosphere,
+                often set in scenic countryside locations or luxury properties near major cities. These gatherings blend
+                music, privacy, and style, featuring DJ-led soundtracks, open-air spaces, pools, and long nights that
+                feel detached from everyday life.
+              </span>
+            </VilaPartyTextContainer>
+          </OtherActivitiesParentContainer3>
         </OtherActivitiesContainer>
       </ActivitiesParentContainer>
       <ActivitiesContactContainer>

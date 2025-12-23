@@ -154,8 +154,8 @@ export const YoutubeFooterLink = styled.a`
 
 export const ContactFooterLogo = styled.div`
   width: 100%;
-  max-width: 160px;
-  height: 60px;
+  max-width: 200px;
+  height: 80px;
 
   img {
     width: 100%;
