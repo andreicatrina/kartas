@@ -12,6 +12,11 @@ export const AboutContainer = styled.div`
   /* max-width: 1600px; */
   margin: 0 auto;
   padding: 0px 24px 80px;
+
+  @media all and (max-width: 850px) {
+    padding: 0px 20px 60px;
+    gap: 24px;
+  }
 `;
 
 export const AboutSubTitleContainer = styled.div`
@@ -21,10 +26,12 @@ export const AboutSubTitleContainer = styled.div`
 `;
 
 export const Subtitle = styled.span`
+  font-family: "Roboto";
   width: 100%;
   max-width: 600px;
-
   color: #fff;
+  font-size: 16px;
+  line-height: 24px;
 `;
 
 export const AboutTitleContainer = styled.div`
@@ -38,8 +45,13 @@ export const AboutTitle = styled.h2`
   font-size: 48px;
   line-height: 56px;
   font-family: "Neonderthaw";
-  margin: 20px 0;
+  margin: 10px 0;
   color: #dfad6a;
+
+  @media all and (max-width: 850px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 `;
 
 export const AboutCardsContainer = styled.div`
@@ -48,6 +60,13 @@ export const AboutCardsContainer = styled.div`
   column-gap: 20px;
   row-gap: 12px;
   justify-items: center;
+
+  @media all and (max-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media all and (max-width: 850px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const AboutCard1 = styled.div`

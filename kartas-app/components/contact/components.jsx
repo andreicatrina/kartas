@@ -21,17 +21,42 @@ export const ContactHeadingContainer = styled.div`
 
 export const ContactHeadingPhoneLink = styled.a`
   font-size: 20px;
+  line-height: 24px;
   font-family: "Roboto";
   font-weight: 400;
   text-decoration: none;
+
+  @media all and (max-width: 850px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+`;
+
+export const ContactMailLink = styled.a`
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-decoration: none;
+
+  @media all and (max-width: 850px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
 `;
 
 export const ContactHeading = styled.h2`
+  margin-bottom: 16px;
   font-size: 28px;
   font-family: "Roboto";
   font-weight: 400;
   color: #dfad6a;
   text-align: center;
+
+  @media all and (max-width: 850px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 export const ContactColumn1 = styled.div`

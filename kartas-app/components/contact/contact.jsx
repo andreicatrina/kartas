@@ -14,6 +14,7 @@ import {
   ContactHeading,
   ContactHeadingContainer,
   ContactHeadingPhoneLink,
+  ContactMailLink,
   ContactParentContainer,
   FacebookFooterLink,
   InstagramFooterLink,
@@ -36,7 +37,7 @@ export default function Contact() {
         <ContactHeadingContainer>
           <ContactHeading>CONTACT US</ContactHeading>
           <ContactHeadingPhoneLink href="tel:+40712345678">+40 712 345 678</ContactHeadingPhoneLink>
-          <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+          <ContactMailLink href="mailto:abc@gmail.com">abc@gmail.com</ContactMailLink>
         </ContactHeadingContainer>
         <ContactColumn1>
           <Column1Title>Info</Column1Title>
