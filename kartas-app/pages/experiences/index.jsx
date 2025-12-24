@@ -63,7 +63,7 @@ export default function index() {
       <ActivitiesParentContainer>
         <ToursContainer>
           <ActivitiesTitleContainer>
-            <ActivitiesTitle>Activities</ActivitiesTitle>
+            <ActivitiesTitle>Experiences</ActivitiesTitle>
             <span>Travel at your own pace. In absolute comfort.</span>
           </ActivitiesTitleContainer>
           <ToursTitle>Guided Tours</ToursTitle>

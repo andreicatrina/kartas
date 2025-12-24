@@ -13,7 +13,7 @@ export const ContactContainer = styled.div`
   margin: 0 auto;
   color: #fff;
 
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 550px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -39,11 +39,6 @@ export const ContactHeadingPhoneLink = styled.a`
   }
 
   @media all and (max-width: 700px) {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  @media all and (max-width: 650px) {
     font-size: 14px;
     line-height: 16px;
   }
@@ -62,11 +57,6 @@ export const ContactMailLink = styled.a`
   }
 
   @media all and (max-width: 700px) {
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-  @media all and (max-width: 650px) {
     font-size: 14px;
     line-height: 16px;
   }
@@ -81,17 +71,17 @@ export const ContactHeading = styled.h2`
   text-align: center;
 
   @media all and (max-width: 850px) {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
 
   @media all and (max-width: 700px) {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
   }
 
   @media all and (max-width: 650px) {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 18px;
   }
 `;
@@ -114,11 +104,6 @@ export const ContactColumn1 = styled.div`
     }
 
     @media all and (max-width: 700px) {
-      font-size: 16px;
-      line-height: 18px;
-    }
-
-    @media all and (max-width: 650px) {
       font-size: 14px;
       line-height: 16px;
     }
@@ -160,11 +145,6 @@ export const ContactColumn2 = styled.div`
     }
 
     @media all and (max-width: 700px) {
-      font-size: 16px;
-      line-height: 18px;
-    }
-
-    @media all and (max-width: 650px) {
       font-size: 14px;
       line-height: 16px;
     }
@@ -336,7 +316,7 @@ export const ContactFooterLogo = styled.div`
     object-fit: cover;
   }
 
-  @media all and (max-width: 700px) {
+  @media all and (max-width: 850px) {
     max-width: 160px;
     height: 60px;
   }

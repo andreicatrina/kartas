@@ -30,7 +30,7 @@ import {
 
 import { RiVipCrown2Fill } from "react-icons/ri";
 
-import Header from "../../components/header/";
+import Header from "../../components/header";
 import Contact from "../../components/contact/contact";
 import Image from "next/image";
 

@@ -34,8 +34,6 @@ export default function Header() {
     }
   }
 
-  function MenuClickClose() {}
-
   return (
     <HeaderContainer>
       <MenuContainer>
@@ -45,7 +43,7 @@ export default function Header() {
         <Menu>
           <HomeHeader href="/">Home</HomeHeader>
           <ServicesHeader>About Us</ServicesHeader>
-          <ActivitiesHeader href="/activities">Activities</ActivitiesHeader>
+          <ActivitiesHeader href="/experiences">Experiences</ActivitiesHeader>
           <AboutHeader href="/services">Services</AboutHeader>
           <ContactHeader>Contact</ContactHeader>
         </Menu>
@@ -55,7 +53,7 @@ export default function Header() {
           {showMobileMenu === true ? (
             <DropDownContainer>
               <a href="">About Us</a>
-              <a href="/activities">Activities</a>
+              <a href="/experiences">Experiences</a>
               <a href="/services">Services</a>
               <a href="/contact">Contact</a>
               <DropDownLogoContainer>
