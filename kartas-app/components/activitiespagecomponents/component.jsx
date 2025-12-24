@@ -158,6 +158,13 @@ export const LocationDescriptionParagraph = styled.p`
   }
 `;
 
+export const ToursGetInTouchContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+`;
+
 export const OtherActivitiesContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -272,9 +279,8 @@ export const OtherActivitiesParentContainer2 = styled.div`
 `;
 
 export const PoolPartyTitleContainer = styled.div`
-  margin-top: 20px;
   h3 {
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-size: 20px;
     font-weight: 400;
     color: #fff;
@@ -324,7 +330,6 @@ export const VilaPartyTitleContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 20px;
 
   svg {
     width: 24px;
@@ -333,7 +338,7 @@ export const VilaPartyTitleContainer = styled.div`
   }
 
   h3 {
-    /* margin-bottom: 20px; */
+    margin: 20px 0;
     font-size: 20px;
     font-weight: 400;
     color: #fff;
@@ -395,6 +400,93 @@ export const VilaPartyTextContainer = styled.div`
     font-family: "Roboto";
     /* font-size: 4rem; */
     /* color: #fff; */
+  }
+`;
+
+export const GetInTouchContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 12px;
+  margin-top: 40px;
+  border: 1px solid #c7b198;
+  border-radius: 8px;
+`;
+
+export const GetInTouchTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p {
+    font-family: "Cormorant SC", serif;
+    color: #dfad6a;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    span {
+      font-family: "Cormorant SC", serif;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+`;
+
+export const CallUsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    font-family: "Cormorant SC", serif;
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f9f6f7;
+    padding: 6px;
+    border: 1px solid #c7b198;
+    border-radius: 4px;
+    transition: 0.6s;
+
+    &:hover {
+      color: #dfad6a;
+      background-color: #0a0a0a;
+    }
+  }
+`;
+
+export const WhatsappContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-family: "Cormorant SC", serif;
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f9f6f7;
+    padding: 6px;
+    border: 1px solid #c7b198;
+    border-radius: 4px;
+    transition: 0.6s;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      color: #dfad6a;
+      background-color: #0a0a0a;
+    }
   }
 `;
 

@@ -6,7 +6,10 @@ import {
   ActivitiesSection,
   ActivitiesTitle,
   ActivitiesTitleContainer,
+  CallUsContainer,
   ClubPartiesTextContainer,
+  GetInTouchContainer,
+  GetInTouchTextContainer,
   LocationCardContainer,
   LocationContainer,
   LocationDescriptionContainer,
@@ -28,12 +31,14 @@ import {
   PoolPartyImagesContainer,
   PoolPartyTitleContainer,
   ToursContainer,
+  ToursGetInTouchContainer,
   ToursText,
   ToursTitle,
   VilaPartyImageContainer,
   VilaPartyImagesContainer,
   VilaPartyTextContainer,
   VilaPartyTitleContainer,
+  WhatsappContainer,
 } from "../../components/activitiespagecomponents/component";
 
 import Header from "../../components/header/index";
@@ -46,8 +51,8 @@ import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
 import kartaspartytest3 from "../../public/kartaspartytest3.jpg";
 
 import { CiLocationOn } from "react-icons/ci";
-import { FaEyeSlash } from "react-icons/fa";
 import { BiParty } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function index() {
   return (
@@ -285,6 +290,27 @@ export default function index() {
                 </LocationDescriptionParagraph>
               </LocationDescriptionContainer>
             </LocationContainer>
+            <ToursGetInTouchContainer>
+              <GetInTouchContainer>
+                <GetInTouchTextContainer>
+                  <p>
+                    Interested<span>?</span>
+                  </p>
+                  <p>
+                    Got questions<span>?</span>
+                  </p>
+                </GetInTouchTextContainer>
+                <CallUsContainer>
+                  <a href="tel:+40712345678">CALL US</a>
+                </CallUsContainer>
+                <WhatsappContainer>
+                  <a href="">
+                    <FaWhatsapp />
+                    WHATSAPP
+                  </a>
+                </WhatsappContainer>
+              </GetInTouchContainer>
+            </ToursGetInTouchContainer>
           </LocationsToursContainer>
         </ToursContainer>
         <OtherActivitiesContainer>
@@ -371,6 +397,25 @@ export default function index() {
               </span>
             </VilaPartyTextContainer>
           </OtherActivitiesParentContainer3>
+          <GetInTouchContainer>
+            <GetInTouchTextContainer>
+              <p>
+                Interested<span>?</span>
+              </p>
+              <p>
+                Got questions<span>?</span>
+              </p>
+            </GetInTouchTextContainer>
+            <CallUsContainer>
+              <a href="tel:+40712345678">CALL US</a>
+            </CallUsContainer>
+            <WhatsappContainer>
+              <a href="">
+                <FaWhatsapp />
+                WHATSAPP
+              </a>
+            </WhatsappContainer>
+          </GetInTouchContainer>
         </OtherActivitiesContainer>
       </ActivitiesParentContainer>
       <ActivitiesContactContainer>
