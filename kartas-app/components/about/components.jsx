@@ -67,6 +67,17 @@ export const AboutCardsContainer = styled.div`
   @media all and (max-width: 850px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media all and (max-width: 550px) {
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+
+  @media all and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const AboutCard1 = styled.div`

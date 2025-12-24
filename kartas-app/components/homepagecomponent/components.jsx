@@ -33,6 +33,14 @@ export const LandingContainer = styled.div`
   @media all and (max-width: 850px) {
     padding: 100px 20px;
   }
+
+  @media all and (max-width: 580px) {
+    padding: 80px 20px;
+  }
+
+  @media all and (max-width: 450px) {
+    padding: 60px 20px;
+  }
 `;
 
 export const LandingTitleContainer = styled.div`
@@ -51,6 +59,11 @@ export const LandingTitle = styled.h1`
   @media all and (max-width: 850px) {
     font-size: 50px;
     line-height: 64px;
+  }
+
+  @media all and (max-width: 580px) {
+    font-size: 40px;
+    line-height: 48px;
   }
 `;
 
@@ -74,6 +87,10 @@ export const LandingSpan = styled.span`
     margin: 30px 0;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media all and (max-width: 580px) {
+    font-size: 16px;
   }
 `;
 

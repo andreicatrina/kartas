@@ -11,6 +11,10 @@ export const MenuContainer = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+
+  @media all and (max-width: 450px) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -79,18 +83,33 @@ export const DropDownContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 8px;
   position: absolute;
   top: 28px;
-  left: 8px;
-  background-color: #0a0a0a;
-  width: 180px;
+  left: 24px;
+  width: 220px;
   padding: 30px 8px;
   border: 1px solid #dfad6a;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background: rgba(253, 253, 250, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 
   a {
     color: #dfad6a;
+    /* text-decoration: underline;
+    text-decoration-color: #fff;
+    text-underline-offset: 4px; */
     font-size: 16px;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: #dfad6a;
+      text-underline-offset: 4px;
+    }
   }
 `;
 
@@ -98,7 +117,8 @@ export const DropDownLogoContainer = styled.div`
   width: 100%;
   max-width: 80px;
   height: 40px;
-  margin-top: 30px;
+  margin-top: 16px;
+  border-bottom: 1px solid #dfad6a;
 
   img {
     width: 100%;

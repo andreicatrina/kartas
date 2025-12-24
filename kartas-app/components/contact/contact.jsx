@@ -40,20 +40,20 @@ export default function Contact() {
           <ContactMailLink href="mailto:abc@gmail.com">abc@gmail.com</ContactMailLink>
         </ContactHeadingContainer>
         <ContactColumn1>
-          <Column1Title>Info</Column1Title>
-          <span>A</span>
-          <span>B</span>
-          <span>C</span>
+          <Column1Title>INFO</Column1Title>
+          <span>Terms & Conditions</span>
+          <span>GDPR</span>
+          <span>Privacy Policy</span>
         </ContactColumn1>
         <ContactColumn2>
-          <Column2Title>Links</Column2Title>
+          <Column2Title>LINKS</Column2Title>
           <span>Home</span>
           <span>About Us</span>
           <span>Services</span>
           <span>Activities</span>
         </ContactColumn2>
         <ContactColumn3>
-          <Column3Title>Socials</Column3Title>
+          <Column3Title>SOCIALS</Column3Title>
           <InstagramFooterLink>
             <FaInstagram />
           </InstagramFooterLink>

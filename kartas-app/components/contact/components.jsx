@@ -12,6 +12,13 @@ export const ContactContainer = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   color: #fff;
+
+  @media all and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
 `;
 
 export const ContactHeadingContainer = styled.div`
@@ -30,6 +37,16 @@ export const ContactHeadingPhoneLink = styled.a`
     font-size: 18px;
     line-height: 20px;
   }
+
+  @media all and (max-width: 700px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media all and (max-width: 650px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
 `;
 
 export const ContactMailLink = styled.a`
@@ -42,6 +59,16 @@ export const ContactMailLink = styled.a`
   @media all and (max-width: 850px) {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  @media all and (max-width: 700px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media all and (max-width: 650px) {
+    font-size: 14px;
+    line-height: 16px;
   }
 `;
 
@@ -57,6 +84,16 @@ export const ContactHeading = styled.h2`
     font-size: 20px;
     line-height: 24px;
   }
+
+  @media all and (max-width: 700px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media all and (max-width: 650px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `;
 
 export const ContactColumn1 = styled.div`
@@ -66,6 +103,26 @@ export const ContactColumn1 = styled.div`
   justify-content: center;
   gap: 8px;
   padding: 0 12px;
+
+  span {
+    font-size: 18px;
+    color: #fff;
+
+    @media all and (max-width: 850px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media all and (max-width: 700px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    @media all and (max-width: 650px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 `;
 
 export const Column1Title = styled.p`
@@ -74,6 +131,16 @@ export const Column1Title = styled.p`
   font-weight: 400;
   line-height: 24px;
   color: #dfad6a;
+
+  @media all and (max-width: 850px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media all and (max-width: 700px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `;
 
 export const ContactColumn2 = styled.div`
@@ -83,6 +150,25 @@ export const ContactColumn2 = styled.div`
   justify-content: center;
   gap: 8px;
   padding: 0 12px;
+  span {
+    font-size: 18px;
+    color: #fff;
+
+    @media all and (max-width: 850px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media all and (max-width: 700px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    @media all and (max-width: 650px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 `;
 
 export const Column2Title = styled.p`
@@ -91,6 +177,16 @@ export const Column2Title = styled.p`
   font-weight: 400;
   line-height: 24px;
   color: #dfad6a;
+
+  @media all and (max-width: 850px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media all and (max-width: 700px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `;
 
 export const ContactColumn3 = styled.div`
@@ -108,6 +204,16 @@ export const Column3Title = styled.p`
   font-weight: 400;
   line-height: 24px;
   color: #dfad6a;
+
+  @media all and (max-width: 850px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media all and (max-width: 700px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 `;
 
 export const InstagramFooterLink = styled.a`
@@ -129,6 +235,20 @@ export const InstagramFooterLink = styled.a`
     svg {
       height: 32px;
       width: 32px;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 650px) {
+    svg {
+      width: 18px;
+      height: 18px;
     }
   }
 `;
@@ -153,6 +273,20 @@ export const FacebookFooterLink = styled.a`
       width: 32px;
     }
   }
+
+  @media all and (max-width: 700px) {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 650px) {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
 `;
 
 export const YoutubeFooterLink = styled.a`
@@ -175,6 +309,20 @@ export const YoutubeFooterLink = styled.a`
       width: 32px;
     }
   }
+
+  @media all and (max-width: 700px) {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 650px) {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
 `;
 
 export const ContactFooterLogo = styled.div`
@@ -186,5 +334,15 @@ export const ContactFooterLogo = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media all and (max-width: 700px) {
+    max-width: 160px;
+    height: 60px;
+  }
+
+  @media all and (max-width: 650px) {
+    max-width: 80px;
+    height: 40px;
   }
 `;
