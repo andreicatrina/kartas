@@ -226,6 +226,10 @@ export const LocationDescriptionParagraph = styled.p`
       width: 18px;
       color: #fff;
     }
+
+    @media all and (max-width: 555px) {
+      font-size: 14px;
+    }
   }
 
   @media all and (max-width: 555px) {
