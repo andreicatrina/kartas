@@ -37,7 +37,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <MenuContainer>
-        <LogoContainer>
+        <LogoContainer href="/">
           <Image src={kartaslogo4} alt="logo" />
         </LogoContainer>
         <Menu>

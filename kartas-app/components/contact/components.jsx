@@ -13,7 +13,7 @@ export const ContactContainer = styled.div`
   margin: 0 auto;
   color: #fff;
 
-  @media all and (max-width: 550px) {
+  @media all and (max-width: 555px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -135,7 +135,7 @@ export const ContactColumn2 = styled.div`
   justify-content: center;
   gap: 8px;
   padding: 0 12px;
-  span {
+  a {
     font-size: 18px;
     color: #fff;
 
@@ -321,7 +321,7 @@ export const ContactFooterLogo = styled.div`
     height: 60px;
   }
 
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 750px) {
     max-width: 80px;
     height: 40px;
   }

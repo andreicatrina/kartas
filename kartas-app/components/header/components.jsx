@@ -17,11 +17,12 @@ export const MenuContainer = styled.div`
   }
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
   width: 100%;
   max-width: 160px;
   height: 60px;
   color: #fff;
+  text-decoration: none;
 
   @media all and (max-width: 700px) {
     max-width: 140px;

@@ -47,10 +47,10 @@ export default function Contact() {
         </ContactColumn1>
         <ContactColumn2>
           <Column2Title>LINKS</Column2Title>
-          <span>Home</span>
-          <span>About Us</span>
-          <span>Services</span>
-          <span>Activities</span>
+          <a href="/">Home</a>
+          <a>About Us</a>
+          <a href="/services">Services</a>
+          <a href="/experiences">Experiences</a>
         </ContactColumn2>
         <ContactColumn3>
           <Column3Title>SOCIALS</Column3Title>
