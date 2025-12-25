@@ -55,7 +55,7 @@ export default function Header() {
               <a href="">About Us</a>
               <a href="/experiences">Experiences</a>
               <a href="/services">Services</a>
-              <a href="/contact">Contact</a>
+              <a href="">Contact</a>
               <DropDownLogoContainer>
                 <Image src={kartaslogo4} alt="logo" />
               </DropDownLogoContainer>
