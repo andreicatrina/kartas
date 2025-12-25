@@ -126,7 +126,6 @@ export const LocationTitle = styled.a`
   gap: 8px;
   font-size: 28px;
   color: #dfad6a;
-  margin-bottom: 20px;
   font-family: "Roboto";
   margin-bottom: 20px;
   cursor: pointer;
@@ -229,11 +228,13 @@ export const LocationDescriptionParagraph = styled.p`
 
     @media all and (max-width: 555px) {
       font-size: 14px;
+      line-height: 16px;
     }
   }
 
   @media all and (max-width: 555px) {
     font-size: 14px;
+    line-height: 16px;
   }
 `;
 

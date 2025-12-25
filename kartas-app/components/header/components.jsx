@@ -87,9 +87,9 @@ export const DropDownContainer = styled.div`
   gap: 8px;
   position: absolute;
   top: 28px;
-  left: 24px;
-  width: 220px;
-  padding: 30px 8px;
+  left: 22px;
+  width: 260px;
+  padding: 40px 8px;
   border: 1px solid #dfad6a;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
