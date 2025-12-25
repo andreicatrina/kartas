@@ -1,10 +1,17 @@
 import Image from "next/image";
 
-import { ContactParentContainer, HomeContainer, HomeSection } from "../components/homepagecomponent/components.jsx";
+import {
+  ContactParentContainer,
+  HomeContainer,
+  HomeSection,
+  LandingYoutubeContainer,
+} from "../components/homepagecomponent/components.jsx";
 
 import Header from "../components/header";
 import Contact from "../components/contact/contact.jsx";
 import About from "../components/about/about.jsx";
+
+import { FaYoutube } from "react-icons/fa6";
 
 import {
   LandingContainer,
@@ -36,6 +43,12 @@ export default function Home() {
               dolore autem totam tempora accusamus excepturi nostrum culpa veritatis eum atque consequuntur.
             </LandingSpan>
           </LandingSpanContainer>
+          <LandingYoutubeContainer>
+            <a target="_blank" href="https://youtube.com">
+              <FaYoutube />
+              Take a look
+            </a>
+          </LandingYoutubeContainer>
         </LandingContainer>
       </LandingParentContainer>
       <About />

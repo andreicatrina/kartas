@@ -9,7 +9,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   gap: 40px;
   width: 100%;
-  /* max-width: 1600px; */
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0px 24px 80px;
 

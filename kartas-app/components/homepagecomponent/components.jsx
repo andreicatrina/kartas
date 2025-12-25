@@ -28,14 +28,14 @@ export const LandingContainer = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 120px 24px;
+  padding: 100px 24px;
 
   @media all and (max-width: 850px) {
-    padding: 100px 20px;
+    padding: 80px 20px;
   }
 
   @media all and (max-width: 580px) {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   @media all and (max-width: 450px) {
@@ -72,6 +72,75 @@ export const LandingSpanContainer = styled.div`
   max-width: 1000px;
   display: flex;
   justify-content: center;
+`;
+
+export const LandingYoutubeContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  svg {
+    height: 30px;
+    width: 30px;
+    color: #dfad6a;
+    transition: 0.8s;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 200px;
+    height: 60px;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto";
+    color: #dfad6a;
+    background-color: #0a0a0a;
+    border: 1px solid #c7b198;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.8s;
+
+    &:hover {
+      background-color: #fff;
+      color: #0a0a0a;
+      border: 1px solid #dfad6a;
+
+      svg {
+        color: #ff0000;
+      }
+    }
+  }
+
+  @media all and (max-width: 850px) {
+    a {
+      padding: 4px 8px;
+      font-size: 18px;
+
+      svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+
+  @media all and (max-width: 600px) {
+    a {
+      width: 160px;
+      height: 40px;
+      padding: 6px 8px;
+      font-size: 16px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
 `;
 
 export const LandingSpan = styled.span`

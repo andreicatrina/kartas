@@ -34,6 +34,10 @@ export default function Header() {
     }
   }
 
+  function ScrollToContact() {
+    window.scrollTo(0, 5000);
+  }
+
   return (
     <HeaderContainer>
       <MenuContainer>
@@ -45,17 +49,17 @@ export default function Header() {
           <ServicesHeader>About Us</ServicesHeader>
           <ActivitiesHeader href="/experiences">Experiences</ActivitiesHeader>
           <AboutHeader href="/services">Services</AboutHeader>
-          <ContactHeader>Contact</ContactHeader>
+          <ContactHeader onClick={ScrollToContact}>Contact</ContactHeader>
         </Menu>
         <HamburgerMenuContainer onClick={MenuClick}>
           {showMobileMenu === true ? <MdClose /> : <AiOutlineMenu />}
 
           {showMobileMenu === true ? (
             <DropDownContainer>
-              <a href="">About Us</a>
+              <a href="/">Home</a>
               <a href="/experiences">Experiences</a>
               <a href="/services">Services</a>
-              <a href="">Contact</a>
+              <span onClick={ScrollToContact}>Contact</span>
               <DropDownLogoContainer>
                 <Image src={kartaslogo4} alt="logo" />
               </DropDownLogoContainer>

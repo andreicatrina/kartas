@@ -100,10 +100,21 @@ export const DropDownContainer = styled.div`
 
   a {
     color: #dfad6a;
-    /* text-decoration: underline;
-    text-decoration-color: #fff;
-    text-underline-offset: 4px; */
     font-size: 16px;
+    font-family: "Roboto";
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+      text-decoration-color: #dfad6a;
+      text-underline-offset: 4px;
+    }
+  }
+
+  span {
+    color: #dfad6a;
+    font-size: 16px;
+    font-family: "Roboto";
 
     &:hover {
       color: #fff;
