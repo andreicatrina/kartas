@@ -35,12 +35,14 @@ export default function Home() {
           </LandingTitleContainer>
           <LandingSpanContainer>
             <LandingSpan>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem saepe quaerat debitis fuga. Accusamus
-              reiciendis minus obcaecati illo commodi, atque illum, dolores et delectus aperiam non inventore ipsam
-              beatae iusto recusandae magnam est amet repellendus numquam odio quod temporibus ullam exercitationem
-              blanditiis. Autem obcaecati facilis nulla non necessitatibus, culpa commodi nam incidunt consequuntur
-              neque illum quasi itaque voluptate! Molestias labore, iure fugit minus, sint tenetur vitae laudantium
-              dolore autem totam tempora accusamus excepturi nostrum culpa veritatis eum atque consequuntur.
+              Kartas Events is a premium platform designed to deliver unforgettable private experiences across Romania
+              and beyond. We offer seamless reservations for private tours, luxury airport transfers with high-end
+              vehicles, exclusive boat tours, private pool parties, and access to top clubs and events. Kartas Events
+              specializes in curated tours in iconic destinations such as Bucharest, Brașov, Constanța, the Black Sea
+              coast, and the legendary castles of Transylvania. Our platform also extends its services to international
+              locations, including Veliko Tarnovo in Bulgaria. Whether you are planning a refined private party, a
+              cultural escape, or a luxury travel experience, Kartas Events combines comfort, discretion, and local
+              expertise to create tailored, high-quality experiences for every occasion.
             </LandingSpan>
           </LandingSpanContainer>
           <LandingYoutubeContainer>

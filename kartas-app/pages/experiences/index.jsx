@@ -18,6 +18,7 @@ import {
   LocationTitle,
   LocationsParentContainer,
   LocationsToursContainer,
+  OfferListContainer,
   OtherActivitiesChildContainer1,
   OtherActivitiesChildContainer2,
   OtherActivitiesContainer,
@@ -33,6 +34,7 @@ import {
   PoolPartyTitleContainer,
   ToursContainer,
   ToursGetInTouchContainer,
+  ToursOfferContainer,
   ToursText,
   ToursTitle,
   VilaPartyImageContainer,
@@ -56,6 +58,10 @@ import kartaspeles3 from "../../public/kartas-peles3.jpg";
 import kartasbuc from "../../public/kartas-pp.jpg";
 import kartasbuc2 from "../../public/kartas-pp2.jpg";
 import kartasbuc3 from "../../public/kartas-pp3.jpg";
+import kartasct from "../../public/kartas-ct.jpg";
+import kartasct2 from "../../public/kartas-ct2.jpg";
+import kartasveliko from "../../public/kartas-veliko.jpg";
+import kartasveliko2 from "../../public/kartas-veliko2.jpg";
 
 import kartaspartytest from "../../public/kartaspartytest.jpg";
 import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
@@ -78,7 +84,17 @@ export default function index() {
             <span>Travel at your own pace. In absolute comfort.</span>
           </ActivitiesTitleContainer>
           <ToursTitle>Guided Tours</ToursTitle>
-          <ToursText>Discover Romania through private guided tours, led by professional local experts</ToursText>
+          <ToursText>
+            Explore Romania through private, fully customized tours, guided by experienced local professionals
+          </ToursText>
+          <OfferListContainer>
+            Available Locations
+            <li>• Bucharest. Capital of Romania</li>
+            <li>• Brasov & Transylvania</li>
+            <li>• Castles, palaces & cultural landmarks</li>
+            <li>• Constanta, Black Sea & Dobrogea region</li>
+            <li>• Veliko Trnova in Bulgaria</li>
+          </OfferListContainer>
           <LocationsToursContainer>
             <LocationContainer>
               <LocationTitle
@@ -246,13 +262,13 @@ export default function index() {
               <LocationsParentContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Constanta Romania" loading="eager" />
+                    <Image src={kartasct} alt="Constanta Romania" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Black Sea" loading="eager" />
+                    <Image src={kartasct2} alt="Black Sea" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
@@ -285,13 +301,13 @@ export default function index() {
               <LocationsParentContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Veliko Trnova" loading="eager" />
+                    <Image src={kartasveliko} alt="Veliko Trnova" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Bulgaria" loading="eager" />
+                    <Image src={kartasveliko2} alt="Bulgaria" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
@@ -313,6 +329,21 @@ export default function index() {
                 </LocationDescriptionContainer>
               </LocationsParentContainer>
             </LocationContainer>
+            <ToursOfferContainer>
+              <p>
+                At KARTAS, our private tours are designed for travelers who value comfort, culture and exclusivity. No
+                groups. No fixed schedules. Just a perfectly curated experience — for you.
+              </p>
+              <OfferListContainer>
+                <li>• Professional local guide</li>
+                <li>• Flexible route & timing</li>
+                <li>• Luxury transport available</li>
+                <li>• Your own chauffeur for your comfort</li>
+                <li>• Tailored storytelling, not scripted tours</li>
+                <li>• Perfect for travelers seeking history & legends </li>
+                <li>• No rush, no crowds, no wasteof time</li>
+              </OfferListContainer>
+            </ToursOfferContainer>
             <ToursGetInTouchContainer>
               <GetInTouchContainer>
                 <GetInTouchTextContainer>
@@ -384,11 +415,23 @@ export default function index() {
               </PoolPartyImageContainer>
             </PoolPartyImagesContainer>
             <PoolPartiesTextContainer>
-              <span>
+              <p>
                 Bucharest pool parties bring a vibrant, sun-soaked twist to the city’s nightlife, especially during the
                 summer months when rooftops, hotels, and private venues transform into lively daytime-to-night events.
                 Known for stylish crowds, upbeat DJ sets, and a relaxed yet glamorous atmosphere
-              </span>
+                <br />
+                <span>Our offer includes:</span>
+              </p>
+              <OfferListContainer>
+                <li>• Pool parties in private locations</li>
+                <li>• Birthday & anniversary celebrations</li>
+                <li>• Bachelor & Bachelorette Parties</li>
+                <li>• Invitation-only private gatherings</li>
+                <li>• Your own personal DJ</li>
+                <li>• We handle logistics & coordination</li>
+                <li>• No crowds. No wait list. No compromises.</li>
+                <li>• Just your group — done right.</li>
+              </OfferListContainer>
             </PoolPartiesTextContainer>
           </OtherActivitiesParentContainer2>
           <OtherActivitiesParentContainer3>
@@ -412,12 +455,24 @@ export default function index() {
               </VilaPartyImageContainer>
             </VilaPartyImagesContainer>
             <VilaPartyTextContainer>
-              <span>
+              <p>
                 Private villa parties in Romania are known for their exclusivity, freedom, and high-energy atmosphere,
                 often set in scenic countryside locations or luxury properties near major cities. These gatherings blend
                 music, privacy, and style, featuring DJ-led soundtracks, open-air spaces, pools, and long nights that
                 feel detached from everyday life.
-              </span>
+                <br />
+                <span>Our offer includes:</span>
+              </p>
+              <OfferListContainer>
+                <li>• Private villa & pool parties</li>
+                <li>• Birthday & anniversary celebrations</li>
+                <li>• Invitation-only private gatherings</li>
+                <li>• Bachelor & Bachelorette Parties</li>
+                <li>• Private & spacious villa that can accomodate everyone</li>
+                <li>• We handle logistics & coordination</li>
+                <li>• No crowds. No wait list. No compromises.</li>
+                <li>• Just your group — done right.</li>
+              </OfferListContainer>
             </VilaPartyTextContainer>
           </OtherActivitiesParentContainer3>
           <GetInTouchContainer>

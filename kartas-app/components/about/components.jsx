@@ -31,6 +31,7 @@ export const Subtitle = styled.span`
   max-width: 600px;
   color: #fff;
   font-size: 16px;
+  font-family: "Roboto";
   line-height: 24px;
 `;
 
@@ -126,5 +127,45 @@ export const AboutCard2 = styled.div`
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
     cursor: pointer;
+  }
+`;
+
+export const AirportTransferTextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #dfad6a;
+    font-family: "Roboto";
+
+    @media all and (max-width: 850px) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #dfad6a;
+
+    @media all and(max-width:850px) {
+      font-size: 16px;
+    }
+  }
+`;
+
+export const OfferListContainer = styled.ul`
+  padding: 12px 0;
+
+  li {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
   }
 `;

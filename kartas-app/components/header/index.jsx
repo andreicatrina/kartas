@@ -35,7 +35,7 @@ export default function Header() {
   }
 
   function ScrollToContact() {
-    window.scrollTo(0, 5000);
+    window.scrollTo(0, 10000);
   }
 
   return (

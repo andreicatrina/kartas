@@ -7,6 +7,8 @@ import {
   AboutSubTitleContainer,
   AboutTitle,
   AboutTitleContainer,
+  AirportTransferTextContainer,
+  OfferListContainer,
   Subtitle,
 } from "./components";
 
@@ -31,8 +33,9 @@ export default function About() {
         </AboutTitleContainer>
         <AboutSubTitleContainer>
           <Subtitle>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quasi modi iste tempore accusamus eaque
-            nobis soluta ipsum velit necessitatibus?
+            We are specialiased in luxury airport transfers with private chauffeurs and high-end vehicles. We offer
+            seamless, discreet transport using Mercedes V-Class, S-Class, Maybach, E-Class and limousines, ensuring
+            comfort, safety, and elegance from arrival to destination.
           </Subtitle>
         </AboutSubTitleContainer>
         <AboutCardsContainer>
@@ -69,6 +72,17 @@ export default function About() {
             {/* <span>VIP Escorts</span> */}
           </AboutCard1>
         </AboutCardsContainer>
+        <AirportTransferTextContainer>
+          <h3>VIP Airport Transfers</h3>
+          <p>Start and end your journey with ease through our VIP airport transfer services</p>
+          <OfferListContainer>
+            <li>• Meet & greet service</li>
+            <li>• Luxury high-end vehicles</li>
+            <li>• Professional chauffeurs</li>
+            <li>• Flight tracking & flexible timing</li>
+            <li>• Direct hotel or destination transfer</li>
+          </OfferListContainer>
+        </AirportTransferTextContainer>
       </AboutContainer>
     </AboutParentContainer>
   );
