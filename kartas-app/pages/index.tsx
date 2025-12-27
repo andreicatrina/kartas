@@ -5,7 +5,6 @@ import {
   HomeContainer,
   HomeSection,
   LandingBackgroundContainer,
-  LandingImage,
   LandingImageContainer,
   LandingYoutubeContainer,
 } from "../components/homepagecomponent/components.jsx";
