@@ -20,7 +20,7 @@ export const HomeContainer = styled.div`
 export const LandingParentContainer = styled.div`
   width: 100%;
   /* position: relative; */
-  height: calc(100vh - 108px);
+  /* height: calc(100vh - 108px); */
   overflow: hidden;
 `;
 

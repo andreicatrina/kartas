@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 24px 80px;
+  padding: 40px 24px 80px;
 
   @media all and (max-width: 850px) {
     padding: 0px 20px 60px;
