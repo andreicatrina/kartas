@@ -22,6 +22,26 @@ export const LandingParentContainer = styled.div`
   /* position: relative; */
   height: calc(100vh - 108px);
   overflow: hidden;
+
+  @media all and (max-width: 1000px) {
+    height: calc(100vh - 200px);
+  }
+
+  @media all and (min-width: 310px) {
+    height: calc(100vh + 120px);
+  }
+
+  @media all and (min-width: 355px) {
+    height: calc(100vh+ 90px);
+  }
+
+  @media all and (min-width: 380px) {
+    height: calc(100vh + 40px);
+  }
+
+  @media all and (min-width: 470px) {
+    height: calc() (100vh + 70px);
+  }
 `;
 
 export const LandingImageContainer = styled.div`
