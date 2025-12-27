@@ -4,6 +4,9 @@ import {
   ContactParentContainer,
   HomeContainer,
   HomeSection,
+  LandingBackgroundContainer,
+  LandingImage,
+  LandingImageContainer,
   LandingYoutubeContainer,
 } from "../components/homepagecomponent/components.jsx";
 
@@ -12,6 +15,8 @@ import Contact from "../components/contact/contact.jsx";
 import About from "../components/about/about.jsx";
 
 import { FaYoutube } from "react-icons/fa6";
+
+import kartas13 from "../public/kartas13.jpeg";
 
 import {
   LandingContainer,
@@ -30,6 +35,11 @@ export default function Home() {
       </HomeContainer>
       <LandingParentContainer>
         <LandingContainer>
+          <LandingBackgroundContainer>
+            <LandingImageContainer>
+              <Image alt="karta" src={kartas13} layout="fill" loading="eager" />
+            </LandingImageContainer>
+          </LandingBackgroundContainer>
           <LandingTitleContainer>
             <LandingTitle>Kartas Bucharest Events</LandingTitle>
           </LandingTitleContainer>

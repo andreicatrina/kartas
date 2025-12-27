@@ -97,6 +97,7 @@ export const DropDownContainer = styled.div`
   background: rgba(253, 253, 250, 0.25);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  z-index: 2;
 
   a {
     color: #dfad6a;

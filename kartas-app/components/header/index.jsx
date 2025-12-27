@@ -21,10 +21,14 @@ import kartaslogo4 from "../../public/kartaslogo4.png";
 
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import { useClickAway } from "@uidotdev/usehooks";
 
 export default function Header() {
   const [showMobileMenu, SetShowMobileMenu] = useState(false);
-  const [menuOpen, SetMenuOpen] = useState(false);
+  // const [menuOpen, SetMenuOpen] = useState(false);
+  const ref = useClickAway(() => {
+    SetShowMobileMenu(false);
+  });
 
   function MenuClick() {
     if (showMobileMenu === false) {
@@ -54,8 +58,8 @@ export default function Header() {
         <HamburgerMenuContainer onClick={MenuClick}>
           {showMobileMenu === true ? <MdClose /> : <AiOutlineMenu />}
 
-          {showMobileMenu === true ? (
-            <DropDownContainer>
+          {showMobileMenu ? (
+            <DropDownContainer ref={ref}>
               <a href="/">Home</a>
               <a href="/experiences">Experiences</a>
               <a href="/services">Services</a>

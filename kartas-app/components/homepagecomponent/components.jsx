@@ -19,9 +19,43 @@ export const HomeContainer = styled.div`
 
 export const LandingParentContainer = styled.div`
   width: 100%;
+  /* position: relative; */
+  height: calc(100vh - 108px);
+  overflow: hidden;
+`;
+
+export const LandingImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+
+  img {
+    object-fit: cover;
+  }
+`;
+
+export const LandingBackgroundContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ::after {
+    position: absolute;
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.5), #0a0a0a 65%);
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 `;
 
 export const LandingContainer = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,6 +79,7 @@ export const LandingContainer = styled.div`
 
 export const LandingTitleContainer = styled.div`
   width: 100%;
+  z-index: 1;
 `;
 
 export const LandingTitle = styled.h1`
@@ -72,6 +107,7 @@ export const LandingSpanContainer = styled.div`
   max-width: 1000px;
   display: flex;
   justify-content: center;
+  z-index: 1;
 `;
 
 export const LandingYoutubeContainer = styled.div`
@@ -79,6 +115,7 @@ export const LandingYoutubeContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  z-index: 1;
 
   svg {
     height: 30px;
