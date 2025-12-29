@@ -22,6 +22,7 @@ import kartaslogo4 from "../../public/kartaslogo4.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import { useClickAway } from "@uidotdev/usehooks";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Header() {
   const [showMobileMenu, SetShowMobileMenu] = useState(false);
@@ -71,7 +72,11 @@ export default function Header() {
           ) : null}
         </HamburgerMenuContainer>
         <WhatsappMenuContainer>
-          <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
+          <a
+            target="_blank"
+            href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+          >
+            <FaWhatsapp />
             WHATSAPP
           </a>
         </WhatsappMenuContainer>

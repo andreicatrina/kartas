@@ -52,8 +52,12 @@ export const Menu = styled.div`
     gap: 16px;
   }
 
-  @media all and (max-width: 700px) {
+  @media all and (max-width: 720px) {
     gap: 12px;
+  }
+
+  @media all and (max-width: 670px) {
+    gap: 8px;
   }
 
   @media all and (max-width: 650px) {
@@ -150,6 +154,10 @@ export const WhatsappMenuContainer = styled.div`
   border-radius: 4px;
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
     font-size: 18px;
     text-decoration: none;
     color: #dfad6a;

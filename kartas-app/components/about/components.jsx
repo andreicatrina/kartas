@@ -70,8 +70,7 @@ export const AboutCardsContainer = styled.div`
   }
 
   @media all and (max-width: 550px) {
-    column-gap: 8px;
-    row-gap: 8px;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   @media all and (max-width: 480px) {
@@ -130,6 +129,16 @@ export const AboutCard2 = styled.div`
   }
 `;
 
+export const TextContactParentContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media all and (max-width: 850px) {
+    flex-direction: column;
+  }
+`;
+
 export const AirportTransferTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -156,6 +165,67 @@ export const AirportTransferTextContainer = styled.div`
 
     @media all and(max-width:850px) {
       font-size: 16px;
+    }
+  }
+`;
+
+export const ServicesFastContactContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 40px 0;
+
+  @media all and (max-width: 850px) {
+    justify-content: center;
+  }
+`;
+
+export const FastContactLinksContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  /* margin-top: 40px; */
+  border: 1px solid #c7b198;
+  border-radius: 8px;
+
+  @media all and (max-width: 1000px) {
+    padding: 6px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    font-family: "Cormorant SC", serif;
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f9f6f7;
+    padding: 6px;
+    border: 1px solid #c7b198;
+    border-radius: 4px;
+    transition: 0.6s;
+
+    svg {
+      /* width: 20px;
+      height: 20px; */
+    }
+
+    @media all and (max-width: 1000px) {
+      padding: 4px;
+    }
+
+    &:hover {
+      color: #dfad6a;
+      background-color: #0a0a0a;
+    }
+
+    @media all and (max-width: 1000px) {
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 `;

@@ -8,11 +8,17 @@ import {
   AboutTitle,
   AboutTitleContainer,
   AirportTransferTextContainer,
+  FastContactLinksContainer,
   OfferListContainer,
+  ServicesFastContactContainer,
   Subtitle,
+  TextContactParentContainer,
 } from "./components";
 
 import Image from "next/image";
+
+import { MdPhoneInTalk } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 import carexample1 from "../../public/bmw.jpg";
 import kartas13 from "../../public/kartas13.jpeg";
@@ -72,17 +78,34 @@ export default function About() {
             {/* <span>VIP Escorts</span> */}
           </AboutCard1>
         </AboutCardsContainer>
-        <AirportTransferTextContainer>
-          <h3>VIP Airport Transfers</h3>
-          <p>Start and end your journey with ease through our VIP airport transfer services</p>
-          <OfferListContainer>
-            <li>• Meet & greet service</li>
-            <li>• Luxury high-end vehicles</li>
-            <li>• Professional chauffeurs</li>
-            <li>• Flight tracking & flexible timing</li>
-            <li>• Direct hotel or destination transfer</li>
-          </OfferListContainer>
-        </AirportTransferTextContainer>
+        <TextContactParentContainer>
+          <AirportTransferTextContainer>
+            <h3>VIP Airport Transfers</h3>
+            <p>Start and end your journey with ease through our VIP airport transfer services</p>
+            <OfferListContainer>
+              <li>• Meet & greet service</li>
+              <li>• Luxury high-end vehicles</li>
+              <li>• Professional chauffeurs</li>
+              <li>• Flight tracking & flexible timing</li>
+              <li>• Direct hotel or destination transfer</li>
+            </OfferListContainer>
+          </AirportTransferTextContainer>
+          <ServicesFastContactContainer>
+            <FastContactLinksContainer>
+              <a href="tel:+40712345678">
+                <MdPhoneInTalk />
+                CALL US
+              </a>
+              <a
+                target="_blank"
+                href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+              >
+                <FaWhatsapp />
+                WHATSAPP
+              </a>
+            </FastContactLinksContainer>
+          </ServicesFastContactContainer>
+        </TextContactParentContainer>
       </AboutContainer>
     </AboutParentContainer>
   );
