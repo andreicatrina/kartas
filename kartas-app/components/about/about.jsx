@@ -2,6 +2,8 @@ import {
   AboutCard1,
   AboutCard2,
   AboutCardsContainer,
+  AboutChildFirstContainer,
+  AboutChildSecondContainer,
   AboutContainer,
   AboutParentContainer,
   AboutSubTitleContainer,
@@ -9,6 +11,7 @@ import {
   AboutTitleContainer,
   AirportTransferTextContainer,
   FastContactLinksContainer,
+  LineContainer,
   OfferListContainer,
   ServicesFastContactContainer,
   Subtitle,
@@ -29,84 +32,151 @@ import kartas11 from "../../public/kartas11.jpeg";
 import kartas9 from "../../public/kartas9.jpeg";
 import kartas8 from "../../public/kartas8.jpeg";
 import kartas6 from "../../public/kartas6.jpeg";
+import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
 
 export default function About() {
   return (
     <AboutParentContainer>
       <AboutContainer>
-        <AboutTitleContainer>
-          <AboutTitle>About Us</AboutTitle>
-        </AboutTitleContainer>
-        <AboutSubTitleContainer>
-          <Subtitle>
-            We are specialiased in luxury airport transfers with private chauffeurs and high-end vehicles. We offer
-            seamless, discreet transport using Mercedes V-Class, S-Class, Maybach, E-Class and limousines, ensuring
-            comfort, safety, and elegance from arrival to destination.
-          </Subtitle>
-        </AboutSubTitleContainer>
-        <AboutCardsContainer>
-          <AboutCard1>
-            <Image src={kartas13} alt="car rent" />
-            {/* <span>VIP Cars & Driver</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas15} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas17} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas12} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas11} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas9} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas6} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-          <AboutCard1>
-            <Image src={kartas8} alt="bucharest car rent" />
-            {/* <span>VIP Escorts</span> */}
-          </AboutCard1>
-        </AboutCardsContainer>
-        <TextContactParentContainer>
-          <AirportTransferTextContainer>
-            <h3>VIP Airport Transfers</h3>
-            <p>Start and end your journey with ease through our VIP airport transfer services</p>
-            <OfferListContainer>
-              <li>• Meet & greet service</li>
-              <li>• Luxury high-end vehicles</li>
-              <li>• Professional chauffeurs</li>
-              <li>• Flight tracking & flexible timing</li>
-              <li>• Direct hotel or destination transfer</li>
-            </OfferListContainer>
-          </AirportTransferTextContainer>
-          <ServicesFastContactContainer>
-            <FastContactLinksContainer>
-              <a href="tel:+40712345678">
-                <MdPhoneInTalk />
-                CALL US
-              </a>
-              <a
-                target="_blank"
-                href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
-              >
-                <FaWhatsapp />
-                WHATSAPP
-              </a>
-            </FastContactLinksContainer>
-          </ServicesFastContactContainer>
-        </TextContactParentContainer>
+        <AboutChildFirstContainer>
+          <AboutTitleContainer>
+            <AboutTitle>About Us</AboutTitle>
+          </AboutTitleContainer>
+          <AboutSubTitleContainer>
+            <Subtitle>
+              We are specialiased in luxury airport transfers with private chauffeurs and high-end vehicles. We offer
+              seamless, discreet transport using Mercedes V-Class, S-Class, Maybach, E-Class and limousines, ensuring
+              comfort, safety, and elegance from arrival to destination.
+            </Subtitle>
+          </AboutSubTitleContainer>
+          <AboutCardsContainer>
+            <AboutCard1>
+              <Image src={kartas13} alt="car rent" />
+              {/* <span>VIP Cars & Driver</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas15} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas17} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas12} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas11} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas9} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas6} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas8} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+          </AboutCardsContainer>
+          <TextContactParentContainer>
+            <AirportTransferTextContainer>
+              <h3>VIP Airport Transfers and Tours</h3>
+              <p>Start and end your journey with ease through our VIP airport transfer services</p>
+              <OfferListContainer>
+                <li>• Meet & greet service</li>
+                <li>• Luxury high-end vehicles</li>
+                <li>• Professional chauffeurs</li>
+                <li>• Flight tracking & flexible timing</li>
+                <li>• Direct hotel or destination transfer</li>
+              </OfferListContainer>
+            </AirportTransferTextContainer>
+          </TextContactParentContainer>
+        </AboutChildFirstContainer>
+        <AboutChildSecondContainer>
+          <LineContainer></LineContainer>
+          <AboutSubTitleContainer>
+            <Subtitle>
+              Experience the ultimate VIP party in Romania — arrive in style with a luxury limousine, premium drinks,
+              exclusive venues, and an unforgettable night of elegance, music, and celebration. Where glamour meets
+              nonstop fun
+            </Subtitle>
+          </AboutSubTitleContainer>
+          <AboutCardsContainer>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="car rent" />
+              {/* <span>VIP Cars & Driver</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+          </AboutCardsContainer>
+          <TextContactParentContainer>
+            <AirportTransferTextContainer>
+              <h3>V.I.P Party</h3>
+              <p>Party with style — luxury limousine, premium vibes, unforgettable night</p>
+              <OfferListContainer>
+                <li>• Birthday & anniversary celebrations</li>
+                <li>• Bachelor & Bachelorette Parties</li>
+                <li>• Professional chauffeur</li>
+                <li>• We handle logistics & coordination</li>
+                <li>• Special private party for you and your friends</li>
+                <li>• Hard and soft drinks</li>
+                <li>• Great music & great atmosphere</li>
+              </OfferListContainer>
+            </AirportTransferTextContainer>
+            <ServicesFastContactContainer>
+              <FastContactLinksContainer>
+                <a href="tel:+40758579743">
+                  <MdPhoneInTalk />
+                  CALL US
+                </a>
+                <a
+                  target="_blank"
+                  href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                >
+                  <FaWhatsapp />
+                  WHATSAPP
+                </a>
+              </FastContactLinksContainer>
+            </ServicesFastContactContainer>
+          </TextContactParentContainer>
+        </AboutChildSecondContainer>
       </AboutContainer>
     </AboutParentContainer>
   );
 }
+
+/*
+
+
+*/

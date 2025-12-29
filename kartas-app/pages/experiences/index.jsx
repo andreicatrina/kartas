@@ -1,5 +1,8 @@
 import React from "react";
 import {
+  AccommodationsImageContainer,
+  AccommodationsImagesContainer,
+  AccommodationsTitleContainer,
   ActivitiesContactContainer,
   ActivitiesHeaderContainer,
   ActivitiesParentContainer,
@@ -26,6 +29,7 @@ import {
   OtherActivitiesParentContainer,
   OtherActivitiesParentContainer2,
   OtherActivitiesParentContainer3,
+  OtherActivitiesParentContainer4,
   OtherActivitiesSubtitle,
   OtherActivitiesTitleContainer,
   PoolPartiesTextContainer,
@@ -60,15 +64,26 @@ import kartasbuc2 from "../../public/kartas-pp2.jpg";
 import kartasbuc3 from "../../public/kartas-pp3.jpg";
 import kartasct from "../../public/kartas-ct.jpg";
 import kartasct2 from "../../public/kartas-ct2.jpg";
+import kartasct3 from "../../public/kartasct3.jpg";
 import kartasveliko from "../../public/kartas-veliko.jpg";
-import kartasveliko2 from "../../public/kartas-veliko2.jpg";
+import kartasveliko3 from "../../public/kartas-veliko3.jpg";
+import kartasveliko4 from "../../public/kartas-veliko4.jpg";
 import kartasfaleza1 from "../../public/kartas-faleza1.jpg";
 import kartasfaleza2 from "../../public/kartas-faleza2.jpg";
 import kartasfaleza3 from "../../public/kartas-faleza3.jpeg";
+import kartasbrasov1 from "../../public/kartasbrasov1.jpg";
+import kartasbrasov2 from "../../public/kartasbrasov2.jpg";
+import kartasbrasov3 from "../../public/kartasbrasov3.jpg";
+import kartaspool1 from "../../public/kartaspool1.jpg";
+import kartaspool2 from "../../public/kartaspool2.jpg";
+import kartaspool3 from "../../public/kartaspool3.jpg";
+import kartaspool4 from "../../public/kartaspool4.jpg";
 
 import kartaspartytest from "../../public/kartaspartytest.jpg";
 import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
-import kartaspartytest3 from "../../public/kartaspartytest3.jpg";
+import kartasparty3 from "../../public/kartasparty3.jpg";
+import kartasparty4 from "../../public/kartasparty4.jpg";
+import kartasparty5 from "../../public/kartasparty5.jpg";
 
 import { CiLocationOn } from "react-icons/ci";
 import { BiParty } from "react-icons/bi";
@@ -187,19 +202,19 @@ export default function index() {
               <LocationsParentContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Brasov city" loading="eager" />
+                    <Image src={kartasbrasov1} alt="Brasov city" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Brasov, Romania" loading="eager" />
+                    <Image src={kartasbrasov2} alt="Brasov, Romania" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Brasov city" loading="eager" />
+                    <Image src={kartasbrasov3} alt="Brasov city" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
@@ -277,7 +292,7 @@ export default function index() {
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Constanta Mamaia" loading="eager" />
+                    <Image src={kartasct3} alt="Constanta Mamaia" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
@@ -304,19 +319,19 @@ export default function index() {
               <LocationsParentContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasveliko} alt="Veliko Trnova" loading="eager" />
+                    <Image src={kartasveliko3} alt="Veliko Trnova" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasveliko2} alt="Bulgaria" loading="eager" />
+                    <Image src={kartasveliko} alt="Bulgaria" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
                   <LocationImageContainer>
-                    <Image src={kartasbran} alt="Tsarevets Fortress" loading="eager" />
+                    <Image src={kartasveliko4} alt="Tsarevets Fortress" loading="eager" />
                   </LocationImageContainer>
                   <span></span>
                 </LocationCardContainer>
@@ -397,7 +412,7 @@ export default function index() {
                   </p>
                 </GetInTouchTextContainer>
                 <CallUsContainer>
-                  <a href="tel:+40712345678">CALL US</a>
+                  <a href="tel:+40758579743">CALL US</a>
                 </CallUsContainer>
                 <WhatsappContainer>
                   <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
@@ -417,16 +432,16 @@ export default function index() {
           <OtherActivitiesParentContainer>
             <OtherActivitiesChildContainer1>
               <OtherActivitiesImageContainer>
-                <Image src={kartaspartytest2} alt="romanian clubs" />
+                <Image src={kartaspartytest2} alt="romanian clubs" loading="eager" />
               </OtherActivitiesImageContainer>
               <OtherActivitiesImageContainer>
-                <Image src={kartaspartytest2} alt="romania parties" />
+                <Image src={kartasparty3} alt="romania parties" loading="eager" />
               </OtherActivitiesImageContainer>
               <OtherActivitiesImageContainer>
-                <Image src={kartaspartytest2} alt="bucharest parties" />
+                <Image src={kartasparty4} alt="bucharest parties" loading="eager" />
               </OtherActivitiesImageContainer>
               <OtherActivitiesImageContainer>
-                <Image src={kartaspartytest2} alt="bucharest clubs" />
+                <Image src={kartasparty5} alt="bucharest clubs" loading="eager" />
               </OtherActivitiesImageContainer>
             </OtherActivitiesChildContainer1>
             <ClubPartiesTextContainer>
@@ -444,16 +459,16 @@ export default function index() {
             </PoolPartyTitleContainer>
             <PoolPartyImagesContainer>
               <PoolPartyImageContainer>
-                <Image src={kartaspartytest3} alt="pool party Romania" />
+                <Image src={kartaspool1} alt="pool party Romania" />
               </PoolPartyImageContainer>
               <PoolPartyImageContainer>
-                <Image src={kartaspartytest3} alt="bucharest pool party" />
+                <Image src={kartaspool2} alt="bucharest pool party" />
               </PoolPartyImageContainer>
               <PoolPartyImageContainer>
-                <Image src={kartaspartytest3} alt="bucharest party" />
+                <Image src={kartaspool3} alt="bucharest party" />
               </PoolPartyImageContainer>
               <PoolPartyImageContainer>
-                <Image src={kartaspartytest3} alt="vip parties" />
+                <Image src={kartaspool4} alt="vip parties" />
               </PoolPartyImageContainer>
             </PoolPartyImagesContainer>
             <PoolPartiesTextContainer>
@@ -495,6 +510,18 @@ export default function index() {
               <VilaPartyImageContainer>
                 <Image src={kartaspartytest} alt="romania private party" />
               </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
+              <VilaPartyImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </VilaPartyImageContainer>
             </VilaPartyImagesContainer>
             <VilaPartyTextContainer>
               <p>
@@ -517,6 +544,42 @@ export default function index() {
               </OfferListContainer>
             </VilaPartyTextContainer>
           </OtherActivitiesParentContainer3>
+          <OtherActivitiesParentContainer4>
+            <AccommodationsTitleContainer>
+              <h3>Accommodations</h3>
+            </AccommodationsTitleContainer>
+            <AccommodationsImagesContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartaspartytest} alt="romania private party" />
+              </AccommodationsImageContainer>
+            </AccommodationsImagesContainer>
+            <VilaPartyTextContainer>
+              <p>
+                We offer exclusive villa and penthouse accommodations across Romania, designed for guests who value
+                comfort, privacy, and refined living. Our villas provide generous space, private outdoor areas, and a
+                relaxing atmosphere—ideal for a group of friends or family.
+                <br />
+                <span>Our offer includes:</span>
+              </p>
+              <OfferListContainer>
+                <li>• Private villa/Penthouse</li>
+                <li>• Birthday & anniversary celebrations</li>
+                <li>• Family gatherings</li>
+                <li>• Private & spacious villa that can accomodate your friends or family</li>
+                <li>• We handle logistics & coordination</li>
+                <li>• Your friends and family only</li>
+              </OfferListContainer>
+            </VilaPartyTextContainer>
+          </OtherActivitiesParentContainer4>
           <GetInTouchContainer>
             <GetInTouchTextContainer>
               <p>
@@ -527,7 +590,7 @@ export default function index() {
               </p>
             </GetInTouchTextContainer>
             <CallUsContainer>
-              <a href="tel:+40712345678">CALL US</a>
+              <a href="tel:+40758579743">CALL US</a>
             </CallUsContainer>
             <WhatsappContainer>
               <a href="">

@@ -161,6 +161,7 @@ export const LocationsParentContainer = styled.div`
 
   @media all and (max-width: 1200px) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
   }
 
   @media all and (max-width: 555px) {
@@ -502,6 +503,15 @@ export const OtherActivitiesParentContainer3 = styled.div`
   width: 100%;
 `;
 
+export const OtherActivitiesParentContainer4 = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+`;
+
 export const VilaPartyTitleContainer = styled.div`
   display: flex;
   align-items: center;
@@ -544,6 +554,29 @@ export const VilaPartyTitleContainer = styled.div`
   }
 `;
 
+export const AccommodationsTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+
+  h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: underline overline;
+    text-underline-offset: 5px;
+    text-decoration-color: #dfad6a;
+  }
+`;
+
 export const VilaPartyImagesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -562,7 +595,44 @@ export const VilaPartyImagesContainer = styled.div`
   }
 `;
 
+export const AccommodationsImagesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  @media all and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
 export const VilaPartyImageContainer = styled.div`
+  width: 100%;
+  max-width: 360px;
+  height: 280px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 1.2s;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: none;
+    }
+  }
+`;
+
+export const AccommodationsImageContainer = styled.div`
   width: 100%;
   max-width: 360px;
   height: 280px;

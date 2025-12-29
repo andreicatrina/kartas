@@ -36,13 +36,12 @@ export default function Contact() {
         </ContactFooterLogo>
         <ContactHeadingContainer>
           <ContactHeading>CONTACT US</ContactHeading>
-          <ContactHeadingPhoneLink href="tel:+40712345678">+40 712 345 678</ContactHeadingPhoneLink>
+          <ContactHeadingPhoneLink href="tel:+40758579743">+40 758 579 743</ContactHeadingPhoneLink>
           <ContactMailLink href="mailto:abc@gmail.com">abc@gmail.com</ContactMailLink>
         </ContactHeadingContainer>
         <ContactColumn1>
           <Column1Title>INFO</Column1Title>
           <span>Terms & Conditions</span>
-          <span>GDPR</span>
           <span>Privacy Policy</span>
         </ContactColumn1>
         <ContactColumn2>

@@ -7,6 +7,26 @@ export const AboutParentContainer = styled.div`
 export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const AboutChildFirstContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 24px 40px;
+
+  @media all and (max-width: 850px) {
+    padding: 0px 20px 20px;
+    gap: 24px;
+  }
+`;
+
+export const AboutChildSecondContainer = styled.div`
+  display: flex;
+  flex-direction: column;
   gap: 40px;
   width: 100%;
   max-width: 1440px;
@@ -40,6 +60,12 @@ export const AboutTitleContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+`;
+
+export const LineContainer = styled.div`
+  width: 100%;
+  height: 2px;
+  background-color: #dfad6a;
 `;
 
 export const AboutTitle = styled.h2`
@@ -131,7 +157,7 @@ export const AboutCard2 = styled.div`
 
 export const TextContactParentContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   @media all and (max-width: 850px) {

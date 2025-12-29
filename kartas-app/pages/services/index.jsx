@@ -86,7 +86,7 @@ export default function ServicesPage() {
             </AirportTransferParentContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
-                <a href="tel:+40712345678">
+                <a href="tel:+40758579743">
                   <MdPhoneInTalk />
                   CALL US
                 </a>
@@ -130,7 +130,7 @@ export default function ServicesPage() {
             </ATLimoParentContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
-                <a href="tel:+40712345678">
+                <a href="tel:+40758579743">
                   <MdPhoneInTalk />
                   CALL US
                 </a>
