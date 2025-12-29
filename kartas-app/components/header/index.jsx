@@ -71,7 +71,9 @@ export default function Header() {
           ) : null}
         </HamburgerMenuContainer>
         <WhatsappMenuContainer>
-          <a>WHATSAPP</a>
+          <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
+            WHATSAPP
+          </a>
         </WhatsappMenuContainer>
       </MenuContainer>
     </HeaderContainer>

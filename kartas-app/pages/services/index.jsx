@@ -54,8 +54,8 @@ export default function ServicesPage() {
         <ServicesTitle>Services</ServicesTitle>
         <ServicesTextContainer>
           <ServicesText>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum totam ut vero expedita? Odit deserunt minus
-            molestiae fuga explicabo ab.
+            At Kartas Experiences,transportation is more than moving from point A to point B. It's about comfort,
+            discretion and impeccable timing.
           </ServicesText>
         </ServicesTextContainer>
         <ServicesOffersContainer>

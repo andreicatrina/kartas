@@ -62,6 +62,9 @@ import kartasct from "../../public/kartas-ct.jpg";
 import kartasct2 from "../../public/kartas-ct2.jpg";
 import kartasveliko from "../../public/kartas-veliko.jpg";
 import kartasveliko2 from "../../public/kartas-veliko2.jpg";
+import kartasfaleza1 from "../../public/kartas-faleza1.jpg";
+import kartasfaleza2 from "../../public/kartas-faleza2.jpg";
+import kartasfaleza3 from "../../public/kartas-faleza3.jpeg";
 
 import kartaspartytest from "../../public/kartaspartytest.jpg";
 import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
@@ -325,6 +328,45 @@ export default function index() {
                       Tsarevets Fortress
                     </a>{" "}
                     overlooking the Yantra River.
+                  </LocationDescriptionParagraph>
+                </LocationDescriptionContainer>
+              </LocationsParentContainer>
+            </LocationContainer>
+            <LocationContainer>
+              <LocationTitle
+                target="_blank"
+                href="https://www.google.com/maps/place/Gala%C8%9Bi/@45.4376289,27.9650941,12z/data=!3m1!4b1!4m6!3m5!1s0x40b6dee589f2c4b5:0x53d7342f252d702b!8m2!3d45.4353208!4d28.0079945!16zL20vMDFtMHJi?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+              >
+                <CiLocationOn />
+                Galati, Romania
+              </LocationTitle>
+              <LocationsParentContainer>
+                <LocationCardContainer>
+                  <LocationImageContainer>
+                    <Image src={kartasfaleza1} alt="Galati, Romania" loading="eager" />
+                  </LocationImageContainer>
+                  <span></span>
+                </LocationCardContainer>
+                <LocationCardContainer>
+                  <LocationImageContainer>
+                    <Image src={kartasfaleza2} alt="Galati" loading="eager" />
+                  </LocationImageContainer>
+                  <span></span>
+                </LocationCardContainer>
+                <LocationCardContainer>
+                  <LocationImageContainer>
+                    <Image src={kartasfaleza3} alt="Croaziere Dunare" loading="eager" />
+                  </LocationImageContainer>
+                  <span></span>
+                </LocationCardContainer>
+                <LocationDescriptionContainer>
+                  <LocationDescriptionParagraph>
+                    Galați is a historic port city in eastern Romania, located on the Danube River near the borders with
+                    Moldova and Ukraine. The Danube offers scenic views from the{" "}
+                    <a target="_blank" href="https://galaticityapp.ro/places/faleza-dunarii-5v3aavcoy-yozg">
+                      embankment
+                    </a>
+                    , river cruises, transport routes, and a strong link between Galați and Europe.
                   </LocationDescriptionParagraph>
                 </LocationDescriptionContainer>
               </LocationsParentContainer>
