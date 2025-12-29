@@ -81,7 +81,70 @@ export const ServicesOffersContainer = styled.div`
   }
 `;
 
-export const AirportTransferClassicContainer = styled.div``;
+export const AirportTransferClassicContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const AirportTransferParentContainer = styled.div``;
+
+export const ServicesFastContactContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+`;
+
+export const FastContactLinksContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  /* margin-top: 40px; */
+  border: 1px solid #c7b198;
+  border-radius: 8px;
+
+  @media all and (max-width: 1000px) {
+    padding: 6px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    font-family: "Cormorant SC", serif;
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f9f6f7;
+    padding: 6px;
+    border: 1px solid #c7b198;
+    border-radius: 4px;
+    transition: 0.6s;
+
+    svg {
+      /* width: 20px;
+      height: 20px; */
+    }
+
+    @media all and (max-width: 1000px) {
+      padding: 4px;
+    }
+
+    &:hover {
+      color: #dfad6a;
+      background-color: #0a0a0a;
+    }
+
+    @media all and (max-width: 1000px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+`;
 
 export const ATClassicTitle = styled.h3`
   font-size: 28px;
@@ -384,6 +447,8 @@ export const ATImageContainer6 = styled.div`
 `;
 
 export const ATLimoContainer = styled.div``;
+
+export const ATLimoParentContainer = styled.div``;
 
 export const ATLimoTitle = styled.h3`
   font-size: 28px;

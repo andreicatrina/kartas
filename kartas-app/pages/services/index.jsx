@@ -9,12 +9,16 @@ import {
   ATImageContainer6,
   ATImagesContainer,
   ATLimoContainer,
+  ATLimoParentContainer,
   ATLimoSpan,
   ATLimoTitle,
   AirportTransferClassicContainer,
+  AirportTransferParentContainer,
   ContactParentContainer,
+  FastContactLinksContainer,
   SecuritySpan,
   SecurityTitle,
+  ServicesFastContactContainer,
   ServicesHeaderContainer,
   ServicesOffersContainer,
   ServicesParentContainer,
@@ -29,6 +33,8 @@ import {
 } from "../../components/servicespagecomponent/components";
 
 import { RiVipCrown2Fill } from "react-icons/ri";
+import { MdPhoneInTalk } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 import Header from "../../components/header";
 import Contact from "../../components/contact/contact";
@@ -60,52 +66,80 @@ export default function ServicesPage() {
         </ServicesTextContainer>
         <ServicesOffersContainer>
           <AirportTransferClassicContainer>
-            <ATClassicTitle>Airport Transfer - Clasic</ATClassicTitle>
-            <ATClassicSpan>Let us enhance your comfort with our fleet of classic luxury vehicles</ATClassicSpan>
-            <ATImagesContainer>
-              <ATImageContainer1>
-                <Image src={kartas8} alt="Airport Transfer" />
-                <span>V Class</span>
-              </ATImageContainer1>
-              <ATImageContainer2>
-                <Image src={kartas22} alt="Bucharest vip car" />
-                <span>S Class</span>
-              </ATImageContainer2>
-              <ATImageContainer3>
-                <Image src={kartas25} alt="E-class for rent" />
-                <span>E Class</span>
-              </ATImageContainer3>
-            </ATImagesContainer>
+            <AirportTransferParentContainer>
+              <ATClassicTitle>Airport Transfer - Clasic</ATClassicTitle>
+              <ATClassicSpan>Let us enhance your comfort with our fleet of classic luxury vehicles</ATClassicSpan>
+              <ATImagesContainer>
+                <ATImageContainer1>
+                  <Image src={kartas8} alt="Airport Transfer" />
+                  <span>V Class</span>
+                </ATImageContainer1>
+                <ATImageContainer2>
+                  <Image src={kartas22} alt="Bucharest vip car" />
+                  <span>S Class</span>
+                </ATImageContainer2>
+                <ATImageContainer3>
+                  <Image src={kartas25} alt="E-class for rent" />
+                  <span>E Class</span>
+                </ATImageContainer3>
+              </ATImagesContainer>
+            </AirportTransferParentContainer>
+            <ServicesFastContactContainer>
+              <FastContactLinksContainer>
+                <a href="tel:+40712345678">
+                  <MdPhoneInTalk />
+                  CALL US
+                </a>
+                <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
+                  <FaWhatsapp />
+                  WHATSAPP
+                </a>
+              </FastContactLinksContainer>
+            </ServicesFastContactContainer>
           </AirportTransferClassicContainer>
           <ATLimoContainer>
-            <ATLimoTitle>Airport Transport - Limousine</ATLimoTitle>
-            <ATLimoSpan>Or maybe a Limousine fits you better</ATLimoSpan>
-            <ATImagesContainer>
-              <ATImageContainer1>
-                <Image src={kartas11} alt="Limousine Romania" />
-                <span>G-Class</span>
-              </ATImageContainer1>
-              <ATImageContainer2>
-                <Image src={kartas21} alt="Bucharest vip car" />
-                <span>Ferrari</span>
-              </ATImageContainer2>
-              <ATImageContainer3>
-                <Image src={kartas12} alt="Bucharest Limousine" />
-                <span>G-Class</span>
-              </ATImageContainer3>
-              <ATImageContainer4>
-                <Image src={kartas24} alt="Bucharest Ferrari" />
-                <span>Ferrari</span>
-              </ATImageContainer4>
-              <ATImageContainer5>
-                <Image src={kartas6} alt="Bucharest Hummer" />
-                <span>Hummer</span>
-              </ATImageContainer5>
-              <ATImageContainer6>
-                <Image src={kartas7} alt="Bucharest Hummer Limousine" />
-                <span>Hummer</span>
-              </ATImageContainer6>
-            </ATImagesContainer>
+            <ATLimoParentContainer>
+              <ATLimoTitle>Airport Transport - Limousine</ATLimoTitle>
+              <ATLimoSpan>Or maybe a Limousine fits you better</ATLimoSpan>
+              <ATImagesContainer>
+                <ATImageContainer1>
+                  <Image src={kartas11} alt="Limousine Romania" />
+                  <span>G-Class</span>
+                </ATImageContainer1>
+                <ATImageContainer2>
+                  <Image src={kartas21} alt="Bucharest vip car" />
+                  <span>Ferrari</span>
+                </ATImageContainer2>
+                <ATImageContainer3>
+                  <Image src={kartas12} alt="Bucharest Limousine" />
+                  <span>G-Class</span>
+                </ATImageContainer3>
+                <ATImageContainer4>
+                  <Image src={kartas24} alt="Bucharest Ferrari" />
+                  <span>Ferrari</span>
+                </ATImageContainer4>
+                <ATImageContainer5>
+                  <Image src={kartas6} alt="Bucharest Hummer" />
+                  <span>Hummer</span>
+                </ATImageContainer5>
+                <ATImageContainer6>
+                  <Image src={kartas7} alt="Bucharest Hummer Limousine" />
+                  <span>Hummer</span>
+                </ATImageContainer6>
+              </ATImagesContainer>
+            </ATLimoParentContainer>
+            <ServicesFastContactContainer>
+              <FastContactLinksContainer>
+                <a href="tel:+40712345678">
+                  <MdPhoneInTalk />
+                  CALL US
+                </a>
+                <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
+                  <FaWhatsapp />
+                  WHATSAPP
+                </a>
+              </FastContactLinksContainer>
+            </ServicesFastContactContainer>
           </ATLimoContainer>
           <ServicesSecurityContainer>
             <SecurityTitle>Security Guard</SecurityTitle>

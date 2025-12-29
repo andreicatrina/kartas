@@ -400,7 +400,7 @@ export default function index() {
                   <a href="tel:+40712345678">CALL US</a>
                 </CallUsContainer>
                 <WhatsappContainer>
-                  <a href="">
+                  <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
                     <FaWhatsapp />
                     WHATSAPP
                   </a>
