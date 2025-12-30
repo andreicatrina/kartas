@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   ATClassicSpan,
   ATClassicTitle,
@@ -15,7 +17,23 @@ import {
   AirportTransferClassicContainer,
   AirportTransferParentContainer,
   ContactParentContainer,
+  ELargeImageContainer1,
+  ELargeImageContainer2,
+  ELargeImageContainer3,
+  EclassContainer1,
+  EclassContainer2,
+  EclassContainer3,
   FastContactLinksContainer,
+  ImagesChildContainer,
+  ImagesParentContainer,
+  LargeImageContainer,
+  LimoImagesContainer,
+  SLargeImageContainer1,
+  SLargeImageContainer2,
+  SLargeImageContainer3,
+  SclassContainer1,
+  SclassContainer2,
+  SclassContainer3,
   SecuritySpan,
   SecurityTitle,
   ServicesFastContactContainer,
@@ -30,27 +48,131 @@ import {
   VIPPackContainer,
   VIPSpan,
   VIPTitle,
+  VLargeImageContainer1,
+  VLargeImageContainer2,
+  VLargeImageContainer3,
+  VclassContainer1,
+  VclassContainer2,
+  VclassContainer3,
 } from "../../components/servicespagecomponent/components";
 
 import { RiVipCrown2Fill } from "react-icons/ri";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 
 import Header from "../../components/header";
 import Contact from "../../components/contact/contact";
 import Image from "next/image";
 
+import kartas1 from "../../public/kartas1.png";
+import kartas2 from "../../public/kartas2.png";
 import kartas6 from "../../public/kartas6.jpeg";
 import kartas7 from "../../public/kartas7.jpeg";
 import kartas8 from "../../public/kartas8.jpeg";
-import kartas25 from "../../public/kartas25.jpg";
+import kartas9 from "../../public/kartas9.jpeg";
+import kartas13 from "../../public/kartas13.jpeg";
 import kartas22 from "../../public/kartas22.jpg";
 import kartas11 from "../../public/kartas11.jpeg";
 import kartas12 from "../../public/kartas12.jpeg";
 import kartas21 from "../../public/kartas21.jpg";
 import kartas24 from "../../public/kartas24.jpg";
+import kartas25 from "../../public/kartas25.jpg";
+import kartas26 from "../../public/kartas26.jpg";
+import kartas27 from "../../public/kartas27.jpg";
 
 export default function ServicesPage() {
+  const [image, setImage] = useState(false);
+  const [image1, setImage1] = useState(false);
+  const [image2, setImage2] = useState(false);
+  const [image3, setImage3] = useState(false);
+  const [image4, setImage4] = useState(false);
+  const [image5, setImage5] = useState(false);
+  const [image6, setImage6] = useState(false);
+  const [image7, setImage7] = useState(false);
+
+  function onClickOpenImage() {
+    if (image === false) {
+      setImage(true);
+    } else {
+      setImage(false);
+    }
+  }
+  function onClickOpenImage1() {
+    if (image1 === false) {
+      setImage1(true);
+    } else {
+      setImage1(false);
+    }
+  }
+  function onClickOpenImage2() {
+    if (image2 === false) {
+      setImage2(true);
+    } else {
+      setImage2(false);
+    }
+  }
+  function onClickOpenImage3() {
+    if (image3 === false) {
+      setImage3(true);
+    } else {
+      setImage3(false);
+    }
+  }
+  function onClickOpenImage4() {
+    if (image4 === false) {
+      setImage4(true);
+    } else {
+      setImage4(false);
+    }
+  }
+  function onClickOpenImage5() {
+    if (image5 === false) {
+      setImage5(true);
+    } else {
+      setImage5(false);
+    }
+  }
+  function onClickOpenImage6() {
+    if (image6 === false) {
+      setImage6(true);
+    } else {
+      setImage6(false);
+    }
+  }
+  function onClickOpenImage7() {
+    if (image7 === false) {
+      setImage7(true);
+    } else {
+      setImage7(false);
+    }
+  }
+
+  function onClickCloseImage() {
+    setImage(false);
+  }
+  function onClickCloseImage1() {
+    setImage1(false);
+  }
+  function onClickCloseImage2() {
+    setImage2(false);
+  }
+  function onClickCloseImage3() {
+    setImage3(false);
+  }
+  function onClickCloseImage4() {
+    setImage4(false);
+  }
+  function onClickCloseImage5() {
+    setImage5(false);
+  }
+  function onClickCloseImage6() {
+    setImage6(false);
+  }
+  function onClickCloseImage7() {
+    setImage7(false);
+  }
+
   return (
     <ServicesSection>
       <ServicesHeaderContainer>
@@ -69,20 +191,122 @@ export default function ServicesPage() {
             <AirportTransferParentContainer>
               <ATClassicTitle>Airport Transfer - Clasic</ATClassicTitle>
               <ATClassicSpan>Let us enhance your comfort with our fleet of classic luxury vehicles</ATClassicSpan>
-              <ATImagesContainer>
-                <ATImageContainer1>
-                  <Image src={kartas8} alt="Airport Transfer" />
-                  <span>V Class</span>
-                </ATImageContainer1>
-                <ATImageContainer2>
-                  <Image src={kartas22} alt="Bucharest vip car" />
-                  <span>S Class</span>
-                </ATImageContainer2>
-                <ATImageContainer3>
-                  <Image src={kartas25} alt="E-class for rent" />
-                  <span>E Class</span>
-                </ATImageContainer3>
-              </ATImagesContainer>
+              <ImagesParentContainer>
+                <ImagesChildContainer>
+                  <VclassContainer1>
+                    <ATImageContainer1 onClick={onClickOpenImage}>
+                      <Image src={kartas8} alt="Airport Transfer" />
+                      <span>V Class</span>
+                    </ATImageContainer1>
+                    {image ? (
+                      <VLargeImageContainer1>
+                        <Image src={kartas8} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage} />
+                      </VLargeImageContainer1>
+                    ) : null}
+                  </VclassContainer1>
+                  <VclassContainer2>
+                    <ATImageContainer1 onClick={onClickOpenImage1}>
+                      <Image src={kartas9} alt="Airport Transfer" />
+                      <span>V Class</span>
+                    </ATImageContainer1>
+                    {image1 ? (
+                      <VLargeImageContainer2>
+                        <Image src={kartas9} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage1} />
+                      </VLargeImageContainer2>
+                    ) : null}
+                  </VclassContainer2>
+                  <VclassContainer3>
+                    <ATImageContainer1 onClick={onClickOpenImage1}>
+                      <Image src={kartas9} alt="Airport Transfer" />
+                      <span>V Class</span>
+                    </ATImageContainer1>
+                    {image1 ? (
+                      <VLargeImageContainer3>
+                        <Image src={kartas9} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage1} />
+                      </VLargeImageContainer3>
+                    ) : null}
+                  </VclassContainer3>
+                </ImagesChildContainer>
+                <ImagesChildContainer>
+                  <SclassContainer1>
+                    <ATImageContainer1 onClick={onClickOpenImage2}>
+                      <Image src={kartas13} alt="Airport Transfer" />
+                      <span>S Class</span>
+                    </ATImageContainer1>
+                    {image2 ? (
+                      <SLargeImageContainer1>
+                        <Image src={kartas13} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage2} />
+                      </SLargeImageContainer1>
+                    ) : null}
+                  </SclassContainer1>
+                  <SclassContainer2>
+                    <ATImageContainer1 onClick={onClickOpenImage3}>
+                      <Image src={kartas1} alt="Airport Transfer" />
+                      <span>S Class </span>
+                    </ATImageContainer1>
+                    {image3 ? (
+                      <SLargeImageContainer2>
+                        <Image src={kartas1} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage3} />
+                      </SLargeImageContainer2>
+                    ) : null}
+                  </SclassContainer2>
+                  <SclassContainer3>
+                    <ATImageContainer1 onClick={onClickOpenImage4}>
+                      <Image src={kartas2} alt="Airport Transfer" />
+                      <span>S Class</span>
+                    </ATImageContainer1>
+                    {image4 ? (
+                      <SLargeImageContainer3>
+                        <Image src={kartas2} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage4} />
+                      </SLargeImageContainer3>
+                    ) : null}
+                  </SclassContainer3>
+                </ImagesChildContainer>
+                <ImagesChildContainer>
+                  <EclassContainer1>
+                    <ATImageContainer1 onClick={onClickOpenImage5}>
+                      <Image src={kartas25} alt="Airport Transfer" />
+                      <span>E Class</span>
+                    </ATImageContainer1>
+                    {image5 ? (
+                      <ELargeImageContainer1>
+                        <Image src={kartas25} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage5} />
+                      </ELargeImageContainer1>
+                    ) : null}
+                  </EclassContainer1>
+                  <EclassContainer2>
+                    <ATImageContainer1 onClick={onClickOpenImage6}>
+                      <Image src={kartas26} alt="Airport Transfer" />
+                      <span>E Class </span>
+                    </ATImageContainer1>
+                    {image6 ? (
+                      <ELargeImageContainer2>
+                        <Image src={kartas26} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage6} />
+                      </ELargeImageContainer2>
+                    ) : null}
+                  </EclassContainer2>
+                  <EclassContainer3>
+                    <ATImageContainer1 onClick={onClickOpenImage7}>
+                      <Image src={kartas27} alt="Airport Transfer" />
+                      <span>E Class</span>
+                    </ATImageContainer1>
+                    {image7 ? (
+                      <ELargeImageContainer3>
+                        <Image src={kartas27} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage7} />
+                      </ELargeImageContainer3>
+                    ) : null}
+                  </EclassContainer3>
+                </ImagesChildContainer>
+              </ImagesParentContainer>
             </AirportTransferParentContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
@@ -101,7 +325,7 @@ export default function ServicesPage() {
             <ATLimoParentContainer>
               <ATLimoTitle>Airport Transport - Limousine</ATLimoTitle>
               <ATLimoSpan>Or maybe a Limousine fits you better</ATLimoSpan>
-              <ATImagesContainer>
+              <LimoImagesContainer>
                 <ATImageContainer1>
                   <Image src={kartas11} alt="Limousine Romania" />
                   <span>G-Class</span>
@@ -126,7 +350,7 @@ export default function ServicesPage() {
                   <Image src={kartas7} alt="Bucharest Hummer Limousine" />
                   <span>Hummer</span>
                 </ATImageContainer6>
-              </ATImagesContainer>
+              </LimoImagesContainer>
             </ATLimoParentContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
@@ -159,3 +383,14 @@ export default function ServicesPage() {
     </ServicesSection>
   );
 }
+
+/*
+<ATImageContainer2>
+                  <Image src={kartas22} alt="Bucharest vip car" />
+                  <span>S Class</span>
+                </ATImageContainer2>
+                <ATImageContainer3>
+                  <Image src={kartas25} alt="E-class for rent" />
+                  <span>E Class</span>
+                </ATImageContainer3>
+*/

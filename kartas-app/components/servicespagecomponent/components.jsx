@@ -87,7 +87,15 @@ export const AirportTransferClassicContainer = styled.div`
   align-items: center;
 `;
 
-export const AirportTransferParentContainer = styled.div``;
+export const AirportTransferParentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media all and (max-width: 500px) {
+    align-items: center;
+  }
+`;
 
 export const ServicesFastContactContainer = styled.div`
   display: flex;
@@ -173,7 +181,150 @@ export const ATClassicSpan = styled.span`
   }
 `;
 
-export const ATImagesContainer = styled.div`
+export const ImagesParentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  padding: 16px 0;
+`;
+
+export const ImagesChildContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 12px;
+
+  @media all and (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media all and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const VclassContainer1 = styled.div`
+  display: flex;
+
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const VclassContainer2 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const VclassContainer3 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const SclassContainer1 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const SclassContainer2 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const SclassContainer3 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const EclassContainer1 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const EclassContainer2 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const EclassContainer3 = styled.div`
+  display: flex;
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 700px) {
+  }
+
+  @media all and (max-width: 500px) {
+  }
+`;
+
+export const LimoImagesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -197,6 +348,54 @@ export const ATImagesContainer = styled.div`
 `;
 
 export const ATImageContainer1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid #c7b198;
+  border-top-left-radius: 14px;
+
+  img {
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+  }
+
+  span {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 400;
+
+    @media all and (max-width: 1000px) {
+      font-size: 18px;
+    }
+
+    @media all and (max-width: 850px) {
+      font-size: 16px;
+    }
+
+    @media all and (max-width: 650px) {
+      font-size: 14px;
+    }
+  }
+
+  @media all and (max-width: 1000px) {
+    padding: 4px;
+  }
+
+  @media all and (max-width: 1000px) {
+    font-size: 18px;
+  }
+
+  @media all and (max-width: 850px) {
+    gap: 4px;
+  }
+`;
+
+export const ATImageContainer2 = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px;
@@ -243,7 +442,899 @@ export const ATImageContainer1 = styled.div`
   }
 `;
 
-export const ATImageContainer2 = styled.div`
+export const VLargeImageContainer1 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const VLargeImageContainer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const VLargeImageContainer3 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const SLargeImageContainer1 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const SLargeImageContainer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const SLargeImageContainer3 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const ELargeImageContainer1 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const ELargeImageContainer2 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+export const ELargeImageContainer3 = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  width: 700px;
+  height: 500px;
+  padding: 12px 0 12px 12px;
+  border: 2px solid #dfad6a;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+
+  img {
+    width: 90%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  svg {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    @media all and (max-width: 800px) {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media all and (max-width: 700px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 1100px) {
+    top: 15%;
+    left: 20%;
+  }
+
+  @media all and (max-width: 1000px) {
+    width: 600px;
+    height: 400px;
+  }
+
+  @media all and (max-width: 900px) {
+    top: 20%;
+    left: 15%;
+  }
+
+  @media all and (max-width: 800px) {
+    left: 10%;
+  }
+
+  @media all and (max-width: 700px) {
+    width: 550px;
+    height: 330px;
+  }
+
+  @media all and (max-width: 625px) {
+    left: 5%;
+  }
+
+  @media all and (max-width: 600px) {
+    width: 500px;
+    height: 280px;
+  }
+
+  @media all and (max-width: 550px) {
+    width: 460px;
+    height: 240px;
+    padding: 6px 0 6px 6px;
+  }
+  @media all and (max-width: 500px) {
+    width: 420px;
+    height: 220px;
+    padding: 2px 0 2px 2px;
+  }
+
+  @media all and (max-width: 450px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 425px) {
+    left: 10px;
+    width: 380px;
+    height: 200px;
+  }
+
+  @media all and (max-width: 400px) {
+    width: 360px;
+    height: 200px;
+  }
+`;
+
+export const TestImageContainer2 = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px;
