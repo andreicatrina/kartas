@@ -78,6 +78,8 @@ import kartas24 from "../../public/kartas24.jpg";
 import kartas25 from "../../public/kartas25.jpg";
 import kartas26 from "../../public/kartas26.jpg";
 import kartas27 from "../../public/kartas27.jpg";
+import kartas28 from "../../public/kartas28.png";
+import kartas29 from "../../public/kartas29.png";
 
 export default function ServicesPage() {
   const [image, setImage] = useState(false);
@@ -88,6 +90,7 @@ export default function ServicesPage() {
   const [image5, setImage5] = useState(false);
   const [image6, setImage6] = useState(false);
   const [image7, setImage7] = useState(false);
+  const [image8, setImage8] = useState(false);
 
   function onClickOpenImage() {
     if (image === false) {
@@ -145,6 +148,13 @@ export default function ServicesPage() {
       setImage7(false);
     }
   }
+  function onClickOpenImage8() {
+    if (image8 === false) {
+      setImage8(true);
+    } else {
+      setImage8(false);
+    }
+  }
 
   function onClickCloseImage() {
     setImage(false);
@@ -169,6 +179,9 @@ export default function ServicesPage() {
   }
   function onClickCloseImage7() {
     setImage7(false);
+  }
+  function onClickCloseImage8() {
+    setImage8(false);
   }
 
   return (
@@ -205,25 +218,25 @@ export default function ServicesPage() {
                   </VclassContainer1>
                   <VclassContainer2>
                     <ATImageContainer1 onClick={onClickOpenImage1}>
-                      <Image src={kartas9} alt="Airport Transfer" />
+                      <Image src={kartas28} alt="Airport Transfer" />
                       <span>V Class</span>
                     </ATImageContainer1>
                     {image1 ? (
                       <VLargeImageContainer2>
-                        <Image src={kartas9} alt="Airport Transfer" />
+                        <Image src={kartas28} alt="Airport Transfer" />
                         <MdClose onClick={onClickCloseImage1} />
                       </VLargeImageContainer2>
                     ) : null}
                   </VclassContainer2>
                   <VclassContainer3>
-                    <ATImageContainer1 onClick={onClickOpenImage1}>
-                      <Image src={kartas9} alt="Airport Transfer" />
+                    <ATImageContainer1 onClick={onClickOpenImage8}>
+                      <Image src={kartas29} alt="Airport Transfer" />
                       <span>V Class</span>
                     </ATImageContainer1>
-                    {image1 ? (
+                    {image8 ? (
                       <VLargeImageContainer3>
-                        <Image src={kartas9} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage1} />
+                        <Image src={kartas29} alt="Airport Transfer" />
+                        <MdClose onClick={onClickCloseImage8} />
                       </VLargeImageContainer3>
                     ) : null}
                   </VclassContainer3>
