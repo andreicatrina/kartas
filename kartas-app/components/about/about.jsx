@@ -23,7 +23,6 @@ import Image from "next/image";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 
-import carexample1 from "../../public/bmw.jpg";
 import kartas13 from "../../public/kartas13.jpeg";
 import kartas15 from "../../public/kartas15.jpeg";
 import kartas17 from "../../public/kartas17.jpeg";
@@ -33,6 +32,19 @@ import kartas9 from "../../public/kartas9.jpeg";
 import kartas8 from "../../public/kartas8.jpeg";
 import kartas6 from "../../public/kartas6.jpeg";
 import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
+import kartasparty3 from "../../public/kartasparty3.jpg";
+import kartasparty4 from "../../public/kartasparty4.jpg";
+import kartasparty5 from "../../public/kartasparty5.jpg";
+import kartasparty2 from "../../public/kartasparty2.png";
+import kartasparty7 from "../../public/kartasparty7.png";
+import kartasparty6 from "../../public/kartasparty6.jpg";
+import kartasparty1 from "../../public/kartasparty1.jpg";
+import kartasbrasov1 from "../../public/kartasbrasov1.jpg";
+import kartasct1 from "../../public/kartas-ct.jpg";
+import kartasbran3 from "../../public/kartas-bran3.jpg";
+import kartaspeles3 from "../../public/kartas-peles3.jpg";
+import kartaspp3 from "../../public/kartas-pp3.jpg";
+import kartaspp2 from "../../public/kartas-pp2.jpg";
 
 export default function About() {
   return (
@@ -55,7 +67,7 @@ export default function About() {
               {/* <span>VIP Cars & Driver</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartas15} alt="bucharest car rent" />
+              <Image src={kartasbrasov1} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
@@ -63,7 +75,7 @@ export default function About() {
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartas12} alt="bucharest car rent" />
+              <Image src={kartasct1} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
@@ -71,7 +83,7 @@ export default function About() {
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartas9} alt="bucharest car rent" />
+              <Image src={kartasbran3} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
@@ -79,7 +91,23 @@ export default function About() {
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartas8} alt="bucharest car rent" />
+              <Image src={kartaspeles3} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas15} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspp3} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartas9} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartaspp2} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
           </AboutCardsContainer>
@@ -108,35 +136,35 @@ export default function About() {
           </AboutSubTitleContainer>
           <AboutCardsContainer>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="car rent" />
+              <Image src={kartasparty3} alt="Romania party" />
               {/* <span>VIP Cars & Driver</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartasparty4} alt="Romaniațs clubs" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartasparty5} alt="bucharest party people" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartasparty2} alt="bucharest fun" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartasparty6} alt="bucharest best clubs" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartasparty1} alt="bucharest clubs" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartaspartytest2} alt="bucharest party" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartaspartytest2} alt="bucharest car rent" />
+              <Image src={kartasparty7} alt="bucharest club" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
           </AboutCardsContainer>
