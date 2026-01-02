@@ -23,15 +23,22 @@ import {
   EclassContainer2,
   EclassContainer3,
   FastContactLinksContainer,
+  FirstChildDetailsContainer,
+  FirstChildImageContainer,
   ImagesChildContainer,
   ImagesParentContainer,
   LimoImagesContainer,
+  PackageFirstChildContainer,
+  PackageSecondChildContainer,
+  PackagesParentContainer,
   SLargeImageContainer1,
   SLargeImageContainer2,
   SLargeImageContainer3,
   SclassContainer1,
   SclassContainer2,
   SclassContainer3,
+  SecondChildDetailsContainer,
+  SecondChildImageContainer,
   SecuritySpan,
   SecurityTitle,
   ServicesFastContactContainer,
@@ -80,6 +87,8 @@ import kartas26 from "../../public/kartas26.jpg";
 import kartas27 from "../../public/kartas27.jpg";
 import kartas28 from "../../public/kartas28.png";
 import kartas29 from "../../public/kartas29.png";
+import kartaspool8 from "../../public/kartaspool8.jpg";
+import kartaspool9 from "../../public/kartaspool9.jpg";
 
 export default function ServicesPage() {
   const [image, setImage] = useState(false);
@@ -385,6 +394,35 @@ export default function ServicesPage() {
               VIP Combo <RiVipCrown2Fill />
             </VIPTitle>
             <VIPSpan>Get the best of everything</VIPSpan>
+            <PackagesParentContainer>
+              <PackageFirstChildContainer>
+                <FirstChildDetailsContainer>
+                  <h3>Pool Party Silver Pack</h3>
+                  <p>Location (6h)-Private Pool Vila</p>
+                  <p>Drinks-2 x Absolut Vodka(1L) + natural juices + RedBull</p>
+                  <p>Camino Tequilla shots</p>
+                  <p>2 x JN Chennet(1.5L)</p>
+                  <p>VIP Transfer</p>
+                </FirstChildDetailsContainer>
+                <FirstChildImageContainer>
+                  <Image src={kartaspool8} alt="pool party" />
+                </FirstChildImageContainer>
+              </PackageFirstChildContainer>
+              <PackageSecondChildContainer>
+                <SecondChildDetailsContainer>
+                  <h3>Pool Party Gold Pack</h3>
+                  <p>Location (6h)-Private Pool Vila</p>
+                  <p>Drinks-2 x Belvedere/Grey Goose + natural juices</p>
+                  <p>2 x Moet + Figa</p>
+                  <p>Patron/Padre tequila shots</p>
+                  <p>Snacks & water</p>
+                  <p>VIP Transfer</p>
+                </SecondChildDetailsContainer>
+                <SecondChildImageContainer>
+                  <Image src={kartaspool9} alt="vip pool party" />
+                </SecondChildImageContainer>
+              </PackageSecondChildContainer>
+            </PackagesParentContainer>
           </VIPPackContainer>
         </ServicesOffersContainer>
       </ServicesParentContainer>
