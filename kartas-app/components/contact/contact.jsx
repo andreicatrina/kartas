@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import {
   Column1Title,
@@ -18,12 +19,14 @@ import {
   ContactParentContainer,
   FacebookFooterLink,
   InstagramFooterLink,
+  WhatsappFooterLink,
   YoutubeFooterLink,
 } from "./components";
 
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 import kartaslogo4 from "../../public/kartaslogo4.png";
 
@@ -41,8 +44,12 @@ export default function Contact() {
         </ContactHeadingContainer>
         <ContactColumn1>
           <Column1Title>INFO</Column1Title>
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <Link target="_blank" href="/pdf/Terms & Conditions.pdf">
+            Terms & Conditions
+          </Link>
+          <Link target="_blank" href={"/pdf/Privacy policy.pdf"}>
+            Privacy Policy
+          </Link>
         </ContactColumn1>
         <ContactColumn2>
           <Column2Title>LINKS</Column2Title>
@@ -62,6 +69,12 @@ export default function Contact() {
           <YoutubeFooterLink>
             <FaYoutube />
           </YoutubeFooterLink>
+          <WhatsappFooterLink
+            target="_blank"
+            href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+          >
+            <FaWhatsapp />
+          </WhatsappFooterLink>
         </ContactColumn3>
       </ContactContainer>
     </ContactParentContainer>

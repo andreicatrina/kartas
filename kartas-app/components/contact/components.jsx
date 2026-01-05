@@ -305,6 +305,42 @@ export const YoutubeFooterLink = styled.a`
   }
 `;
 
+export const WhatsappFooterLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  svg {
+    height: 24px;
+    width: 24px;
+    color: #25d366;
+    transition: 0.6s;
+  }
+
+  &:hover {
+    svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  @media all and (max-width: 700px) {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media all and (max-width: 650px) {
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+`;
+
 export const ContactFooterLogo = styled.div`
   width: 100%;
   max-width: 200px;
