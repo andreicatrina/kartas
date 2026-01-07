@@ -40,7 +40,7 @@ export default function Home() {
             </LandingImageContainer>
           </LandingBackgroundContainer>
           <LandingTitleContainer>
-            <LandingTitle>Kartas Bucharest Events</LandingTitle>
+            <LandingTitle>Kartas Bucharest Experience</LandingTitle>
           </LandingTitleContainer>
           <LandingSpanContainer>
             <LandingSpan>

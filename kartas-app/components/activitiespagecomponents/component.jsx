@@ -709,6 +709,10 @@ export const GetInTouchContainer = styled.div`
   @media all and (max-width: 1000px) {
     padding: 6px;
   }
+
+  @media all and (max-width: 400px) {
+    gap: 12px;
+  }
 `;
 
 export const GetInTouchTextContainer = styled.div`
@@ -772,6 +776,12 @@ export const CallUsContainer = styled.div`
       font-size: 14px;
       line-height: 18px;
     }
+
+    @media all and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 2px;
+    }
   }
 `;
 
@@ -811,6 +821,17 @@ export const WhatsappContainer = styled.div`
     @media all and (max-width: 1000px) {
       font-size: 14px;
       line-height: 18px;
+    }
+
+    @media all and (max-width: 400px) {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 2px;
+
+      svg {
+        width: 14px;
+        height: 14px;
+      }
     }
   }
 `;

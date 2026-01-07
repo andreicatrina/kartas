@@ -23,7 +23,6 @@ import {
   LocationsToursContainer,
   OfferListContainer,
   OtherActivitiesChildContainer1,
-  OtherActivitiesChildContainer2,
   OtherActivitiesContainer,
   OtherActivitiesImageContainer,
   OtherActivitiesParentContainer,
@@ -84,6 +83,23 @@ import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
 import kartasparty3 from "../../public/kartasparty3.jpg";
 import kartasparty4 from "../../public/kartasparty4.jpg";
 import kartasparty5 from "../../public/kartasparty5.jpg";
+import kartasparty8 from "../../public/kartasparty8.jpg";
+import kartasparty9 from "../../public/kartasparty9.jpg";
+import kartasparty10 from "../../public/kartasparty10.jpg";
+import kartasparty11 from "../../public/kartasparty11.jpg";
+import kartasparty12 from "../../public/kartasparty12.jpg";
+import kartasparty13 from "../../public/kartasparty13.jpg";
+import kartasparty14 from "../../public/kartasparty14.jpg";
+import kartasparty15 from "../../public/kartasparty15.jpg";
+
+import kartasaccom1 from "../../public/kartasaccom1.jpg";
+import kartasaccom2 from "../../public/kartasaccom2.jpg";
+import kartasaccom3 from "../../public/kartasaccom3.jpg";
+import kartasaccom4 from "../../public/kartasaccom4.jpg";
+import kartasaccom5 from "../../public/kartasaccom5.jpg";
+import kartasaccom6 from "../../public/kartasaccom6.jpg";
+import kartasaccom7 from "../../public/kartasaccom7.jpg";
+import kartasaccom8 from "../../public/kartasaccom8.jpg";
 
 import { CiLocationOn } from "react-icons/ci";
 import { BiParty } from "react-icons/bi";
@@ -499,28 +515,28 @@ export default function index() {
             </VilaPartyTitleContainer>
             <VilaPartyImagesContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty8} alt="romania vip party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty9} alt="VIP party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty10} alt="romania private party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty11} alt="romania party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty12} alt="Bucharest penthouse party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty13} alt="romania pool party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty14} alt="Bucharest pool party" />
               </VilaPartyImageContainer>
               <VilaPartyImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasparty15} alt="Bucharest private party" />
               </VilaPartyImageContainer>
             </VilaPartyImagesContainer>
             <VilaPartyTextContainer>
@@ -550,16 +566,28 @@ export default function index() {
             </AccommodationsTitleContainer>
             <AccommodationsImagesContainer>
               <AccommodationsImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasaccom1} alt="bucharest penthouse" />
               </AccommodationsImageContainer>
               <AccommodationsImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasaccom2} alt="bucharest private villa" />
               </AccommodationsImageContainer>
               <AccommodationsImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasaccom3} alt="bucharest private party" />
               </AccommodationsImageContainer>
               <AccommodationsImageContainer>
-                <Image src={kartaspartytest} alt="romania private party" />
+                <Image src={kartasaccom4} alt="bucharest villa" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartasaccom5} alt="bucharest accomodation" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartasaccom6} alt="bucharest apartment for rent" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartasaccom7} alt="bucharest party penthouse" />
+              </AccommodationsImageContainer>
+              <AccommodationsImageContainer>
+                <Image src={kartasaccom8} alt="romania private party" />
               </AccommodationsImageContainer>
             </AccommodationsImagesContainer>
             <VilaPartyTextContainer>
