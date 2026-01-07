@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import {
   ATClassicSpan,
@@ -195,6 +197,8 @@ export default function ServicesPage() {
 
   return (
     <ServicesSection>
+      <Analytics />
+      <SpeedInsights />
       <ServicesHeaderContainer>
         <Header />
       </ServicesHeaderContainer>

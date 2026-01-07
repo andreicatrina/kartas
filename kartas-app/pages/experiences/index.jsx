@@ -1,4 +1,8 @@
 import React from "react";
+
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import {
   AccommodationsImageContainer,
   AccommodationsImagesContainer,
@@ -108,6 +112,8 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function index() {
   return (
     <ActivitiesSection>
+      <Analytics />
+      <SpeedInsights />
       <ActivitiesHeaderContainer>
         <Header />
       </ActivitiesHeaderContainer>

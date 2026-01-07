@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import {
   ContactParentContainer,
   HomeContainer,
@@ -29,6 +32,8 @@ import {
 export default function Home() {
   return (
     <HomeSection>
+      <Analytics />
+      <SpeedInsights />
       <HomeContainer>
         <Header />
       </HomeContainer>
@@ -64,6 +69,8 @@ export default function Home() {
       <ContactParentContainer>
         <Contact />
       </ContactParentContainer>
+      <Analytics />
+      <SpeedInsights />
     </HomeSection>
   );
 }
