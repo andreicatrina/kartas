@@ -385,13 +385,13 @@ export default function ServicesPage() {
               </FastContactLinksContainer>
             </ServicesFastContactContainer>
           </ATLimoContainer>
-          <ServicesSecurityContainer>
+          {/* <ServicesSecurityContainer>
             <SecurityTitle>Security Guard</SecurityTitle>
             <SecuritySpan>For your protection</SecuritySpan>
-          </ServicesSecurityContainer>
+          </ServicesSecurityContainer> */}
           <VIPPackContainer>
             <VIPTitle>
-              VIP Combo <RiVipCrown2Fill />
+              VIP Packages <RiVipCrown2Fill />
             </VIPTitle>
             <VIPSpan>Get the best of everything</VIPSpan>
             <PackagesParentContainer>
