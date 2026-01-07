@@ -40,7 +40,7 @@ export default function Contact() {
         <ContactHeadingContainer>
           <ContactHeading>CONTACT US</ContactHeading>
           <ContactHeadingPhoneLink href="tel:+40758579743">+40 758 579 743</ContactHeadingPhoneLink>
-          <ContactMailLink href="mailto:abc@gmail.com">abc@gmail.com</ContactMailLink>
+          <ContactMailLink href="mailto:kartaskts@gmail.com">kartaskts@gmail.com</ContactMailLink>
         </ContactHeadingContainer>
         <ContactColumn1>
           <Column1Title>INFO</Column1Title>
