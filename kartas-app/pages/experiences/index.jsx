@@ -14,7 +14,6 @@ import {
   ActivitiesTitle,
   ActivitiesTitleContainer,
   CallUsContainer,
-  ClubPartiesTextContainer,
   GetInTouchContainer,
   GetInTouchTextContainer,
   LocationCardContainer,
@@ -26,28 +25,14 @@ import {
   LocationsParentContainer,
   LocationsToursContainer,
   OfferListContainer,
-  OtherActivitiesChildContainer1,
   OtherActivitiesContainer,
-  OtherActivitiesImageContainer,
-  OtherActivitiesParentContainer,
-  OtherActivitiesParentContainer2,
-  OtherActivitiesParentContainer3,
   OtherActivitiesParentContainer4,
-  OtherActivitiesSubtitle,
-  OtherActivitiesTitleContainer,
-  PoolPartiesTextContainer,
-  PoolPartyImageContainer,
-  PoolPartyImagesContainer,
-  PoolPartyTitleContainer,
   ToursContainer,
   ToursGetInTouchContainer,
   ToursOfferContainer,
   ToursText,
   ToursTitle,
-  VilaPartyImageContainer,
-  VilaPartyImagesContainer,
   VilaPartyTextContainer,
-  VilaPartyTitleContainer,
   WhatsappContainer,
 } from "../../components/activitiespagecomponents/component";
 
@@ -77,25 +62,6 @@ import kartasfaleza3 from "../../public/kartas-faleza3.jpeg";
 import kartasbrasov1 from "../../public/kartasbrasov1.jpg";
 import kartasbrasov2 from "../../public/kartasbrasov2.jpg";
 import kartasbrasov3 from "../../public/kartasbrasov3.jpg";
-import kartaspool1 from "../../public/kartaspool1.jpg";
-import kartaspool2 from "../../public/kartaspool2.jpg";
-import kartaspool3 from "../../public/kartaspool3.jpg";
-import kartaspool4 from "../../public/kartaspool4.jpg";
-
-import kartaspartytest from "../../public/kartaspartytest.jpg";
-import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
-import kartasparty3 from "../../public/kartasparty3.jpg";
-import kartasparty4 from "../../public/kartasparty4.jpg";
-import kartasparty5 from "../../public/kartasparty5.jpg";
-import kartasparty8 from "../../public/kartasparty8.jpg";
-import kartasparty9 from "../../public/kartasparty9.jpg";
-import kartasparty10 from "../../public/kartasparty10.jpg";
-import kartasparty11 from "../../public/kartasparty11.jpg";
-import kartasparty12 from "../../public/kartasparty12.jpg";
-import kartasparty13 from "../../public/kartasparty13.jpg";
-import kartasparty14 from "../../public/kartasparty14.jpg";
-import kartasparty15 from "../../public/kartasparty15.jpg";
-
 import kartasaccom1 from "../../public/kartasaccom1.jpg";
 import kartasaccom2 from "../../public/kartasaccom2.jpg";
 import kartasaccom3 from "../../public/kartasaccom3.jpg";
@@ -106,7 +72,7 @@ import kartasaccom7 from "../../public/kartasaccom7.jpg";
 import kartasaccom8 from "../../public/kartasaccom8.jpg";
 
 import { CiLocationOn } from "react-icons/ci";
-import { BiParty } from "react-icons/bi";
+
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function index() {
@@ -447,125 +413,6 @@ export default function index() {
           </LocationsToursContainer>
         </ToursContainer>
         <OtherActivitiesContainer>
-          <OtherActivitiesTitleContainer>
-            <h3>Other Activities</h3>
-            <OtherActivitiesSubtitle>Bucharest Club Parties</OtherActivitiesSubtitle>
-          </OtherActivitiesTitleContainer>
-          <OtherActivitiesParentContainer>
-            <OtherActivitiesChildContainer1>
-              <OtherActivitiesImageContainer>
-                <Image src={kartaspartytest2} alt="romanian clubs" loading="eager" />
-              </OtherActivitiesImageContainer>
-              <OtherActivitiesImageContainer>
-                <Image src={kartasparty3} alt="romania parties" loading="eager" />
-              </OtherActivitiesImageContainer>
-              <OtherActivitiesImageContainer>
-                <Image src={kartasparty4} alt="bucharest parties" loading="eager" />
-              </OtherActivitiesImageContainer>
-              <OtherActivitiesImageContainer>
-                <Image src={kartasparty5} alt="bucharest clubs" loading="eager" />
-              </OtherActivitiesImageContainer>
-            </OtherActivitiesChildContainer1>
-            <ClubPartiesTextContainer>
-              <span>
-                Bucharest’s club parties are known for their high energy, late-night intensity, and eclectic mix of
-                styles, making the city one of Eastern Europe’s most exciting nightlife hubs. From sleek, upscale clubs
-                in the city center to underground venues tucked into old industrial spaces, the scene caters to
-                everything from mainstream hits to techno, house, and experimental electronic music.
-              </span>
-            </ClubPartiesTextContainer>
-          </OtherActivitiesParentContainer>
-          <OtherActivitiesParentContainer2>
-            <PoolPartyTitleContainer>
-              <h3>Bucharest Pool Parties</h3>
-            </PoolPartyTitleContainer>
-            <PoolPartyImagesContainer>
-              <PoolPartyImageContainer>
-                <Image src={kartaspool1} alt="pool party Romania" />
-              </PoolPartyImageContainer>
-              <PoolPartyImageContainer>
-                <Image src={kartaspool2} alt="bucharest pool party" />
-              </PoolPartyImageContainer>
-              <PoolPartyImageContainer>
-                <Image src={kartaspool3} alt="bucharest party" />
-              </PoolPartyImageContainer>
-              <PoolPartyImageContainer>
-                <Image src={kartaspool4} alt="vip parties" />
-              </PoolPartyImageContainer>
-            </PoolPartyImagesContainer>
-            <PoolPartiesTextContainer>
-              <p>
-                Bucharest pool parties bring a vibrant, sun-soaked twist to the city’s nightlife, especially during the
-                summer months when rooftops, hotels, and private venues transform into lively daytime-to-night events.
-                Known for stylish crowds, upbeat DJ sets, and a relaxed yet glamorous atmosphere
-                <br />
-                <span>Our offer includes:</span>
-              </p>
-              <OfferListContainer>
-                <li>• Pool parties in private locations</li>
-                <li>• Birthday & anniversary celebrations</li>
-                <li>• Bachelor & Bachelorette Parties</li>
-                <li>• Invitation-only private gatherings</li>
-                <li>• Your own personal DJ</li>
-                <li>• We handle logistics & coordination</li>
-                <li>• No crowds. No wait list. No compromises.</li>
-                <li>• Just your group — done right.</li>
-              </OfferListContainer>
-            </PoolPartiesTextContainer>
-          </OtherActivitiesParentContainer2>
-          <OtherActivitiesParentContainer3>
-            <VilaPartyTitleContainer>
-              <BiParty />
-              <h3>Villa/Penthouse Private Party</h3>
-              <BiParty />
-            </VilaPartyTitleContainer>
-            <VilaPartyImagesContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty8} alt="romania vip party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty9} alt="VIP party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty10} alt="romania private party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty11} alt="romania party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty12} alt="Bucharest penthouse party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty13} alt="romania pool party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty14} alt="Bucharest pool party" />
-              </VilaPartyImageContainer>
-              <VilaPartyImageContainer>
-                <Image src={kartasparty15} alt="Bucharest private party" />
-              </VilaPartyImageContainer>
-            </VilaPartyImagesContainer>
-            <VilaPartyTextContainer>
-              <p>
-                Private villa parties in Romania are known for their exclusivity, freedom, and high-energy atmosphere,
-                often set in scenic countryside locations or luxury properties near major cities. These gatherings blend
-                music, privacy, and style, featuring DJ-led soundtracks, open-air spaces, pools, and long nights that
-                feel detached from everyday life.
-                <br />
-                <span>Our offer includes:</span>
-              </p>
-              <OfferListContainer>
-                <li>• Private villa & pool parties</li>
-                <li>• Birthday & anniversary celebrations</li>
-                <li>• Invitation-only private gatherings</li>
-                <li>• Bachelor & Bachelorette Parties</li>
-                <li>• Private & spacious villa that can accomodate everyone</li>
-                <li>• We handle logistics & coordination</li>
-                <li>• No crowds. No wait list. No compromises.</li>
-                <li>• Just your group — done right.</li>
-              </OfferListContainer>
-            </VilaPartyTextContainer>
-          </OtherActivitiesParentContainer3>
           <OtherActivitiesParentContainer4>
             <AccommodationsTitleContainer>
               <h3>Accommodations</h3>

@@ -219,7 +219,25 @@ export const AboutHeader = styled.a`
     font-size: 16px;
   }
 `;
+
 export const ActivitiesHeader = styled.a`
+  color: #dfad6a;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Cormorant SC", serif;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+
+  @media all and (max-width: 850px) {
+    font-size: 16px;
+  }
+`;
+
+export const NightlifeHeader = styled.a`
   color: #dfad6a;
   font-size: 18px;
   cursor: pointer;

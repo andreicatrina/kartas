@@ -13,6 +13,7 @@ import {
   LogoContainer,
   Menu,
   MenuContainer,
+  NightlifeHeader,
   ServicesHeader,
   WhatsappMenuContainer,
 } from "./components.jsx";
@@ -51,8 +52,9 @@ export default function Header() {
         </LogoContainer>
         <Menu>
           <HomeHeader href="/">Home</HomeHeader>
-          <ServicesHeader>About Us</ServicesHeader>
+          {/* <ServicesHeader>About Us</ServicesHeader> */}
           <ActivitiesHeader href="/experiences">Experiences</ActivitiesHeader>
+          <NightlifeHeader href="/nightlife">Nightlife</NightlifeHeader>
           <AboutHeader href="/services">Services</AboutHeader>
           <ContactHeader onClick={ScrollToContact}>Contact</ContactHeader>
         </Menu>
@@ -63,6 +65,7 @@ export default function Header() {
             <DropDownContainer ref={ref}>
               <a href="/">Home</a>
               <a href="/experiences">Experiences</a>
+              <a href="/nightlife">Nightlife</a>
               <a href="/services">Services</a>
               <span onClick={ScrollToContact}>Contact</span>
               <DropDownLogoContainer>

@@ -337,7 +337,6 @@ export const OtherActivitiesParentContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 24px;
-  /* width: 100%; */
 `;
 
 export const OtherActivitiesChildContainer1 = styled.div`
@@ -373,38 +372,6 @@ export const ClubPartiesTextContainer = styled.div`
   }
 `;
 
-export const PoolPartiesTextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-
-  p {
-    width: 100%;
-    max-width: 1000px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    font-family: "Roboto";
-    span {
-      width: 100%;
-      max-width: 1000px;
-      font-size: 18px;
-      font-weight: 400;
-      color: #fff;
-      padding: 12px 0;
-      font-family: "Roboto";
-      text-decoration: underline;
-      text-underline-offset: 4px;
-      text-decoration-color: #dfad6a;
-    }
-  }
-
-  @media all and (max-width: 1200px) {
-    align-items: center;
-  }
-`;
-
 export const OtherActivitiesImageContainer = styled.div`
   display: flex;
   align-items: center;
@@ -436,73 +403,6 @@ export const OtherActivitiesParentContainer2 = styled.div`
   width: 100%;
 `;
 
-export const PoolPartyTitleContainer = styled.div`
-  h3 {
-    margin: 20px 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    font-family: "Roboto";
-    text-decoration: underline overline;
-    text-underline-offset: 5px;
-    text-decoration-color: #dfad6a;
-
-    @media all and (max-width: 1000px) {
-      font-size: 18px;
-    }
-
-    @media all and (max-width: 850px) {
-      font-size: 16px;
-    }
-  }
-`;
-
-export const PoolPartyImagesContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-
-  @media all and (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media all and (max-width: 1000px) {
-    gap: 12px;
-  }
-
-  @media all and (max-width: 550px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
-export const PoolPartyImageContainer = styled.div`
-  width: 100%;
-  max-width: 360px;
-  height: 280px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(4px);
-    transition: 1.2s;
-
-    &:hover {
-      transform: scale(1.1);
-      filter: none;
-    }
-  }
-`;
-
-export const OtherActivitiesParentContainer3 = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  width: 100%;
-`;
-
 export const OtherActivitiesParentContainer4 = styled.div`
   display: flex;
   flex-direction: column;
@@ -510,145 +410,6 @@ export const OtherActivitiesParentContainer4 = styled.div`
   align-items: center;
   gap: 24px;
   width: 100%;
-`;
-
-export const VilaPartyTitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  svg {
-    width: 24px;
-    height: 24px;
-    color: #fff;
-  }
-
-  h3 {
-    margin: 20px 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    font-family: "Roboto";
-    text-decoration: underline overline;
-    text-underline-offset: 5px;
-    text-decoration-color: #dfad6a;
-    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
-    animation: glow 1.5s infinite alternate;
-
-    @keyframes glow {
-      0% {
-        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
-      }
-      100% {
-        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
-      }
-    }
-
-    @media all and (max-width: 1000px) {
-      font-size: 18px;
-    }
-
-    @media all and (max-width: 850px) {
-      font-size: 16px;
-    }
-  }
-`;
-
-export const AccommodationsTitleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  svg {
-    width: 24px;
-    height: 24px;
-    color: #fff;
-  }
-
-  h3 {
-    margin: 20px 0;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    font-family: "Roboto";
-    text-decoration: underline overline;
-    text-underline-offset: 5px;
-    text-decoration-color: #dfad6a;
-  }
-`;
-
-export const VilaPartyImagesContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-
-  @media all and (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media all and (max-width: 1000px) {
-    gap: 12px;
-  }
-
-  @media all and (max-width: 550px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
-export const AccommodationsImagesContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-
-  @media all and (max-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media all and (max-width: 1000px) {
-    gap: 12px;
-  }
-
-  @media all and (max-width: 550px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-`;
-
-export const VilaPartyImageContainer = styled.div`
-  width: 100%;
-  max-width: 360px;
-  height: 280px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    transition: 1.2s;
-
-    &:hover {
-      transform: scale(1.1);
-      filter: none;
-    }
-  }
-`;
-
-export const AccommodationsImageContainer = styled.div`
-  width: 100%;
-  max-width: 360px;
-  height: 280px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    transition: 1.2s;
-
-    &:hover {
-      transform: scale(1.1);
-      filter: none;
-    }
-  }
 `;
 
 export const VilaPartyTextContainer = styled.div`
@@ -680,6 +441,66 @@ export const VilaPartyTextContainer = styled.div`
 
   @media all and (max-width: 1200px) {
     align-items: center;
+  }
+`;
+
+export const AccommodationsTitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+  }
+
+  h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: underline overline;
+    text-underline-offset: 5px;
+    text-decoration-color: #dfad6a;
+  }
+`;
+
+export const AccommodationsImagesContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+
+  @media all and (max-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media all and (max-width: 1000px) {
+    gap: 12px;
+  }
+
+  @media all and (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+export const AccommodationsImageContainer = styled.div`
+  width: 100%;
+  max-width: 360px;
+  height: 280px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 1.2s;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: none;
+    }
   }
 `;
 

@@ -25,22 +25,20 @@ import {
   EclassContainer2,
   EclassContainer3,
   FastContactLinksContainer,
-  FirstChildDetailsContainer,
-  FirstChildImageContainer,
   ImagesChildContainer,
   ImagesParentContainer,
   LimoImagesContainer,
-  PackageFirstChildContainer,
-  PackageSecondChildContainer,
-  PackagesParentContainer,
   SLargeImageContainer1,
   SLargeImageContainer2,
   SLargeImageContainer3,
   SclassContainer1,
   SclassContainer2,
   SclassContainer3,
-  SecondChildDetailsContainer,
-  SecondChildImageContainer,
+  SecurityImageContainer1,
+  SecurityImageContainer2,
+  SecurityImageContainer3,
+  SecurityImageContainer4,
+  SecurityImagesContainer,
   SecuritySpan,
   SecurityTitle,
   ServicesFastContactContainer,
@@ -52,9 +50,6 @@ import {
   ServicesText,
   ServicesTextContainer,
   ServicesTitle,
-  VIPPackContainer,
-  VIPSpan,
-  VIPTitle,
   VLargeImageContainer1,
   VLargeImageContainer2,
   VLargeImageContainer3,
@@ -63,7 +58,6 @@ import {
   VclassContainer3,
 } from "../../components/servicespagecomponent/components";
 
-import { RiVipCrown2Fill } from "react-icons/ri";
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
@@ -89,8 +83,15 @@ import kartas26 from "../../public/kartas26.jpg";
 import kartas27 from "../../public/kartas27.jpg";
 import kartas28 from "../../public/kartas28.png";
 import kartas29 from "../../public/kartas29.png";
-import kartaspool8 from "../../public/kartaspool8.jpg";
-import kartaspool9 from "../../public/kartaspool9.jpg";
+
+import kartassecurity1 from "../../public/kartassecurity1.jpg";
+import kartassecurity2 from "../../public/kartassecurity2.jpg";
+import kartassecurity3 from "../../public/kartassecurity3.jpg";
+import kartassecurity4 from "../../public/kartassecurity4.jpg";
+import kartassecurity5 from "../../public/kartassecurity5.jpg";
+import kartassecurity6 from "../../public/kartassecurity6.jpg";
+import kartassecurity7 from "../../public/kartassecurity7.jpg";
+import kartassecurity8 from "../../public/kartassecurity8.jpg";
 
 export default function ServicesPage() {
   const [image, setImage] = useState(false);
@@ -389,45 +390,25 @@ export default function ServicesPage() {
               </FastContactLinksContainer>
             </ServicesFastContactContainer>
           </ATLimoContainer>
-          {/* <ServicesSecurityContainer>
+          <ServicesSecurityContainer>
             <SecurityTitle>Security Guard</SecurityTitle>
             <SecuritySpan>For your protection</SecuritySpan>
-          </ServicesSecurityContainer> */}
-          <VIPPackContainer>
-            <VIPTitle>
-              VIP Packages <RiVipCrown2Fill />
-            </VIPTitle>
-            <VIPSpan>Get the best of everything</VIPSpan>
-            <PackagesParentContainer>
-              <PackageFirstChildContainer>
-                <FirstChildDetailsContainer>
-                  <h3>Pool Party Silver Pack</h3>
-                  <p>Location (6h)-Private Pool Vila</p>
-                  <p>Drinks-2 x Absolut Vodka(1L) + natural juices + RedBull</p>
-                  <p>Camino Tequilla shots</p>
-                  <p>2 x JN Chennet(1.5L)</p>
-                  <p>VIP Transfer</p>
-                </FirstChildDetailsContainer>
-                <FirstChildImageContainer>
-                  <Image src={kartaspool8} alt="pool party" />
-                </FirstChildImageContainer>
-              </PackageFirstChildContainer>
-              <PackageSecondChildContainer>
-                <SecondChildDetailsContainer>
-                  <h3>Pool Party Gold Pack</h3>
-                  <p>Location (6h)-Private Pool Vila</p>
-                  <p>Drinks-2 x Belvedere/Grey Goose + natural juices</p>
-                  <p>2 x Moet + Figa</p>
-                  <p>Patron/Padre tequila shots</p>
-                  <p>Snacks & water</p>
-                  <p>VIP Transfer</p>
-                </SecondChildDetailsContainer>
-                <SecondChildImageContainer>
-                  <Image src={kartaspool9} alt="vip pool party" />
-                </SecondChildImageContainer>
-              </PackageSecondChildContainer>
-            </PackagesParentContainer>
-          </VIPPackContainer>
+            <SecurityImagesContainer>
+              <SecurityImageContainer1>
+                <Image src={kartassecurity1} alt="private security" />
+              </SecurityImageContainer1>
+              <SecurityImageContainer2>
+                <Image src={kartassecurity6} alt="vip security" />
+              </SecurityImageContainer2>
+              <SecurityImageContainer3>
+                <Image src={kartassecurity3} alt="bucharest security" />
+              </SecurityImageContainer3>
+              <SecurityImageContainer4>
+                <Image src={kartassecurity4} alt="party security" />
+              </SecurityImageContainer4>
+            </SecurityImagesContainer>
+          </ServicesSecurityContainer>
+          {/* aa */}
         </ServicesOffersContainer>
       </ServicesParentContainer>
       <ContactParentContainer>
