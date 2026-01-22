@@ -41,7 +41,7 @@ export default function Home() {
         <LandingContainer>
           <LandingBackgroundContainer>
             <LandingImageContainer>
-              <Image alt="karta" src={kartas13} layout="fill" loading="eager" />
+              <Image alt="karta" src={kartas13} layout="fill" />
             </LandingImageContainer>
           </LandingBackgroundContainer>
           <LandingTitleContainer>

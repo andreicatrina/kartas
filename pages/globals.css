@@ -7,7 +7,7 @@
 
 html,
 body {
-  background: var(--background);
+  background: #0a0a0a;
   color: var(--foreground);
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin: 0;

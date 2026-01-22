@@ -48,7 +48,7 @@ export default function Header() {
     <HeaderContainer>
       <MenuContainer>
         <LogoContainer href="/">
-          <Image src={kartaslogo4} alt="logo" />
+          <Image src={kartaslogo4} alt="logo" height={60} />
         </LogoContainer>
         <Menu>
           <HomeHeader href="/">Home</HomeHeader>
