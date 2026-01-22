@@ -47,6 +47,8 @@ import {
   ServicesParentContainer,
   ServicesSection,
   ServicesSecurityContainer,
+  ServicesShortText,
+  ServicesShortTextContainer,
   ServicesText,
   ServicesTextContainer,
   ServicesTitle,
@@ -92,108 +94,34 @@ import kartassecurity5 from "../../public/kartassecurity5.jpg";
 import kartassecurity6 from "../../public/kartassecurity6.jpg";
 import kartassecurity7 from "../../public/kartassecurity7.jpg";
 import kartassecurity8 from "../../public/kartassecurity8.jpg";
+import { ImageModal } from "../../components/servicespagecomponent/ImageModal";
+
+const imagesList = [
+  { image: kartas8, title: "V Class" },
+  { image: kartas28, title: "V Class" },
+  { image: kartas29, title: "V Class" },
+  { image: kartas13, title: "S Class" },
+  { image: kartas1, title: "S Class" },
+  { image: kartas2, title: "S Class" },
+  { image: kartas25, title: "E Class" },
+  { image: kartas26, title: "E Class" },
+  { image: kartas27, title: "E Class" },
+];
 
 export default function ServicesPage() {
   const [image, setImage] = useState(false);
-  const [image1, setImage1] = useState(false);
-  const [image2, setImage2] = useState(false);
-  const [image3, setImage3] = useState(false);
-  const [image4, setImage4] = useState(false);
-  const [image5, setImage5] = useState(false);
-  const [image6, setImage6] = useState(false);
-  const [image7, setImage7] = useState(false);
-  const [image8, setImage8] = useState(false);
+  const [openModal, setOpenModal] = useState(undefined);
 
-  function onClickOpenImage() {
-    if (image === false) {
-      setImage(true);
-    } else {
-      setImage(false);
-    }
-  }
-  function onClickOpenImage1() {
-    if (image1 === false) {
-      setImage1(true);
-    } else {
-      setImage1(false);
-    }
-  }
-  function onClickOpenImage2() {
-    if (image2 === false) {
-      setImage2(true);
-    } else {
-      setImage2(false);
-    }
-  }
-  function onClickOpenImage3() {
-    if (image3 === false) {
-      setImage3(true);
-    } else {
-      setImage3(false);
-    }
-  }
-  function onClickOpenImage4() {
-    if (image4 === false) {
-      setImage4(true);
-    } else {
-      setImage4(false);
-    }
-  }
-  function onClickOpenImage5() {
-    if (image5 === false) {
-      setImage5(true);
-    } else {
-      setImage5(false);
-    }
-  }
-  function onClickOpenImage6() {
-    if (image6 === false) {
-      setImage6(true);
-    } else {
-      setImage6(false);
-    }
-  }
-  function onClickOpenImage7() {
-    if (image7 === false) {
-      setImage7(true);
-    } else {
-      setImage7(false);
-    }
-  }
-  function onClickOpenImage8() {
-    if (image8 === false) {
-      setImage8(true);
-    } else {
-      setImage8(false);
-    }
+  function onClickOpenModal(idx) {
+    setOpenModal(idx);
   }
 
   function onClickCloseImage() {
     setImage(false);
   }
-  function onClickCloseImage1() {
-    setImage1(false);
-  }
-  function onClickCloseImage2() {
-    setImage2(false);
-  }
-  function onClickCloseImage3() {
-    setImage3(false);
-  }
-  function onClickCloseImage4() {
-    setImage4(false);
-  }
-  function onClickCloseImage5() {
-    setImage5(false);
-  }
-  function onClickCloseImage6() {
-    setImage6(false);
-  }
-  function onClickCloseImage7() {
-    setImage7(false);
-  }
-  function onClickCloseImage8() {
-    setImage8(false);
+
+  function onCloseImageModal() {
+    setOpenModal(undefined);
   }
 
   return (
@@ -203,6 +131,9 @@ export default function ServicesPage() {
       <ServicesHeaderContainer>
         <Header />
       </ServicesHeaderContainer>
+      {openModal !== undefined && (
+        <ImageModal images={imagesList.map((item) => item.image)} idx={openModal} onClose={onCloseImageModal} />
+      )}
       <ServicesParentContainer>
         <ServicesTitle>Services</ServicesTitle>
         <ServicesTextContainer>
@@ -218,118 +149,14 @@ export default function ServicesPage() {
               <ATClassicSpan>Let us enhance your comfort with our fleet of classic luxury vehicles</ATClassicSpan>
               <ImagesParentContainer>
                 <ImagesChildContainer>
-                  <VclassContainer1>
-                    <ATImageContainer1 onClick={onClickOpenImage}>
-                      <Image src={kartas8} alt="Airport Transfer" />
-                      <span>V Class</span>
-                    </ATImageContainer1>
-                    {image ? (
-                      <VLargeImageContainer1>
-                        <Image src={kartas8} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage} />
-                      </VLargeImageContainer1>
-                    ) : null}
-                  </VclassContainer1>
-                  <VclassContainer2>
-                    <ATImageContainer1 onClick={onClickOpenImage1}>
-                      <Image src={kartas28} alt="Airport Transfer" />
-                      <span>V Class</span>
-                    </ATImageContainer1>
-                    {image1 ? (
-                      <VLargeImageContainer2>
-                        <Image src={kartas28} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage1} />
-                      </VLargeImageContainer2>
-                    ) : null}
-                  </VclassContainer2>
-                  <VclassContainer3>
-                    <ATImageContainer1 onClick={onClickOpenImage8}>
-                      <Image src={kartas29} alt="Airport Transfer" />
-                      <span>V Class</span>
-                    </ATImageContainer1>
-                    {image8 ? (
-                      <VLargeImageContainer3>
-                        <Image src={kartas29} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage8} />
-                      </VLargeImageContainer3>
-                    ) : null}
-                  </VclassContainer3>
-                </ImagesChildContainer>
-                <ImagesChildContainer>
-                  <SclassContainer1>
-                    <ATImageContainer1 onClick={onClickOpenImage2}>
-                      <Image src={kartas13} alt="Airport Transfer" />
-                      <span>S Class</span>
-                    </ATImageContainer1>
-                    {image2 ? (
-                      <SLargeImageContainer1>
-                        <Image src={kartas13} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage2} />
-                      </SLargeImageContainer1>
-                    ) : null}
-                  </SclassContainer1>
-                  <SclassContainer2>
-                    <ATImageContainer1 onClick={onClickOpenImage3}>
-                      <Image src={kartas1} alt="Airport Transfer" />
-                      <span>S Class </span>
-                    </ATImageContainer1>
-                    {image3 ? (
-                      <SLargeImageContainer2>
-                        <Image src={kartas1} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage3} />
-                      </SLargeImageContainer2>
-                    ) : null}
-                  </SclassContainer2>
-                  <SclassContainer3>
-                    <ATImageContainer1 onClick={onClickOpenImage4}>
-                      <Image src={kartas2} alt="Airport Transfer" />
-                      <span>S Class</span>
-                    </ATImageContainer1>
-                    {image4 ? (
-                      <SLargeImageContainer3>
-                        <Image src={kartas2} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage4} />
-                      </SLargeImageContainer3>
-                    ) : null}
-                  </SclassContainer3>
-                </ImagesChildContainer>
-                <ImagesChildContainer>
-                  <EclassContainer1>
-                    <ATImageContainer1 onClick={onClickOpenImage5}>
-                      <Image src={kartas25} alt="Airport Transfer" />
-                      <span>E Class</span>
-                    </ATImageContainer1>
-                    {image5 ? (
-                      <ELargeImageContainer1>
-                        <Image src={kartas25} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage5} />
-                      </ELargeImageContainer1>
-                    ) : null}
-                  </EclassContainer1>
-                  <EclassContainer2>
-                    <ATImageContainer1 onClick={onClickOpenImage6}>
-                      <Image src={kartas26} alt="Airport Transfer" />
-                      <span>E Class </span>
-                    </ATImageContainer1>
-                    {image6 ? (
-                      <ELargeImageContainer2>
-                        <Image src={kartas26} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage6} />
-                      </ELargeImageContainer2>
-                    ) : null}
-                  </EclassContainer2>
-                  <EclassContainer3>
-                    <ATImageContainer1 onClick={onClickOpenImage7}>
-                      <Image src={kartas27} alt="Airport Transfer" />
-                      <span>E Class</span>
-                    </ATImageContainer1>
-                    {image7 ? (
-                      <ELargeImageContainer3>
-                        <Image src={kartas27} alt="Airport Transfer" />
-                        <MdClose onClick={onClickCloseImage7} />
-                      </ELargeImageContainer3>
-                    ) : null}
-                  </EclassContainer3>
+                  {imagesList.map((item, idx) => (
+                    <VclassContainer1>
+                      <ATImageContainer1 onClick={() => onClickOpenModal(idx)}>
+                        <Image src={item.image} alt="Airport Transfer" />
+                        <span>{item.title}</span>
+                      </ATImageContainer1>
+                    </VclassContainer1>
+                  ))}
                 </ImagesChildContainer>
               </ImagesParentContainer>
             </AirportTransferParentContainer>
@@ -339,7 +166,10 @@ export default function ServicesPage() {
                   <MdPhoneInTalk />
                   CALL US
                 </a>
-                <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
+                <a
+                  target="_blank"
+                  href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                >
                   <FaWhatsapp />
                   WHATSAPP
                 </a>
@@ -383,7 +213,10 @@ export default function ServicesPage() {
                   <MdPhoneInTalk />
                   CALL US
                 </a>
-                <a href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20">
+                <a
+                  target="_blank"
+                  href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                >
                   <FaWhatsapp />
                   WHATSAPP
                 </a>
@@ -393,6 +226,14 @@ export default function ServicesPage() {
           <ServicesSecurityContainer>
             <SecurityTitle>Security Guard</SecurityTitle>
             <SecuritySpan>For your protection</SecuritySpan>
+            <ServicesShortTextContainer>
+              <ServicesShortText>
+                Kartas Bucharest Experience delivers elite VIP transfers in Bucharest, combining luxury vehicles with
+                discreet, highly trained bodyguards. The service is designed for clients who require enhanced personal
+                protection, privacy, and total peace of mind, ensuring every journey is secure, smooth, and handled with
+                the highest level of professionalism.
+              </ServicesShortText>
+            </ServicesShortTextContainer>
             <SecurityImagesContainer>
               <SecurityImageContainer1>
                 <Image src={kartassecurity1} alt="private security" />
@@ -407,8 +248,22 @@ export default function ServicesPage() {
                 <Image src={kartassecurity4} alt="party security" />
               </SecurityImageContainer4>
             </SecurityImagesContainer>
+            <ServicesFastContactContainer>
+              <FastContactLinksContainer>
+                <a href="tel:+40758579743">
+                  <MdPhoneInTalk />
+                  CALL US
+                </a>
+                <a
+                  target="_blank"
+                  href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                >
+                  <FaWhatsapp />
+                  WHATSAPP
+                </a>
+              </FastContactLinksContainer>
+            </ServicesFastContactContainer>
           </ServicesSecurityContainer>
-          {/* aa */}
         </ServicesOffersContainer>
       </ServicesParentContainer>
       <ContactParentContainer>

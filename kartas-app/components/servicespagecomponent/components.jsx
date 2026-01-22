@@ -1578,10 +1578,6 @@ export const ServicesSecurityContainer = styled.div`
     h3 {
       margin: 0 auto;
     }
-
-    span {
-      margin: 0 auto;
-    }
   }
 `;
 
@@ -1602,13 +1598,18 @@ export const SecuritySpan = styled.span`
   font-weight: 400;
   color: #fff;
   font-family: "Roboto";
+  margin: 0 0 20px 0;
 
   @media all and (max-width: 1000px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media all and (max-width: 700px) {
-    font-size: 16px;
+    margin: 0 0 10px 0;
+  }
+
+  @media all and (max-width: 500px) {
+    margin: 10px auto;
   }
 `;
 
@@ -1838,5 +1839,26 @@ export const ContactParentContainer = styled.div`
 
   @media all and (max-width: 1000px) {
     padding: 30px 20px;
+  }
+`;
+
+export const ServicesShortTextContainer = styled.div`
+  border: 1px solid #dfad6a;
+  border-radius: 8px;
+  padding: 8px;
+`;
+
+export const ServicesShortText = styled.span`
+  width: 100%;
+  max-width: 1000px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto";
+
+  @media all and (max-width: 500px) {
+    font-size: 14px;
+    line-height: 16px;
   }
 `;
