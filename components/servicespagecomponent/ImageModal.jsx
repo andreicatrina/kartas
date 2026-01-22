@@ -3,6 +3,7 @@ import { useMemo } from "react";
 import Slider from "react-slick/lib/slider";
 import { styled } from "styled-components";
 import { useClickAway } from "@uidotdev/usehooks";
+import { MdClose } from "react-icons/md";
 
 export function ImageModal(props) {
   var settings = {
@@ -14,15 +15,20 @@ export function ImageModal(props) {
     adaptativeHeight: true,
   };
   const ref = useClickAway((e) => {
-    e.stopPropagation();
-    props.onClose();
+    // props.onClose();
   });
+
   const orderedImages = useMemo(() => {
     // if (props.idx === 0) return props.images;
     return [...props.images.slice(props.idx), ...props.images.slice(0, props.idx)];
   }, [props.idx, props.images]);
   return (
     <Container>
+      <MdClose
+        onClick={() => {
+          props.onClose();
+        }}
+      />
       <Content ref={ref}>
         <Slider {...settings}>
           {orderedImages.map((imageSrc) => (
@@ -47,6 +53,16 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   z-index: 999;
+
+  svg {
+    position: fixed;
+    z-index: 1000;
+    right: 24px;
+    top: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
 `;
 
 const Content = styled.div`
