@@ -170,6 +170,9 @@ export const LocationsParentContainer = styled.div`
 `;
 
 export const LocationImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   width: 100%;
   max-width: 360px;
   height: 280px;
@@ -194,6 +197,70 @@ export const LocationImageContainer = styled.div`
   @media all and (max-width: 555px) {
     max-width: 280px;
     height: 200px;
+  }
+`;
+
+export const LocationDoubleImagesContainer1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
+  height: 280px;
+  border-radius: 8px;
+  transition: 1.2s;
+
+  @media all and (max-width: 555px) {
+    max-width: 280px;
+    height: 200px;
+  }
+`;
+
+export const LocationDoubleImagesContainer2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 360px;
+  height: 280px;
+  border-radius: 8px;
+  transition: 1.2s;
+
+  @media all and (max-width: 555px) {
+    max-width: 280px;
+    height: 200px;
+  }
+`;
+
+export const ImageChildContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  max-height: 136px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: 2.4s;
+
+    &:hover {
+      transform: scale(1.3);
+      -webkit-box-shadow: 2px 0.5px 32px -4.5px rgba(222, 172, 106, 0.53);
+      -moz-box-shadow: 2px 0.5px 32px -4.5px rgba(222, 172, 106, 0.53);
+      box-shadow: 2px 0.5px 32px -4.5px rgba(222, 172, 106, 0.53);
+    }
+  }
+
+  @media all and (max-width: 555px) {
+    max-width: 280px;
+    max-height: 96px;
+
+    img {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
   }
 `;
 

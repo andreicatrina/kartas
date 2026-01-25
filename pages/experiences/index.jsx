@@ -16,10 +16,13 @@ import {
   CallUsContainer,
   GetInTouchContainer,
   GetInTouchTextContainer,
+  ImageChildContainer,
   LocationCardContainer,
   LocationContainer,
   LocationDescriptionContainer,
   LocationDescriptionParagraph,
+  LocationDoubleImagesContainer1,
+  LocationDoubleImagesContainer2,
   LocationImageContainer,
   LocationTitle,
   LocationsParentContainer,
@@ -56,7 +59,7 @@ import kartasct3 from "../../public/kartasct3.jpg";
 import kartasveliko from "../../public/kartas-veliko.jpg";
 import kartasveliko3 from "../../public/kartas-veliko3.jpg";
 import kartasveliko4 from "../../public/kartas-veliko4.jpg";
-import kartasfaleza1 from "../../public/kartas-faleza1.jpg";
+
 import kartasfaleza2 from "../../public/kartas-faleza2.jpg";
 import kartasfaleza3 from "../../public/kartas-faleza3.jpeg";
 import kartasbrasov1 from "../../public/kartasbrasov1.jpg";
@@ -70,6 +73,10 @@ import kartasaccom5 from "../../public/kartasaccom5.jpg";
 import kartasaccom6 from "../../public/kartasaccom6.jpg";
 import kartasaccom7 from "../../public/kartasaccom7.jpg";
 import kartasaccom8 from "../../public/kartasaccom8.jpg";
+import kartasboat1 from "../../public/kartasboat1.jpg";
+import kartasboat2 from "../../public/kartasboat2.jpg";
+import kartasboat3 from "../../public/kartasboat3.jpg";
+import kartasboat4 from "../../public/kartasboat4.jpg";
 
 import { CiLocationOn } from "react-icons/ci";
 
@@ -345,9 +352,14 @@ export default function index() {
               </LocationTitle>
               <LocationsParentContainer>
                 <LocationCardContainer>
-                  <LocationImageContainer>
-                    <Image src={kartasfaleza1} alt="Galati, Romania" loading="eager" />
-                  </LocationImageContainer>
+                  <LocationDoubleImagesContainer1>
+                    <ImageChildContainer>
+                      <Image src={kartasboat3} alt="Galati, Romania" loading="eager" />
+                    </ImageChildContainer>
+                    <ImageChildContainer>
+                      <Image src={kartasboat2} alt="Galati, Romania" loading="eager" />
+                    </ImageChildContainer>
+                  </LocationDoubleImagesContainer1>
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
@@ -357,9 +369,14 @@ export default function index() {
                   <span></span>
                 </LocationCardContainer>
                 <LocationCardContainer>
-                  <LocationImageContainer>
-                    <Image src={kartasfaleza3} alt="Croaziere Dunare" loading="eager" />
-                  </LocationImageContainer>
+                  <LocationDoubleImagesContainer2>
+                    <ImageChildContainer>
+                      <Image src={kartasboat4} alt="Croaziere Dunare" loading="eager" />
+                    </ImageChildContainer>
+                    <ImageChildContainer>
+                      <Image src={kartasboat1} alt="Croaziere Dunare" loading="eager" />
+                    </ImageChildContainer>
+                  </LocationDoubleImagesContainer2>
                   <span></span>
                 </LocationCardContainer>
                 <LocationDescriptionContainer>
