@@ -169,10 +169,14 @@ export const OtherActivitiesTitleContainer = styled.div`
   justify-content: center;
 
   h3 {
-    font-size: 28px;
-    color: #dfad6a;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
     font-family: "Roboto";
+    text-decoration: underline overline;
+    text-underline-offset: 5px;
+    text-decoration-color: #dfad6a;
 
     @media all and (max-width: 1000px) {
       font-size: 24px;

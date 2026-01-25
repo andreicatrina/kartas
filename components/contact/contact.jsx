@@ -60,10 +60,13 @@ export default function Contact() {
         </ContactColumn2>
         <ContactColumn3>
           <Column3Title>SOCIALS</Column3Title>
-          <InstagramFooterLink>
+          <InstagramFooterLink
+            target="_blank"
+            href="https://www.instagram.com/bucharest.experience?igsh=MWVtMXk4eDA5cWNtdw=="
+          >
             <FaInstagram />
           </InstagramFooterLink>
-          <FacebookFooterLink>
+          <FacebookFooterLink target="_blank" href="https://www.facebook.com/share/17x1iGM2Uj/">
             <FaFacebookSquare />
           </FacebookFooterLink>
           <YoutubeFooterLink>

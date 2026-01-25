@@ -48,6 +48,11 @@ import kartasparty3 from "../../public/kartasparty3.jpg";
 import kartasparty4 from "../../public/kartasparty4.jpg";
 import kartasparty5 from "../../public/kartasparty5.jpg";
 
+import kartasbachelor1 from "../../public/kartasbachelor1.jpg";
+import kartasbachelor2 from "../../public/kartasbachelor2.jpg";
+import kartasbachelor3 from "../../public/kartasbachelor3.jpg";
+import kartasbachelor4 from "../../public/kartasbachelor4.jpg";
+
 import kartasparty8 from "../../public/kartasparty8.jpg";
 import kartasparty9 from "../../public/kartasparty9.jpg";
 import kartasparty10 from "../../public/kartasparty10.jpg";
@@ -83,6 +88,33 @@ export default function NightlifePage() {
         <NIghtlifeOfferContainer>
           <OtherActivitiesParentContainer>
             <OtherActivitiesTitleContainer>
+              <h3>Bachelor/Bachelorette Party</h3>
+            </OtherActivitiesTitleContainer>
+            <OtherActivitiesChildContainer1>
+              <OtherActivitiesImageContainer>
+                <Image src={kartasbachelor1} alt="bachelor party" loading="eager" />
+              </OtherActivitiesImageContainer>
+              <OtherActivitiesImageContainer>
+                <Image src={kartasbachelor2} alt="bachelorette party" loading="eager" />
+              </OtherActivitiesImageContainer>
+              <OtherActivitiesImageContainer>
+                <Image src={kartasbachelor3} alt="bucharest bachelor" loading="eager" />
+              </OtherActivitiesImageContainer>
+              <OtherActivitiesImageContainer>
+                <Image src={kartasbachelor4} alt="bachelor party" loading="eager" />
+              </OtherActivitiesImageContainer>
+            </OtherActivitiesChildContainer1>
+            <ClubPartiesTextContainer>
+              <span>
+                Kartas Bucharest Experience turns bachelor and bachelorette parties into unforgettable adventures in the
+                heart of Bucharest, complete with stylish limousine rides. From wild nightlife and unique local
+                experiences to perfectly organized fun for groups, we make sure your last fling before the ring is
+                anything but ordinary
+              </span>
+            </ClubPartiesTextContainer>
+          </OtherActivitiesParentContainer>
+          <OtherActivitiesParentContainer>
+            <OtherActivitiesTitleContainer>
               <h3>Bucharest Clubs</h3>
             </OtherActivitiesTitleContainer>
             <OtherActivitiesChildContainer1>
@@ -108,7 +140,7 @@ export default function NightlifePage() {
               </span>
             </ClubPartiesTextContainer>
           </OtherActivitiesParentContainer>
-          <OtherActivitiesParentContainer2>
+          <OtherActivitiesParentContainer>
             <PoolPartyTitleContainer>
               <h3>Bucharest Pool Parties</h3>
             </PoolPartyTitleContainer>
@@ -145,8 +177,8 @@ export default function NightlifePage() {
                 <li>• Just your group — done right.</li>
               </OfferListContainer>
             </PoolPartiesTextContainer>
-          </OtherActivitiesParentContainer2>
-          <OtherActivitiesParentContainer3>
+          </OtherActivitiesParentContainer>
+          <OtherActivitiesParentContainer>
             <VilaPartyTitleContainer>
               <BiParty />
               <h3>Villa/Penthouse Private Party</h3>
@@ -198,7 +230,7 @@ export default function NightlifePage() {
                 <li>• Just your group — done right.</li>
               </OfferListContainer>
             </VilaPartyTextContainer>
-          </OtherActivitiesParentContainer3>
+          </OtherActivitiesParentContainer>
           <VIPPackContainer>
             <VIPTitle>
               VIP Packages <RiVipCrown2Fill />
