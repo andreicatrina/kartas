@@ -69,7 +69,7 @@ export default function Contact() {
           <FacebookFooterLink target="_blank" href="https://www.facebook.com/share/17x1iGM2Uj/">
             <FaFacebookSquare />
           </FacebookFooterLink>
-          <YoutubeFooterLink>
+          <YoutubeFooterLink target="_blank" href="https://youtube.com/shorts/HVuNYosd9UU?si=7uKDx_iEwckdJDKF">
             <FaYoutube />
           </YoutubeFooterLink>
           <WhatsappFooterLink

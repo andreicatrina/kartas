@@ -1537,7 +1537,10 @@ export const ATImageContainer6 = styled.div`
   }
 `;
 
-export const ATLimoContainer = styled.div``;
+export const ATLimoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const ATLimoParentContainer = styled.div``;
 
@@ -1598,7 +1601,7 @@ export const SecuritySpan = styled.span`
   font-weight: 400;
   color: #fff;
   font-family: "Roboto";
-  margin: 0 0 20px 0;
+  /* margin: 0 0 20px 0; */
 
   @media all and (max-width: 1000px) {
     font-size: 16px;
@@ -1846,6 +1849,7 @@ export const ServicesShortTextContainer = styled.div`
   border: 1px solid #dfad6a;
   border-radius: 8px;
   padding: 8px;
+  margin-top: 20px;
 `;
 
 export const ServicesShortText = styled.span`

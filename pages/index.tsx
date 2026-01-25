@@ -58,7 +58,7 @@ export default function Home() {
             </LandingSpan>
           </LandingSpanContainer>
           <LandingYoutubeContainer>
-            <a target="_blank" href="https://youtube.com">
+            <a target="_blank" href="https://youtube.com/shorts/HVuNYosd9UU?si=7uKDx_iEwckdJDKF">
               <FaYoutube />
               Take a look
             </a>

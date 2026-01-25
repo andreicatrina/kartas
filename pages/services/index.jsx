@@ -18,22 +18,10 @@ import {
   AirportTransferClassicContainer,
   AirportTransferParentContainer,
   ContactParentContainer,
-  ELargeImageContainer1,
-  ELargeImageContainer2,
-  ELargeImageContainer3,
-  EclassContainer1,
-  EclassContainer2,
-  EclassContainer3,
   FastContactLinksContainer,
   ImagesChildContainer,
   ImagesParentContainer,
   LimoImagesContainer,
-  SLargeImageContainer1,
-  SLargeImageContainer2,
-  SLargeImageContainer3,
-  SclassContainer1,
-  SclassContainer2,
-  SclassContainer3,
   SecurityImageContainer1,
   SecurityImageContainer2,
   SecurityImageContainer3,
@@ -52,17 +40,11 @@ import {
   ServicesText,
   ServicesTextContainer,
   ServicesTitle,
-  VLargeImageContainer1,
-  VLargeImageContainer2,
-  VLargeImageContainer3,
   VclassContainer1,
-  VclassContainer2,
-  VclassContainer3,
 } from "../../components/servicespagecomponent/components";
 
 import { MdPhoneInTalk } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
-import { MdClose } from "react-icons/md";
 
 import Header from "../../components/header";
 import Contact from "../../components/contact/contact";
@@ -86,6 +68,11 @@ import kartas27 from "../../public/kartas27.jpg";
 import kartas28 from "../../public/kartas28.png";
 import kartas29 from "../../public/kartas29.png";
 
+import kartashostess1 from "../../public/kartashostess1.jpg";
+import kartashostess2 from "../../public/kartashostess2.jpg";
+import kartashostess3 from "../../public/kartashostess3.jpg";
+import kartashostess4 from "../../public/kartashostess4.jpg";
+
 import kartassecurity1 from "../../public/kartassecurity1.jpg";
 import kartassecurity2 from "../../public/kartassecurity2.jpg";
 import kartassecurity3 from "../../public/kartassecurity3.jpg";
@@ -94,6 +81,7 @@ import kartassecurity5 from "../../public/kartassecurity5.jpg";
 import kartassecurity6 from "../../public/kartassecurity6.jpg";
 import kartassecurity7 from "../../public/kartassecurity7.jpg";
 import kartassecurity8 from "../../public/kartassecurity8.jpg";
+
 import { ImageModal } from "../../components/servicespagecomponent/ImageModal";
 
 const imagesList = [
@@ -180,6 +168,13 @@ export default function ServicesPage() {
             <ATLimoParentContainer>
               <ATLimoTitle>Airport Transport - Limousine</ATLimoTitle>
               <ATLimoSpan>Or maybe a Limousine fits you better</ATLimoSpan>
+              <ServicesShortTextContainer>
+                <ServicesShortText>
+                  Kartas Bucharest Experience provides VIP airport transport with luxury limousines for a smooth and
+                  stylish arrival or departure. For an extra touch of exclusivity, professional hostesses can also be on
+                  board, ensuring comfort, great company, and a premium experience from the very first moment.
+                </ServicesShortText>
+              </ServicesShortTextContainer>
               <LimoImagesContainer>
                 <ATImageContainer1>
                   <Image src={kartas11} alt="Limousine Romania" />
@@ -223,6 +218,46 @@ export default function ServicesPage() {
               </FastContactLinksContainer>
             </ServicesFastContactContainer>
           </ATLimoContainer>
+          <ServicesSecurityContainer>
+            <SecurityTitle>Hostess Services</SecurityTitle>
+            <SecuritySpan>For your protection</SecuritySpan>
+            <ServicesShortTextContainer>
+              <ServicesShortText>
+                Kartas Bucharest Experience offers professional hostess services designed to elevate your night out in
+                Bucharest. Our friendly, attractive, and full of life hostesses are also available for limousine
+                services, adding style, great company, and smooth vibes to your premium experience from start to finish.
+              </ServicesShortText>
+            </ServicesShortTextContainer>
+            <SecurityImagesContainer>
+              <SecurityImageContainer1>
+                <Image src={kartashostess1} alt="bucharest hostess" />
+              </SecurityImageContainer1>
+              <SecurityImageContainer2>
+                <Image src={kartashostess3} alt="hostess services" />
+              </SecurityImageContainer2>
+              <SecurityImageContainer3>
+                <Image src={kartashostess4} alt="romania hostess" />
+              </SecurityImageContainer3>
+              <SecurityImageContainer4>
+                <Image src={kartashostess2} alt="hostess party" />
+              </SecurityImageContainer4>
+            </SecurityImagesContainer>
+            <ServicesFastContactContainer>
+              <FastContactLinksContainer>
+                <a href="tel:+40758579743">
+                  <MdPhoneInTalk />
+                  CALL US
+                </a>
+                <a
+                  target="_blank"
+                  href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                >
+                  <FaWhatsapp />
+                  WHATSAPP
+                </a>
+              </FastContactLinksContainer>
+            </ServicesFastContactContainer>
+          </ServicesSecurityContainer>
           <ServicesSecurityContainer>
             <SecurityTitle>Security Guard</SecurityTitle>
             <SecuritySpan>For your protection</SecuritySpan>
