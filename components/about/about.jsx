@@ -34,17 +34,21 @@ import kartas6 from "../../public/kartas6.jpeg";
 import kartaspartytest2 from "../../public/kartaspartytest2.jpeg";
 import kartasparty3 from "../../public/kartasparty3.jpg";
 import kartasparty4 from "../../public/kartasparty4.jpg";
-import kartasparty5 from "../../public/kartasparty5.jpg";
+import kartasbachelor1 from "../../public/kartasbachelor1.jpg";
 import kartasparty2 from "../../public/kartasparty2.png";
 import kartasparty7 from "../../public/kartasparty7.png";
 import kartasparty6 from "../../public/kartasparty6.jpg";
-import kartasparty1 from "../../public/kartasparty1.jpg";
+import kartasbachelor2 from "../../public/kartasbachelor2.jpg";
 import kartasbrasov1 from "../../public/kartasbrasov1.jpg";
 import kartasct1 from "../../public/kartas-ct.jpg";
 import kartasbran3 from "../../public/kartas-bran3.jpg";
 import kartaspeles3 from "../../public/kartas-peles3.jpg";
 import kartaspp3 from "../../public/kartas-pp3.jpg";
 import kartaspp2 from "../../public/kartas-pp2.jpg";
+import kartashostess1 from "../../public/kartashostess1.jpg";
+import kartashostess2 from "../../public/kartashostess2.jpg";
+import kartashostess3 from "../../public/kartashostess3.jpg";
+import kartashostess4 from "../../public/kartashostess4.jpg";
 
 export default function About() {
   return (
@@ -67,6 +71,10 @@ export default function About() {
               {/* <span>VIP Cars & Driver</span> */}
             </AboutCard1>
             <AboutCard1>
+              <Image src={kartashostess1} alt="bucharest girls" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
               <Image src={kartasbrasov1} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
@@ -75,11 +83,19 @@ export default function About() {
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
+              <Image src={kartashostess3} alt="hostess service" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
               <Image src={kartasct1} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
               <Image src={kartas11} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartashostess4} alt="bucharest hostess" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
@@ -96,6 +112,10 @@ export default function About() {
             </AboutCard1>
             <AboutCard1>
               <Image src={kartas15} alt="bucharest car rent" />
+              {/* <span>VIP Escorts</span> */}
+            </AboutCard1>
+            <AboutCard1>
+              <Image src={kartashostess2} alt="bucharest car rent" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
@@ -140,11 +160,11 @@ export default function About() {
               {/* <span>VIP Cars & Driver</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartasparty4} alt="Romaniațs clubs" />
+              <Image src={kartasparty4} alt="Romania's clubs" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartasparty5} alt="bucharest party people" />
+              <Image src={kartasbachelor1} alt="bucharest party people" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
@@ -156,7 +176,7 @@ export default function About() {
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
-              <Image src={kartasparty1} alt="bucharest clubs" />
+              <Image src={kartasbachelor2} alt="bucharest clubs" />
               {/* <span>VIP Escorts</span> */}
             </AboutCard1>
             <AboutCard1>
