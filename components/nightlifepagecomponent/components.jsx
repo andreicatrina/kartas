@@ -149,16 +149,33 @@ export const OtherActivitiesImageContainer = styled.div`
 
 export const ClubPartiesTextContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
 
-  span {
+  p {
     width: 100%;
     max-width: 1000px;
     font-size: 16px;
     font-weight: 400;
     color: #fff;
     font-family: "Roboto";
+    span {
+      width: 100%;
+      max-width: 1000px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      padding: 12px 0;
+      font-family: "Roboto";
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-color: #dfad6a;
+    }
+  }
+
+  @media all and (max-width: 1200px) {
+    align-items: center;
   }
 `;
 
@@ -184,6 +201,19 @@ export const OtherActivitiesTitleContainer = styled.div`
 
     @media all and (max-width: 850px) {
       font-size: 20px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    @media all and (max-width: 1000px) {
+      font-size: 16px;
     }
   }
 `;
@@ -270,6 +300,7 @@ export const PoolPartiesTextContainer = styled.div`
     font-weight: 400;
     color: #fff;
     font-family: "Roboto";
+
     span {
       width: 100%;
       max-width: 1000px;
@@ -485,6 +516,7 @@ export const PackageFirstChildContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 12px;
   padding: 8px;
   border: 1px solid #c0c0c0;
   border-radius: 10px;
@@ -556,6 +588,7 @@ export const PackageSecondChildContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 12px;
   padding: 8px;
   border: 1px solid #dfad6a;
   border-radius: 10px;
@@ -620,5 +653,24 @@ export const SecondChildImageContainer = styled.div`
     object-fit: cover;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
+  }
+`;
+
+export const RequestOfferContainer = styled.div`
+  width: max-content;
+  margin: 0 auto;
+  padding: 8px;
+  border: 1px solid #dfad6a;
+  cursor: pointer;
+`;
+
+export const RequestLink = styled.a`
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto";
+
+  @media all and (max-width: 1000px) {
+    font-size: 18px;
   }
 `;

@@ -28,6 +28,8 @@ import {
   PoolPartyImageContainer,
   PoolPartyImagesContainer,
   PoolPartyTitleContainer,
+  RequestLink,
+  RequestOfferContainer,
   SecondChildDetailsContainer,
   SecondChildImageContainer,
   VIPPackContainer,
@@ -89,6 +91,7 @@ export default function NightlifePage() {
           <OtherActivitiesParentContainer>
             <OtherActivitiesTitleContainer>
               <h3>Bachelor/Bachelorette Party</h3>
+              <p>Welcome Party</p>
             </OtherActivitiesTitleContainer>
             <OtherActivitiesChildContainer1>
               <OtherActivitiesImageContainer>
@@ -105,12 +108,22 @@ export default function NightlifePage() {
               </OtherActivitiesImageContainer>
             </OtherActivitiesChildContainer1>
             <ClubPartiesTextContainer>
-              <span>
+              <p>
                 Kartas Bucharest Experience turns bachelor and bachelorette parties into unforgettable adventures in the
                 heart of Bucharest, complete with stylish limousine rides. From wild nightlife and unique local
                 experiences to perfectly organized fun for groups, we make sure your last fling before the ring is
                 anything but ordinary
-              </span>
+                <br />
+                <span>Our offer includes:</span>
+              </p>
+              <OfferListContainer>
+                <li>• Transport airport to hotel with 1 luxury limousine</li>
+                <li>• 2 hostesses</li>
+                <li>• Champagne and drinks</li>
+              </OfferListContainer>
+              <RequestOfferContainer>
+                <RequestLink href="tel:+40758579743">Price from 500€/group</RequestLink>
+              </RequestOfferContainer>
             </ClubPartiesTextContainer>
           </OtherActivitiesParentContainer>
           <OtherActivitiesParentContainer>
@@ -139,6 +152,9 @@ export default function NightlifePage() {
                 everything from mainstream hits to techno, house, and experimental electronic music.
               </span>
             </ClubPartiesTextContainer>
+            <RequestOfferContainer>
+              <RequestLink href="tel:+40758579743">Request Offer</RequestLink>
+            </RequestOfferContainer>
           </OtherActivitiesParentContainer>
           <OtherActivitiesParentContainer>
             <PoolPartyTitleContainer>
@@ -166,16 +182,19 @@ export default function NightlifePage() {
                 <br />
                 <span>Our offer includes:</span>
               </p>
+
               <OfferListContainer>
                 <li>• Pool parties in private locations</li>
-                <li>• Birthday & anniversary celebrations</li>
-                <li>• Bachelor & Bachelorette Parties</li>
-                <li>• Invitation-only private gatherings</li>
+                <li>• 3 Hostesses</li>
+                <li>• Food included</li>
+                <li>• Drinks included</li>
                 <li>• Your own personal DJ</li>
-                <li>• We handle logistics & coordination</li>
-                <li>• No crowds. No wait list. No compromises.</li>
+                <li>• Transport included</li>
                 <li>• Just your group — done right.</li>
               </OfferListContainer>
+              <RequestOfferContainer>
+                <RequestLink href="tel:+40758579743">Price from 2700€/group</RequestLink>
+              </RequestOfferContainer>
             </PoolPartiesTextContainer>
           </OtherActivitiesParentContainer>
           <OtherActivitiesParentContainer>
@@ -220,7 +239,6 @@ export default function NightlifePage() {
                 <span>Our offer includes:</span>
               </p>
               <OfferListContainer>
-                <li>• Private villa & pool parties</li>
                 <li>• Birthday & anniversary celebrations</li>
                 <li>• Invitation-only private gatherings</li>
                 <li>• Bachelor & Bachelorette Parties</li>
@@ -229,6 +247,9 @@ export default function NightlifePage() {
                 <li>• No crowds. No wait list. No compromises.</li>
                 <li>• Just your group — done right.</li>
               </OfferListContainer>
+              <RequestOfferContainer>
+                <RequestLink href="tel:+40758579743">Price from 1400€/group</RequestLink>
+              </RequestOfferContainer>
             </VilaPartyTextContainer>
           </OtherActivitiesParentContainer>
           <VIPPackContainer>
@@ -241,6 +262,8 @@ export default function NightlifePage() {
                 <FirstChildDetailsContainer>
                   <h3>Pool Party Silver Pack</h3>
                   <p>Location (6h)-Private Pool Vila</p>
+                  <p>3 Hostesses</p>
+                  <p>Food included</p>
                   <p>Drinks-2 x Absolut Vodka(1L) + natural juices + RedBull</p>
                   <p>Camino Tequilla shots</p>
                   <p>2 x JN Chennet(1.5L)</p>
@@ -249,13 +272,18 @@ export default function NightlifePage() {
                 <FirstChildImageContainer>
                   <Image src={kartaspool8} alt="pool party" />
                 </FirstChildImageContainer>
+                <RequestOfferContainer>
+                  <RequestLink href="tel:+40758579743">Price 2700€</RequestLink>
+                </RequestOfferContainer>
               </PackageFirstChildContainer>
               <PackageSecondChildContainer>
                 <SecondChildDetailsContainer>
                   <h3>Pool Party Gold Pack</h3>
                   <p>Location (6h)-Private Pool Vila</p>
+                  <p>3 Hostesses</p>
+                  <p>BBQ & BBQ man included</p>
                   <p>Drinks-2 x Belvedere/Grey Goose + natural juices</p>
-                  <p>2 x Moet + Figa</p>
+                  <p>3 x Moet + Figa</p>
                   <p>Patron/Padre tequila shots</p>
                   <p>Snacks & water</p>
                   <p>VIP Transfer</p>
@@ -263,6 +291,9 @@ export default function NightlifePage() {
                 <SecondChildImageContainer>
                   <Image src={kartaspool9} alt="vip pool party" />
                 </SecondChildImageContainer>
+                <RequestOfferContainer>
+                  <RequestLink href="tel:+40758579743">Price 3900€</RequestLink>
+                </RequestOfferContainer>
               </PackageSecondChildContainer>
             </PackagesParentContainer>
           </VIPPackContainer>
