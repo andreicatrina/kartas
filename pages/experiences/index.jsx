@@ -102,11 +102,23 @@ export default function index() {
           </ToursText>
           <OfferListContainer>
             Available Locations
-            <li>• Bucharest. Capital of Romania</li>
-            <li>• Brasov & Transylvania</li>
-            <li>• Castles, palaces & cultural landmarks</li>
-            <li>• Constanta, Black Sea & Dobrogea region</li>
-            <li>• Veliko Trnova in Bulgaria</li>
+            <li>
+              • Bucharest. Capital of Romania - <p> from 300€</p>
+            </li>
+            <li>
+              • Brasov & Transylvania - <p>from 450€ </p>
+              {`(10-12 hours)`}
+            </li>
+            {/* <li>• Castles, palaces & cultural landmarks</li> */}
+            <li>
+              • Constanta, Black Sea & Dobrogea region - <p>from 500€</p>
+            </li>
+            <li>
+              • Veliko Trnova in Bulgaria - <p>from 450€</p>
+            </li>
+            <li>
+              • Galati & Danube River - <p>from 1000€</p>
+            </li>
           </OfferListContainer>
           <LocationsToursContainer>
             <LocationContainer>
@@ -386,7 +398,7 @@ export default function index() {
                     <a target="_blank" href="https://galaticityapp.ro/places/faleza-dunarii-5v3aavcoy-yozg">
                       embankment
                     </a>
-                    , river cruises, transport routes, and a strong link between Galați and Europe.
+                    , luxury boat trips, transport routes, and a strong link between Galați and Europe.
                   </LocationDescriptionParagraph>
                 </LocationDescriptionContainer>
               </LocationsParentContainer>
@@ -433,6 +445,7 @@ export default function index() {
           <OtherActivitiesParentContainer4>
             <AccommodationsTitleContainer>
               <h3>Accommodations</h3>
+              <p>from 150€/night</p>
             </AccommodationsTitleContainer>
             <AccommodationsImagesContainer>
               <AccommodationsImageContainer>

@@ -513,6 +513,7 @@ export const VilaPartyTextContainer = styled.div`
 
 export const AccommodationsTitleContainer = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 16px;
 
@@ -523,7 +524,7 @@ export const AccommodationsTitleContainer = styled.div`
   }
 
   h3 {
-    margin: 20px 0;
+    /* margin: 20px 0; */
     font-size: 20px;
     font-weight: 400;
     color: #fff;
@@ -531,6 +532,14 @@ export const AccommodationsTitleContainer = styled.div`
     text-decoration: underline overline;
     text-underline-offset: 5px;
     text-decoration-color: #dfad6a;
+  }
+
+  p {
+    font-weight: 400;
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: underline;
+    text-underline-offset: 4px;
   }
 `;
 
@@ -578,9 +587,20 @@ export const OfferListContainer = styled.ul`
   padding: 12px 0;
 
   li {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
     color: #fff;
     font-family: "Roboto";
     font-size: 16px;
+
+    p {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      color: #fff;
+      font-family: "Roboto";
+      font-size: 16px;
+    }
   }
 `;
 
