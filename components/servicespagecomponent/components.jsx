@@ -171,6 +171,7 @@ export const ATClassicSpan = styled.span`
   font-weight: 400;
   color: #fff;
   font-family: "Roboto";
+  margin-bottom: 20px;
 
   @media all and (max-width: 1000px) {
     font-size: 18px;
@@ -1542,7 +1543,14 @@ export const ATLimoContainer = styled.div`
   flex-direction: column;
 `;
 
-export const ATLimoParentContainer = styled.div``;
+export const ATLimoParentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @media all and (max-width: 500px) {
+    align-items: center;
+  }
+`;
 
 export const ATLimoTitle = styled.h3`
   font-size: 28px;
@@ -1561,6 +1569,7 @@ export const ATLimoSpan = styled.span`
   font-weight: 400;
   color: #fff;
   font-family: "Roboto";
+  margin-bottom: 20px;
 
   @media all and (max-width: 1000px) {
     font-size: 18px;
@@ -1601,7 +1610,7 @@ export const SecuritySpan = styled.span`
   font-weight: 400;
   color: #fff;
   font-family: "Roboto";
-  /* margin: 0 0 20px 0; */
+  margin-bottom: 20px;
 
   @media all and (max-width: 1000px) {
     font-size: 16px;
@@ -1864,5 +1873,28 @@ export const ServicesShortText = styled.span`
   @media all and (max-width: 500px) {
     font-size: 14px;
     line-height: 16px;
+  }
+`;
+
+export const PriceContainer = styled.div`
+  width: max-content;
+  /* margin: 0 auto; */
+  padding: 8px;
+  border: 1px solid #dfad6a;
+  cursor: pointer;
+
+  @media all and (max-width: 500px) {
+    margin: 0 auto;
+  }
+`;
+
+export const PriceLink = styled.a`
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto";
+
+  @media all and (max-width: 1000px) {
+    font-size: 18px;
   }
 `;

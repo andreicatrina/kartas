@@ -22,6 +22,8 @@ import {
   ImagesChildContainer,
   ImagesParentContainer,
   LimoImagesContainer,
+  PriceContainer,
+  PriceLink,
   SecurityImageContainer1,
   SecurityImageContainer2,
   SecurityImageContainer3,
@@ -55,9 +57,7 @@ import kartas2 from "../../public/kartas2.png";
 import kartas6 from "../../public/kartas6.jpeg";
 import kartas7 from "../../public/kartas7.jpeg";
 import kartas8 from "../../public/kartas8.jpeg";
-import kartas9 from "../../public/kartas9.jpeg";
 import kartas13 from "../../public/kartas13.jpeg";
-import kartas22 from "../../public/kartas22.jpg";
 import kartas11 from "../../public/kartas11.jpeg";
 import kartas12 from "../../public/kartas12.jpeg";
 import kartas21 from "../../public/kartas21.jpg";
@@ -74,13 +74,9 @@ import kartashostess3 from "../../public/kartashostess3.jpg";
 import kartashostess4 from "../../public/kartashostess4.jpg";
 
 import kartassecurity1 from "../../public/kartassecurity1.jpg";
-import kartassecurity2 from "../../public/kartassecurity2.jpg";
 import kartassecurity3 from "../../public/kartassecurity3.jpg";
 import kartassecurity4 from "../../public/kartassecurity4.jpg";
-import kartassecurity5 from "../../public/kartassecurity5.jpg";
 import kartassecurity6 from "../../public/kartassecurity6.jpg";
-import kartassecurity7 from "../../public/kartassecurity7.jpg";
-import kartassecurity8 from "../../public/kartassecurity8.jpg";
 
 import { ImageModal } from "../../components/servicespagecomponent/ImageModal";
 
@@ -134,7 +130,10 @@ export default function ServicesPage() {
           <AirportTransferClassicContainer>
             <AirportTransferParentContainer>
               <ATClassicTitle>Airport Transfer - Clasic</ATClassicTitle>
-              <ATClassicSpan>Let us enhance your comfort with our fleet of classic luxury vehicles</ATClassicSpan>
+              <ATClassicSpan>Private chauffeur at your disposal</ATClassicSpan>
+              <PriceContainer>
+                <PriceLink>Price from 50€</PriceLink>
+              </PriceContainer>
               <ImagesParentContainer>
                 <ImagesChildContainer>
                   {imagesList.map((item, idx) => (
@@ -166,8 +165,11 @@ export default function ServicesPage() {
           </AirportTransferClassicContainer>
           <ATLimoContainer>
             <ATLimoParentContainer>
-              <ATLimoTitle>Airport Transport - Limousine</ATLimoTitle>
-              <ATLimoSpan>Or maybe a Limousine fits you better</ATLimoSpan>
+              <ATLimoTitle>Airport Transfer - Limousine</ATLimoTitle>
+              <ATLimoSpan>Limousine city tours</ATLimoSpan>
+              <PriceContainer>
+                <PriceLink>Price from 250€/group</PriceLink>
+              </PriceContainer>
               <ServicesShortTextContainer>
                 <ServicesShortText>
                   Kartas Bucharest Experience provides VIP airport transport with luxury limousines for a smooth and
@@ -220,7 +222,10 @@ export default function ServicesPage() {
           </ATLimoContainer>
           <ServicesSecurityContainer>
             <SecurityTitle>Hostess Services</SecurityTitle>
-            <SecuritySpan>For your protection</SecuritySpan>
+            <SecuritySpan>Make your life interesting</SecuritySpan>
+            <PriceContainer>
+              <PriceLink>Price 120€/hostess</PriceLink>
+            </PriceContainer>
             <ServicesShortTextContainer>
               <ServicesShortText>
                 Kartas Bucharest Experience offers professional hostess services designed to elevate your night out in
@@ -260,7 +265,10 @@ export default function ServicesPage() {
           </ServicesSecurityContainer>
           <ServicesSecurityContainer>
             <SecurityTitle>Security Guard</SecurityTitle>
-            <SecuritySpan>For your protection</SecuritySpan>
+            <SecuritySpan>For your protection - at your disposal</SecuritySpan>
+            <PriceContainer>
+              <PriceLink>Request Offer</PriceLink>
+            </PriceContainer>
             <ServicesShortTextContainer>
               <ServicesShortText>
                 Kartas Bucharest Experience delivers elite VIP transfers in Bucharest, combining luxury vehicles with
