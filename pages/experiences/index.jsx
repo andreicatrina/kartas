@@ -106,12 +106,12 @@ export default function index() {
               • Bucharest. Capital of Romania - <p> from 300€</p>
             </li>
             <li>
-              • Brasov & Transylvania - <p>from 450€ </p>
-              {`(10-12 hours)`}
+              • Brasov, Transylvania - <p>from 450€ </p>
+              {`(10-12h)`}
             </li>
             {/* <li>• Castles, palaces & cultural landmarks</li> */}
             <li>
-              • Constanta, Black Sea & Dobrogea region - <p>from 500€</p>
+              • Constanta & Black Sea - <p>from 500€</p>
             </li>
             <li>
               • Veliko Trnova in Bulgaria - <p>from 450€</p>
