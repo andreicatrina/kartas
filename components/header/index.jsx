@@ -78,6 +78,13 @@ export default function Header() {
           <a
             target="_blank"
             href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+            onClick={() => {
+              if (window.gtag) {
+                window.gtag("event", "conversion-whatsapp", {
+                  send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                });
+              }
+            }}
           >
             <FaWhatsapp />
             WHATSAPP

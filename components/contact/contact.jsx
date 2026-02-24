@@ -39,8 +39,30 @@ export default function Contact() {
         </ContactFooterLogo>
         <ContactHeadingContainer>
           <ContactHeading>CONTACT US</ContactHeading>
-          <ContactHeadingPhoneLink href="tel:+40758579743">+40 758 579 743</ContactHeadingPhoneLink>
-          <ContactMailLink href="mailto:kartaskts@gmail.com">kartaskts@gmail.com</ContactMailLink>
+          <ContactHeadingPhoneLink
+            href="tel:+40758579743"
+            onClick={() => {
+              if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "conversion-phone", {
+                  send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                });
+              }
+            }}
+          >
+            +40 758 579 743
+          </ContactHeadingPhoneLink>
+          <ContactMailLink
+            href="mailto:kartaskts@gmail.com"
+            onClick={() => {
+              if (typeof window !== "undefined" && window.gtag) {
+                window.gtag("event", "conversion-mail", {
+                  send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                });
+              }
+            }}
+          >
+            kartaskts@gmail.com
+          </ContactMailLink>
         </ContactHeadingContainer>
         <ContactColumn1>
           <Column1Title>INFO</Column1Title>
@@ -75,6 +97,13 @@ export default function Contact() {
           <WhatsappFooterLink
             target="_blank"
             href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+            onClick={() => {
+              if (window.gtag) {
+                window.gtag("event", "conversion-whatsapp", {
+                  send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                });
+              }
+            }}
           >
             <FaWhatsapp />
           </WhatsappFooterLink>

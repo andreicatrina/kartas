@@ -149,13 +149,29 @@ export default function ServicesPage() {
             </AirportTransferParentContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
-                <a href="tel:+40758579743">
+                <a
+                  href="tel:+40758579743"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.gtag) {
+                      window.gtag("event", "conversion-phone", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
+                >
                   <MdPhoneInTalk />
                   CALL US
                 </a>
                 <a
                   target="_blank"
                   href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                  onClick={() => {
+                    if (window.gtag) {
+                      window.gtag("event", "conversion-whatsapp", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
                 >
                   <FaWhatsapp />
                   WHATSAPP
@@ -206,13 +222,29 @@ export default function ServicesPage() {
             </ATLimoParentContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
-                <a href="tel:+40758579743">
+                <a
+                  href="tel:+40758579743"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.gtag) {
+                      window.gtag("event", "conversion-phone", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
+                >
                   <MdPhoneInTalk />
                   CALL US
                 </a>
                 <a
                   target="_blank"
                   href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                  onClick={() => {
+                    if (window.gtag) {
+                      window.gtag("event", "conversion-whatsapp", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
                 >
                   <FaWhatsapp />
                   WHATSAPP
@@ -249,13 +281,29 @@ export default function ServicesPage() {
             </SecurityImagesContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
-                <a href="tel:+40758579743">
+                <a
+                  href="tel:+40758579743"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.gtag) {
+                      window.gtag("event", "conversion-phone", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
+                >
                   <MdPhoneInTalk />
                   CALL US
                 </a>
                 <a
                   target="_blank"
                   href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                  onClick={() => {
+                    if (window.gtag) {
+                      window.gtag("event", "conversion-whatsapp", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
                 >
                   <FaWhatsapp />
                   WHATSAPP
@@ -293,13 +341,29 @@ export default function ServicesPage() {
             </SecurityImagesContainer>
             <ServicesFastContactContainer>
               <FastContactLinksContainer>
-                <a href="tel:+40758579743">
+                <a
+                  href="tel:+40758579743"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.gtag) {
+                      window.gtag("event", "conversion-phone", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
+                >
                   <MdPhoneInTalk />
                   CALL US
                 </a>
                 <a
                   target="_blank"
                   href="https://wa.me/40758579743?text=Hello,%20Kartas%20Events!%20I'm%20ready%20for%20the%20best%20experience%20in%20Romania!%20"
+                  onClick={() => {
+                    if (window.gtag) {
+                      window.gtag("event", "conversion-whatsapp", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
                 >
                   <FaWhatsapp />
                   WHATSAPP
@@ -315,14 +379,3 @@ export default function ServicesPage() {
     </ServicesSection>
   );
 }
-
-/*
-<ATImageContainer2>
-                  <Image src={kartas22} alt="Bucharest vip car" />
-                  <span>S Class</span>
-                </ATImageContainer2>
-                <ATImageContainer3>
-                  <Image src={kartas25} alt="E-class for rent" />
-                  <span>E Class</span>
-                </ATImageContainer3>
-*/

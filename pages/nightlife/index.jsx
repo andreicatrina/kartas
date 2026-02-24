@@ -153,7 +153,18 @@ export default function NightlifePage() {
               </span>
             </ClubPartiesTextContainer>
             <RequestOfferContainer>
-              <RequestLink href="tel:+40758579743">Request Offer</RequestLink>
+              <RequestLink
+                href="tel:+40758579743"
+                onClick={() => {
+                  if (typeof window !== "undefined" && window.gtag) {
+                    window.gtag("event", "conversion", {
+                      send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                    });
+                  }
+                }}
+              >
+                Request Offer
+              </RequestLink>
             </RequestOfferContainer>
           </OtherActivitiesParentContainer>
           <OtherActivitiesParentContainer>
@@ -193,7 +204,18 @@ export default function NightlifePage() {
                 <li>• Just your group — done right.</li>
               </OfferListContainer>
               <RequestOfferContainer>
-                <RequestLink href="tel:+40758579743">Price from 2700€/group</RequestLink>
+                <RequestLink
+                  href="tel:+40758579743"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.gtag) {
+                      window.gtag("event", "conversion", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
+                >
+                  Price from 2700€/group
+                </RequestLink>
               </RequestOfferContainer>
             </PoolPartiesTextContainer>
           </OtherActivitiesParentContainer>
@@ -248,7 +270,18 @@ export default function NightlifePage() {
                 <li>• Just your group — done right.</li>
               </OfferListContainer>
               <RequestOfferContainer>
-                <RequestLink href="tel:+40758579743">Price from 1400€/group</RequestLink>
+                <RequestLink
+                  href="tel:+40758579743"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.gtag) {
+                      window.gtag("event", "conversion", {
+                        send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                      });
+                    }
+                  }}
+                >
+                  Price from 1400€/group
+                </RequestLink>
               </RequestOfferContainer>
             </VilaPartyTextContainer>
           </OtherActivitiesParentContainer>
@@ -273,7 +306,18 @@ export default function NightlifePage() {
                   <Image src={kartaspool8} alt="pool party" />
                 </FirstChildImageContainer>
                 <RequestOfferContainer>
-                  <RequestLink href="tel:+40758579743">Price 2700€</RequestLink>
+                  <RequestLink
+                    href="tel:+40758579743"
+                    onClick={() => {
+                      if (typeof window !== "undefined" && window.gtag) {
+                        window.gtag("event", "conversion", {
+                          send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                        });
+                      }
+                    }}
+                  >
+                    Price 2700€
+                  </RequestLink>
                 </RequestOfferContainer>
               </PackageFirstChildContainer>
               <PackageSecondChildContainer>
@@ -292,7 +336,18 @@ export default function NightlifePage() {
                   <Image src={kartaspool9} alt="vip pool party" />
                 </SecondChildImageContainer>
                 <RequestOfferContainer>
-                  <RequestLink href="tel:+40758579743">Price 3900€</RequestLink>
+                  <RequestLink
+                    href="tel:+40758579743"
+                    onClick={() => {
+                      if (typeof window !== "undefined" && window.gtag) {
+                        window.gtag("event", "conversion", {
+                          send_to: "AW-17902569980/V44WCLnLwOwbEPyTzthC",
+                        });
+                      }
+                    }}
+                  >
+                    Price 3900€
+                  </RequestLink>
                 </RequestOfferContainer>
               </PackageSecondChildContainer>
             </PackagesParentContainer>
